@@ -1,0 +1,142 @@
+:root {
+  /* Primary Colors */
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral Colors */
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --hover-state: hsl(245, 83%, 68%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--pale-blue);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: absolute;
+}
+
+.card {
+  width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: hsla(224, 23%, 55%, 0.1) 0px 20px 25px -5px,
+    hsl(224, 23%, 55%, 0.04) 0px 10px 10px -5px;
+}
+
+.card-wrapper {
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--dark-blue);
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  color: var(--desaturated-blue);
+}
+
+.plan-container {
+  background-color: var(--very-pale-blue);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-icon-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.left-icon-container div {
+  margin-left: 1.5rem;
+}
+
+.left-icon-container h5 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--dark-blue);
+  margin-bottom: 0.3rem;
+}
+
+.left-icon-container p {
+  color: var(--desaturated-blue);
+}
+
+.plan-container a:hover {
+  color: var(--hover-state);
+  text-decoration: none;
+}
+
+.plan-container a {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--bright-blue);
+}
+
+.proceed:hover {
+  background-color: var(--hover-state);
+}
+
+.proceed {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  background-color: var(--bright-blue);
+  text-decoration: none;
+  box-shadow: hsla(245, 83%, 68%, 0.3) 0px 25px 25px -5px,
+    hsl(245, 83%, 68%, 0.04) 0px 10px 10px -5px;
+}
+
+.cancel:hover {
+  color: var(--dark-blue);
+}
+
+.cancel {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+@media (max-width: 1440px){
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+}
