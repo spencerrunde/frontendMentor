@@ -41,7 +41,7 @@ ul {
 
 .container {
   background-color: var(--dark-desaturated-blue);
-  width: 90vw;
+  width: 360px;
   margin: 50px auto;
   padding: 0 0 20px;
   border-radius: 10px;
@@ -99,7 +99,7 @@ ul {
   }
 
   .container {
-    width: 60vw;
+    width: 1080px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,13 +111,13 @@ ul {
   .container .card-picture {
     background: url(./images/image-header-desktop.jpg) no-repeat center/cover;
     border-radius: 0px 10px 10px 0;
-    width: 100%;
-    height: 480px;
+    min-width: 550px;
+    height: 446px;
   }
 
   .container .card-picture .overlay {
     border-radius: 0 10px 10px 0;
-    height: 480px;
+    height: 446px;
   }
 
   .container .card-text {
