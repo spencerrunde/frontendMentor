@@ -135,7 +135,7 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
   body {
     background-image: url(./images/pattern-background-mobile.svg);
   }
