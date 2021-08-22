@@ -1,0 +1,131 @@
+:root {
+  /* ### Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  /* paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* background, headings, buttons */
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-light-gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px 10px;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+.left {
+  background-color: var(--bright-orange);
+  padding: 3rem;
+}
+
+.middle {
+  background-color: var(--dark-cyan);
+  padding: 3rem;
+}
+
+.right {
+  background-color: var(--very-dark-cyan);
+  padding: 3rem;
+}
+
+img {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--transparent-white);
+  margin-bottom: 5rem;
+  line-height: 1.6;
+}
+
+a {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--very-light-gray);
+  border-radius: 25px;
+  border: 2px solid var(--very-light-gray);
+  transition: 0.25s ease-in-out;
+}
+
+.left a:hover {
+  color: var(--very-light-gray);
+  background-color: var(--bright-orange);
+}
+
+.left a {
+  color: var(--bright-orange);
+}
+
+.middle a:hover {
+  color: var(--very-light-gray);
+  background-color: var(--dark-cyan);
+}
+
+.middle a {
+  color: var(--dark-cyan);
+}
+
+.right a:hover {
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-cyan);
+}
+
+.right a {
+  color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin: 4rem 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
