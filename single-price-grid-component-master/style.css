@@ -11,7 +11,7 @@
   --grayish-blue: hsl(218, 22%, 67%);
 }
 
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -79,7 +79,7 @@ h3 {
 h5 {
   display: flex;
   align-items: center;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .cost {
@@ -90,7 +90,7 @@ h5 {
 .month {
   color: var(--light-gray);
   font-weight: 400;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
 }
 
 .top p {
@@ -103,7 +103,6 @@ h5 {
   font-size: 14px;
 }
 
-
 ul {
   list-style-type: none;
 }
@@ -111,7 +110,7 @@ ul {
 li {
   color: white;
   font-size: 14px;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   color: var(--light-gray);
 }
 
