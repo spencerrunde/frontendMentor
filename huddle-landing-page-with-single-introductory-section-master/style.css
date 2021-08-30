@@ -17,13 +17,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--violet);
+  min-height: 100vh;
   color: white;
-  height: 100vh;
   display: flex;
   align-items: center;
 }
 
-.container {
+.main {
   margin: 0 auto;
 }
 
@@ -44,6 +44,10 @@ body {
 
 .hero {
   margin-right: 4rem;
+}
+
+.hero img {
+  max-width: 100%;
 }
 
 .text {
@@ -111,7 +115,7 @@ h1 {
   border: 2px solid var(--soft-magenta);
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1200px) {
   body {
     background-image: url(./images/bg-mobile.svg);
     background-size: 100%;
