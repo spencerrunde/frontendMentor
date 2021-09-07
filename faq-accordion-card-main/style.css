@@ -32,6 +32,7 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
+  color: var(--very-dark-desaturated-blue);
   background: linear-gradient(var(--soft-violet), var(--soft-blue));
   min-height: 100vh;
   display: flex;
@@ -52,15 +53,12 @@ body {
   background-image: url(./images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
   background-position: -35.7rem -18.5rem;
-}
-
-.image,
-.text {
-  flex: 1;
+  box-shadow: 0 2rem 3rem hsl(240, 40%, 50%);
 }
 
 .text {
-  padding: 0 4rem;
+  flex: 0.9;
+  padding: 0 5rem;
 }
 
 .box {
@@ -68,35 +66,150 @@ body {
   left: -5.8rem;
   bottom: 7.5rem;
   z-index: 1;
+  animation: UpAndDown 2s linear infinite;
 }
 
-.image {
+@keyframes UpAndDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+.desktop-image {
+  flex: 1;
   display: flex;
   align-items: center;
   overflow: hidden;
-  
 }
 
-.image img {
+.desktop-image img {
   transform: translateX(-5rem);
 }
 
-.question {
+.mobile-image {
+  display: none;
+}
+
+.mobile-background-image {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  color: var(--very-dark-desaturated-blue);
+  border: none;
+  background: transparent;
+  position: relative;
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+label:hover {
+  color: var(--soft-red);
+}
+
+input:checked + label {
+  font-weight: 700;
+}
+
+.arrow {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  transition: all 0.25s ease-in-out;
 }
 
 h1 {
   padding: 2rem 0;
 }
 
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.33s ease-in-out;
+}
+
 p {
-    display: none;
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1023) {
-    .card {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+hr {
+  border: none;
+  height: 1px;
+  margin-bottom: 1rem;
+  background-color: var(--light-grayish-blue);
+}
+
+input:checked + label img {
+  transform: rotate(180deg);
+}
+
+input {
+  display: none;
+}
+
+input + label + .answer {
+  max-height: 0;
+}
+
+input:checked + label + .answer {
+  max-height: 200px;
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    max-width: 330px;
+    flex-direction: column;
+    align-items: center;
+    width: initial;
+    height: initial;
+    background-image: none;
+    margin: 0rem 1.5rem;
+    padding-top: 6rem;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: initial;
+    position: absolute;
+    top: -108px;
+    left: 16px;
+  }
+
+  .mobile-background-image {
+    display: initial;
+    position: absolute;
+    top: 0;
+    left: 42px;
+  }
+
+  .text {
+    flex: 0;
+    padding: 0 2rem;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    font-size: 13px;
+  }
 }

@@ -26,61 +26,86 @@
   <body>
     <main>
       <div class="card">
-        <img src="./images/illustration-box-desktop.svg" alt="" class="box">
-        <div class="image">
+        <img src="./images/illustration-box-desktop.svg" alt="" class="box" />
+        <div class="desktop-image">
           <img
             src="./images/illustration-woman-online-desktop.svg"
             alt="woman at desktop"
           />
         </div>
-        
+
+        <div class="mobile-image">
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="woman at desktop"
+          />
+        </div>
+
+        <div class="mobile-background-image">
+          <img
+            src="./images/bg-pattern-mobile.svg"
+            alt=""
+          />
+        </div>
+
         <div class="text">
           <h1>FAQ</h1>
-          <div class="question"
-            >How many team members can I invite?
-            <img src="./images/icon-arrow-down.svg" alt="arrow down"
-          /></div>
-          <p>
-            You can invite up to 2 additional users on the Free plan. There is
-            no limit on team members for the Premium plan.
-          </p>
-          <div class="question"
-            >What is the maximum file upload size?
-            <img src="./images/icon-arrow-down.svg" alt="arrow down"
-          /></div>
-          <p>
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
-          </p>
-          <div class="question"
-            >How do I reset my password?
-            <img src="./images/icon-arrow-down.svg" alt="arrow down"
-          /></div>
-          <p>
-            Click “Forgot password” from the login page or “Change password”
-            from your profile page. A reset link will be emailed to you.
-          </p>
-          <div class="question"
-            >Can I cancel my subscription?
-            <img src="./images/icon-arrow-down.svg" alt="arrow down"
-          /></div>
-          <p>
-            Yes! Send us a message and we’ll process your request no questions
-            asked.
-          </p>
-          <div class="question"
-            >Do you provide additional support?
-            <img src="./images/icon-arrow-down.svg" alt="arrow down"
-          /></div>
-          <p>
-            Chat and email support is available 24/7. Phone lines are openduring
-            normal business hours.
-          </p>
+          <input type="checkbox" id="question-one" class="question"></input>
+          <label for="question-one"> How many team members can I invite?
+            <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow" /></label>
+          <div class="answer">
+            <p>
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+          <hr>
+          <input type="checkbox" id="question-two" class="question"></input>
+          <label for="question-two">What is the maximum file upload size?
+            <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow"/></label>
+          </button>
+          <div class="answer">
+            <p>
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+          <hr>
+          <input type="checkbox" id="question-three" class="question"></input>
+            <label for="question-three"> How do I reset my password?
+            <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow"/></label>
+          </button>
+          <div class="answer">
+            <p>
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+          <hr>
+          <input type="checkbox" id="question-four" class="question"></input>
+            <label for="question-four"> Can I cancel my subscription?
+            <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow"/></label>
+          </button>
+          <div class="answer">
+            <p>
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+          <hr>
+          <input type="checkbox" id="question-five" class="question"></input>
+            <label for="question-five"> Do you provide additional support?
+            <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow"/></label>
+          </button>
+          <div class="answer">
+            <p>
+              Chat and email support is available 24/7. Phone lines are openduring
+              normal business hours.
+            </p>
+          </div>
+          <hr>
         </div>
       </div>
     </main>
-    
-    <!-- Script -->
-    <script src="./scipt.js"></script>
   </body>
 </html>
