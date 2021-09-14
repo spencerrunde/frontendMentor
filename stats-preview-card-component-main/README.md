@@ -37,28 +37,11 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+This was the first challenge where I made use of Flexbox. You can instantly see that it is an amazing tool, even if you are an absolute beginner. Im writing this readme a bit in the future, and there are a few things I would have done differently. I would have used flex for the mobile view as well if I were building this project now. The desktop version of the site also triggers a bit early, as the container has a fixed width that is bigger than 768px.
 
 ## Author
 
