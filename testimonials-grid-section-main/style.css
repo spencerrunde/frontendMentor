@@ -49,6 +49,8 @@ main {
   background-image: url(./images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top right 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .quote-1 img {
@@ -60,14 +62,18 @@ main {
   grid-area: quote-2;
   border-radius: 0.5rem;
   padding: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .quote-3 {
   background-color: var(--white);
-  color: var(--very-dark-blackish-blue);
+  color: var(--very-dark-grayish-blue);
   grid-area: quote-3;
   border-radius: 0.5rem;
   padding: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .quote-4 {
@@ -75,6 +81,8 @@ main {
   grid-area: quote-4;
   border-radius: 0.5rem;
   padding: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .quote-4 img {
@@ -83,10 +91,12 @@ main {
 
 .quote-5 {
   background-color: var(--white);
-  color: var(--very-dark-blackish-blue);
+  color: var(--very-dark-grayish-blue);
   grid-area: quote-5;
   border-radius: 0.5rem;
   padding: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .header {
