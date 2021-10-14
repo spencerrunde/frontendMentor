@@ -1,0 +1,292 @@
+:root {
+  /* Primary Colors */
+
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+
+  /* Neutral Colors */
+
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+main img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3rem 10rem 3rem;
+}
+
+.header-button {
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.content {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 3rem;
+}
+
+.content p {
+  margin-bottom: 5rem;
+  font-size: 30px;
+}
+
+.content-button {
+  color: white;
+  background-color: var(--pink);
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mockup {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.stats-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-wrapper img {
+  width: 4rem;
+  transform: translateX(-7.5rem);
+}
+
+.stats {
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.spacer {
+  margin-top: 10rem;
+}
+
+.section-top-1 {
+  width: 100%;
+  transform: translateY(5px);
+}
+
+.grow {
+  background-color: var(--very-pale-blue);
+  padding: 10rem 3rem 5rem 3rem;
+}
+
+.grow img {
+  margin-bottom: 10rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.grow h1 {
+  font-size: 48px;
+  margin-bottom: 2.5rem;
+}
+
+.grow p {
+  font-size: 30px;
+}
+
+.section-bottom-1 {
+  width: 100%;
+  /* transform: translateY(5px); */
+}
+
+.conversations {
+  padding: 0 3rem 0 3rem;
+}
+
+.conversations img {
+  margin: 10rem 0 10rem 0;
+  padding: 0 2rem 0 2rem;
+}
+
+.conversations h1 {
+  font-size: 48px;
+  margin-bottom: 2.5rem;
+}
+
+.conversations p {
+  font-size: 30px;
+  margin-bottom: 10rem;
+}
+
+.section-top-2 {
+  width: 100%;
+  transform: translateY(5px);
+}
+
+.users {
+  background-color: var(--very-pale-blue);
+  padding: 0 3rem 0 3rem;
+}
+
+.users img {
+  margin: 5rem 0 10rem 0;
+  padding: 0 2rem 0 2rem;
+}
+
+.users h1 {
+  font-size: 48px;
+  margin-bottom: 2.5rem;
+}
+
+.users p {
+  font-size: 30px;
+  padding-bottom: 10rem;
+}
+
+.section-bottom-2 {
+  width: 100%;
+  /* transform: translateY(5px); */
+}
+
+.community {
+  margin-bottom: 20rem;
+  padding: 0 3rem 0 3rem;
+}
+
+.community h1 {
+  margin-top: 7rem;
+  font-size: 48px;
+  margin-bottom: 5rem;
+}
+
+.community-button {
+  color: white;
+  background-color: var(--pink);
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-top {
+  width: 100%;
+  transform: translateY(5px);
+}
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--very-dark-cyan);
+  color: white;
+  text-align: left;
+  padding: 3rem 3rem 5rem 3rem;
+}
+
+.socials i {
+  width: 4rem;
+  cursor: pointer;
+}
+
+/* doing some css trickery to change svg color */
+.footer-logo {
+  filter: brightness(0) invert(1);
+  margin-bottom: 2rem;
+}
+
+.contact p {
+  font-size: 28px;
+  margin-bottom: 5rem;
+  padding-right: 2rem;
+  font-weight: 600;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.phone img {
+  margin-right: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.email img {
+  margin-right: 2rem;
+  width: 2rem;
+}
+
+.newsletter h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+.newsletter p {
+  font-size: 28px;
+  margin-bottom: 2rem;
+  padding-right: 2rem;
+  font-weight: 600;
+}
+
+input {
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.subscribe {
+  float: right;
+  color: white;
+  background-color: var(--pink);
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10rem;
+}

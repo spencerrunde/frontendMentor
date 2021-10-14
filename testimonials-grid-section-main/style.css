@@ -1,0 +1,136 @@
+:root {
+  /* Primary Colors */
+
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Neutral Colors */
+
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--light-grayish-blue);
+  color: var(--white);
+  padding: 4rem 2rem 4rem 2rem;
+  font-size: 13px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "quote-1 quote-1 quote-2 quote-5"
+    "quote-3 quote-4 quote-4 quote-5";
+  gap: 1.75rem;
+  max-width: 1100px;
+}
+
+.quote-1 {
+  background-color: var(--moderate-violet);
+  grid-area: quote-1;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 2rem;
+}
+
+.quote-1 img {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.quote-2 {
+  background-color: var(--very-dark-grayish-blue);
+  grid-area: quote-2;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.quote-3 {
+  background-color: var(--white);
+  color: var(--very-dark-blackish-blue);
+  grid-area: quote-3;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.quote-4 {
+  background-color: var(--very-dark-blackish-blue);
+  grid-area: quote-4;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.quote-4 img {
+  border: 2px solid rgba(117, 65, 200, 0.7);
+}
+
+.quote-5 {
+  background-color: var(--white);
+  color: var(--very-dark-blackish-blue);
+  grid-area: quote-5;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.verified {
+  opacity: 50%;
+  font-size: 11px;
+}
+
+.main {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.subtitle {
+  opacity: 70%;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "quote-1"
+      "quote-2"
+      "quote-3"
+      "quote-4"
+      "quote-5";
+  }
+}
