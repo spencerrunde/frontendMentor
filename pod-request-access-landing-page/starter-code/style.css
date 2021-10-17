@@ -1,0 +1,215 @@
+:root {
+  --green: #54e6af;
+  --light-green: #b3ffe2;
+  --white: #ffffff;
+  --gray: #2c344b;
+  --light-gray: #5a668a;
+  --black: #121725;
+  --very-light-gray: #c2cbe5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: var(--black);
+  background-image: url(./assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: var(--green);
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+span {
+  color: var(--white);
+}
+
+p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--very-light-gray);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.podcasts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.podcasts img {
+  max-width: 100%;
+}
+
+input {
+  font-family: "Chivo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--gray);
+  color: var(--very-light-gray);
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  font-family: "Chivo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: var(--green);
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.25s;
+}
+
+button:hover {
+  background-color: var(--light-green);
+}
+
+.dots {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(./assets/tablet/image-host.jpg);
+    background-position: right top;
+    background-size: unset;
+    background-blend-mode: initial;
+  }
+
+  main {
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    left: 39px;
+    top: 50px;
+  }
+
+  .dots {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 920px;
+  }
+
+  .content {
+    position: absolute;
+    width: 635px;
+    height: 509px;
+    left: 39px;
+    top: 258px;
+    background-color: var(--black);
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+  }
+
+  p {
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
+
+  .podcasts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+
+  form {
+    position: relative;
+    width: 427px;
+  }
+
+  button {
+    padding: 0.75rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 162px;
+    font-size: 14px;
+  }
+
+  .desktop-flip {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(./assets/desktop/image-host.jpg);
+    background-position: 552px 130px;
+  }
+
+  .logo {
+    left: 165px;
+    top: 102px;
+  }
+
+  .dots {
+    left: 1208px;
+    top: 718px;
+  }
+
+  .content {
+    width: 723px;
+    height: 509px;
+    left: 165px;
+    top: 261px;
+  }
+
+  h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+}
