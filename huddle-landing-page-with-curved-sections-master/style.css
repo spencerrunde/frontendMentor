@@ -20,7 +20,8 @@
 main {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
+  color: var(--very-dark-cyan);
 }
 
 main img {
@@ -31,48 +32,70 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 3rem 10rem 3rem;
+  margin: 0 1.5rem 7rem 1.5rem;
+}
+
+header img {
+  width: 96px;
 }
 
 .header-button {
   color: var(--pink);
   border: 1px solid var(--pink);
+  box-shadow: 0px 0px 5px rgba(255, 82, 193, 0.218778);
   border-radius: 2rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 10px;
   cursor: pointer;
 }
 
+.header-button:hover {
+  color: var(--light-pink);
+  border: 1px solid var(--light-pink);
+  box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+}
+
 .content {
-  padding: 4rem;
+  padding: 0px 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .content h1 {
-  font-size: 48px;
-  margin-bottom: 3rem;
+  font-family: Poppins;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 1.5rem;
 }
 
 .content p {
-  margin-bottom: 5rem;
-  font-size: 30px;
+  margin-bottom: 3rem;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .content-button {
   color: white;
   background-color: var(--pink);
-  padding: 1rem 4rem;
-  border-radius: 2rem;
-  font-size: 22px;
+  padding: 1rem 2.75rem;
+  border-radius: 1.75rem;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.223053);
+}
+
+.content-button:hover {
+  background-color: var(--light-pink);
+  box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
 }
 
 .mockup {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 6.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .stats-wrapper {
@@ -82,126 +105,177 @@ header {
 }
 
 .stats-wrapper img {
-  width: 4rem;
-  transform: translateX(-7.5rem);
+  width: 2.5rem;
+  transform: translateX(-4rem);
+}
+
+.communities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .stats {
-  font-size: 7rem;
+  font-size: 60px;
   font-weight: 700;
 }
 
 .subtitle {
-  font-size: 2rem;
+  font-size: 1rem;
   opacity: 0.5;
 }
 
 .spacer {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .section-top-1 {
+  display: block;
   width: 100%;
-  transform: translateY(5px);
+}
+
+.section-top-1-desktop {
+  display: none;
 }
 
 .grow {
   background-color: var(--very-pale-blue);
-  padding: 10rem 3rem 5rem 3rem;
+  padding: 5rem 1.75rem 5rem 1.75rem;
 }
 
 .grow img {
-  margin-bottom: 10rem;
-  padding: 0 2rem 0 2rem;
-}
-
-.grow h1 {
-  font-size: 48px;
   margin-bottom: 2.5rem;
 }
 
+.grow h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
 .grow p {
-  font-size: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
 }
 
 .section-bottom-1 {
   width: 100%;
-  /* transform: translateY(5px); */
+}
+
+.section-bottom-1-desktop {
+  display: none;
 }
 
 .conversations {
-  padding: 0 3rem 0 3rem;
+  padding: 0px 28px;
 }
 
 .conversations img {
-  margin: 10rem 0 10rem 0;
-  padding: 0 2rem 0 2rem;
+  margin: 5rem 0 2.5rem 0;
+  padding: 0 20px 0 20px;
 }
 
 .conversations h1 {
-  font-size: 48px;
-  margin-bottom: 2.5rem;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
 }
 
 .conversations p {
-  font-size: 30px;
-  margin-bottom: 10rem;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  padding: 0px 4px 7.5rem 4px;
 }
 
 .section-top-2 {
+  display: block;
   width: 100%;
-  transform: translateY(5px);
+}
+
+.section-top-2-desktop {
+  display: none;
 }
 
 .users {
   background-color: var(--very-pale-blue);
-  padding: 0 3rem 0 3rem;
+  padding: 0px 28px;
 }
 
 .users img {
-  margin: 5rem 0 10rem 0;
-  padding: 0 2rem 0 2rem;
+  margin: 2.5rem 0 2.5rem 0;
+  padding: 0 20px 0 20px;
 }
 
 .users h1 {
-  font-size: 48px;
-  margin-bottom: 2.5rem;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
 }
 
 .users p {
-  font-size: 30px;
-  padding-bottom: 10rem;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  padding-bottom: 7.5rem;
 }
 
 .section-bottom-2 {
   width: 100%;
-  /* transform: translateY(5px); */
+}
+
+.section-bottom-2-desktop {
+  display: none;
 }
 
 .community {
-  margin-bottom: 20rem;
-  padding: 0 3rem 0 3rem;
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .community h1 {
-  margin-top: 7rem;
-  font-size: 48px;
-  margin-bottom: 5rem;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .community-button {
   color: white;
   background-color: var(--pink);
-  padding: 1rem 4rem;
-  border-radius: 2rem;
-  font-size: 22px;
+  padding: 1rem 2.75rem;
+  border-radius: 1.75rem;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.223053);
+}
+
+.community-button:hover {
+  background-color: var(--light-pink);
+  box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
 }
 
 .footer-top {
+  display: block;
   width: 100%;
-  transform: translateY(5px);
+}
+
+.footer-top-desktop {
+  display: none;
 }
 
 footer {
@@ -210,65 +284,64 @@ footer {
   background-color: var(--very-dark-cyan);
   color: white;
   text-align: left;
-  padding: 3rem 3rem 5rem 3rem;
+  padding: 3rem 1.75rem 3rem 1.75rem;
 }
 
 .socials i {
-  width: 4rem;
+  width: 3rem;
   cursor: pointer;
 }
 
 /* doing some css trickery to change svg color */
 .footer-logo {
   filter: brightness(0) invert(1);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  width: 200px;
 }
 
 .contact p {
-  font-size: 28px;
-  margin-bottom: 5rem;
-  padding-right: 2rem;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 2.5rem;
 }
 
 .phone {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
-  font-size: 28px;
-  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .phone img {
-  margin-right: 2rem;
-  width: 2rem;
-  height: 2rem;
+  margin-right: 1rem;
 }
 
 .email {
   display: flex;
   align-items: center;
-  margin-bottom: 5rem;
-  font-size: 28px;
-  font-weight: 400;
+  margin-bottom: 3rem;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .email img {
-  margin-right: 2rem;
-  width: 2rem;
+  margin-right: 1rem;
 }
 
 .newsletter h2 {
   text-transform: uppercase;
-  font-size: 30px;
-  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
 }
 
 .newsletter p {
-  font-size: 28px;
-  margin-bottom: 2rem;
-  padding-right: 2rem;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 2rem;
 }
 
 input {
@@ -277,16 +350,357 @@ input {
   border: none;
   padding: 1rem;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .subscribe {
+  cursor: pointer;
   float: right;
   color: white;
   background-color: var(--pink);
-  padding: 1rem 4rem;
+  padding: 1rem 2.5rem;
   border-radius: 0.5rem;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 10rem;
+  margin-bottom: 6.5rem;
+}
+
+.subscribe:hover {
+  background-color: var(--light-pink);
+}
+
+@media (min-width: 1440px) {
+  .section-top-1 {
+    display: none;
+  }
+
+  .section-top-1-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .section-bottom-1 {
+    display: none;
+  }
+
+  .section-bottom-1-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .section-top-2 {
+    display: none;
+  }
+
+  .section-top-2-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .section-bottom-2 {
+    display: none;
+  }
+
+  .section-bottom-2-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-top {
+    display: none;
+  }
+
+  .footer-top-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  main {
+    margin-top: 5rem;
+  }
+
+  main img {
+    max-width: 100%;
+  }
+
+  header {
+    margin: 0 5rem 14rem 5rem;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  .header-button {
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .content h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 1.625rem;
+  }
+
+  .content p {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 600px;
+  }
+
+  .content-button {
+    padding: 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    width: 400px;
+    border-radius: 3rem;
+  }
+
+  .mockup {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .stats-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+
+  .stats-wrapper img {
+    width: 3.5rem;
+  }
+
+  .communities {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .communities img {
+    position: absolute;
+    top: -40px;
+    left: 65px;
+  }
+
+  .messages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .messages img {
+    position: absolute;
+    top: -40px;
+    left: 65px;
+  }
+
+  .stats {
+    font-weight: bold;
+    font-size: 96px;
+  }
+
+  .subtitle {
+    font-weight: normal;
+    font-size: 24px;
+  }
+
+  .spacer {
+    margin: 0rem 5rem 0 5rem;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .grow {
+    padding: 0 7.5rem 0 7.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+  }
+
+  .grow img {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  .grow h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 1.625rem;
+  }
+
+  .grow p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .section-bottom-1 {
+    width: 100%;
+  }
+
+  .conversations {
+    padding: 0 7.5rem 0 7.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 6.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .conversations img {
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+  }
+
+  .conversations h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 1.625rem;
+  }
+
+  .conversations p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  .users {
+    padding: 0 7.5rem 0 7.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+  }
+
+  .users img {
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+  }
+
+  .users h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 1.625rem;
+  }
+
+  .users p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  .community {
+    margin-top: 8.5rem;
+    margin-bottom: 11rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .community h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 2.625rem;
+  }
+
+  .community-button {
+    padding: 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    width: 400px;
+    border-radius: 3rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 340px;
+    padding: 3rem 7.5rem 6.25rem 7.5rem;
+  }
+
+  .socials i {
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  /* doing some css trickery to change svg color */
+  .footer-logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 1.625rem;
+    width: auto;
+  }
+
+  .contact p {
+    margin-bottom: 1.5rem;
+    width: 340px;
+  }
+
+  .phone {
+    font-size: 16px;
+  }
+
+  .email {
+    margin-bottom: 5rem;
+    font-size: 16px;
+  }
+
+  .newsletter h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .newsletter p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 2.5rem;
+    width: 340px;
+  }
+
+  .email-wrapper {
+    display: flex;
+    gap: 40px;
+  }
+
+  input {
+    border-radius: 0.5rem;
+    width: 320px;
+    margin-bottom: 0;
+  }
+
+  .subscribe {
+    float: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
 }
