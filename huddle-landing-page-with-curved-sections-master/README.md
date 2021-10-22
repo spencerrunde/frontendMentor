@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/mobilefirst-huddle-landing-page-with-curved-sections-m89fp_nfP](https://www.frontendmentor.io/solutions/mobilefirst-huddle-landing-page-with-curved-sections-m89fp_nfP)
+- Live Site URL: [https://huddle-landing-with-curved-sections-sr.netlify.app/](https://huddle-landing-with-curved-sections-sr.netlify.app/)
 
 ## My process
 
