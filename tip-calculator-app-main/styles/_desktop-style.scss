@@ -1,0 +1,57 @@
+//desktop styles
+
+@media screen and (min-width: 1024px) {
+  main {
+    height: 100vh;
+  }
+
+  .logo {
+    margin: 0 0 5.5rem;
+  }
+
+  .card {
+    max-width: 920px;
+    flex-direction: row;
+    gap: 2rem;
+    border-radius: 25px;
+
+    .flex-left {
+      flex: 1 1 0;
+      margin: 1rem;
+      gap: 2.5rem;
+
+      .btn-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .people {
+        position: relative;
+
+        .error-msg {
+          position: absolute;
+          top: -0.5rem;
+          right: 0;
+        }
+      }
+    }
+
+    .flex-right {
+      flex: 1 1 0;
+
+      .output {
+        height: 100%;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .tip-value,
+        .total-value {
+          font-size: 48px;
+          line-height: 71px;
+          letter-spacing: -1px;
+        }
+      }
+    }
+  }
+}
