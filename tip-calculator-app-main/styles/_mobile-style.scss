@@ -16,216 +16,216 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-.logo {
-  margin: 3.125rem 0 2.5rem;
-}
+  .logo {
+    margin: 3.125rem 0 2.5rem;
+  }
 
-.card {
-  width: 100vw;
-  background-color: $white;
-  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
-  border-radius: 25px 25px 0px 0px;
-  padding: 2rem;
+  .card {
+    width: 100vw;
+    background-color: $white;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+    padding: 2rem;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-
-  .flex-left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2rem;
-  }
 
-  h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    color: $dark-grayish-cyan-1;
-  }
-
-  h2 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    color: $white;
-  }
-
-  p {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 19px;
-    color: $dark-grayish-cyan-2;
-  }
-
-  button {
-    cursor: pointer;
-  }
-
-  input {
-    height: 3rem;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    background-color: $light-grayish-cyan-2;
-    margin-top: 0.5rem;
-    font-family: "Space Mono", monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: right;
-    padding-right: 1rem;
-    color: $very-dark-cyan;
-    cursor: pointer;
-
-    &::placeholder {
-      text-align: right;
-      font-family: "Space Mono", monospace;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 36px;
-      color: $very-dark-cyan;
-      mix-blend-mode: normal;
-      opacity: 0.35;
+    .flex-left {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
 
-    &:focus-visible {
-      outline: none;
-      border: 2px solid $strong-cyan;
-      caret-color: $strong-cyan;
-    }
-  }
-
-  .bill,
-  .people {
-    position: relative;
-
-    .input-icon {
-      position: absolute;
-      left: 1rem;
-      top: 3rem;
-    }
-  }
-
-  .btn-grid {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-
-    button {
-      height: 3rem;
-      width: 100%;
-      background: $very-dark-cyan;
-      border-radius: 5px;
-      border: none;
-      font-family: "Space Mono", monospace;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 36px;
-      text-align: center;
-      color: $white;
-      transition: all 0.25s ease-in;
-
-      &:hover {
-        background: #9fe8df;
-        color: $very-dark-cyan;
-      }
-    }
-
-    .button-active {
-      background: $strong-cyan;
-    }
-
-    input {
-      margin-top: 0;
-    }
-  }
-
-  .people {
-    .error-msg {
+    h1 {
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
       line-height: 24px;
-      text-align: right;
-      color: #e17457;
-      margin-top: 0.5rem;
-      opacity: 0;
-      transition: opacity 0.5s ease;
+      color: $dark-grayish-cyan-1;
     }
 
-    .show-error-msg {
-      opacity: 1;
-    }
-
-    .error-input {
-      border: 2px solid #e17457;
-      caret-color: #e17457;
-    }
-  }
-
-  .output {
-    background-color: $very-dark-cyan;
-    border-radius: 1rem;
-    padding: 2.375rem 1.5rem 1.5rem;
-
-    .tip-per,
-    .total-per {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .tip-per {
-      margin-bottom: 1.25rem;
-    }
-
-    .tip-value,
-    .total-value {
+    h2 {
       font-style: normal;
       font-weight: bold;
-      font-size: 32px;
-      line-height: 47px;
-      text-align: right;
-      letter-spacing: -0.666667px;
-      color: $strong-cyan;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 19px;
+      color: $dark-grayish-cyan-2;
     }
 
     button {
+      cursor: pointer;
+    }
+
+    input {
+      height: 3rem;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      background-color: $light-grayish-cyan-2;
+      margin-top: 0.5rem;
       font-family: "Space Mono", monospace;
       font-style: normal;
       font-weight: bold;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: center;
-      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: right;
+      padding-right: 1rem;
       color: $very-dark-cyan;
-      background: $strong-cyan;
-      border: none;
-      border-radius: 5px;
-      padding: 0.5rem 0;
-      margin-top: 2rem;
-      width: 100%;
-      transition: all 0.25s ease-in;
+      cursor: pointer;
 
-      &:hover {
-        background: #9fe8df;
+      &::placeholder {
+        text-align: right;
+        font-family: "Space Mono", monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: $very-dark-cyan;
+        mix-blend-mode: normal;
+        opacity: 0.35;
+      }
+
+      &:focus-visible {
+        outline: none;
+        border: 2px solid $strong-cyan;
+        caret-color: $strong-cyan;
       }
     }
 
-    .inactive {
-      mix-blend-mode: normal;
-      opacity: 0.35;
+    .bill,
+    .people {
+      position: relative;
+
+      .input-icon {
+        position: absolute;
+        left: 1rem;
+        top: 3rem;
+      }
+    }
+
+    .btn-grid {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      button {
+        height: 3rem;
+        width: 100%;
+        background: $very-dark-cyan;
+        border-radius: 5px;
+        border: none;
+        font-family: "Space Mono", monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: $white;
+        transition: all 0.25s ease-in;
+
+        &:hover {
+          background: #9fe8df;
+          color: $very-dark-cyan;
+        }
+      }
+
+      .button-active {
+        background: $strong-cyan;
+      }
+
+      input {
+        margin-top: 0;
+      }
+    }
+
+    .people {
+      .error-msg {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: #e17457;
+        margin-top: 0.5rem;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .show-error-msg {
+        opacity: 1;
+      }
+
+      .error-input {
+        border: 2px solid #e17457;
+        caret-color: #e17457;
+      }
+    }
+
+    .output {
+      background-color: $very-dark-cyan;
+      border-radius: 1rem;
+      padding: 2.375rem 1.5rem 1.5rem;
+
+      .tip-per,
+      .total-per {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .tip-per {
+        margin-bottom: 1.25rem;
+      }
+
+      .tip-value,
+      .total-value {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 47px;
+        text-align: right;
+        letter-spacing: -0.666667px;
+        color: $strong-cyan;
+      }
+
+      button {
+        font-family: "Space Mono", monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $very-dark-cyan;
+        background: $strong-cyan;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 0;
+        margin-top: 2rem;
+        width: 100%;
+        transition: all 0.25s ease-in;
+
+        &:hover {
+          background: #9fe8df;
+        }
+      }
+
+      .inactive {
+        mix-blend-mode: normal;
+        opacity: 0.35;
+      }
     }
   }
 }
