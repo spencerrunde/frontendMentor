@@ -32,23 +32,23 @@
       <div class="card">
         <div class="flex-left">
           <div class="bill">
-            <h1>Bill</h1>
-            <input type="text" id="bill-input" placeholder="0" />
+            <label>Bill</label>
+            <input type="number" id="bill-input" placeholder="0" />
             <img class="input-icon" src="./images/icon-dollar.svg" alt="" />
           </div>
           <div class="percent">
-            <h1>Select Tip %</h1>
+            <label>Select Tip %</label>
             <div class="btn-grid">
               <button class="tip">5%</button> <button class="tip">10%</button>
               <button class="tip button-active">15%</button>
               <button class="tip">25%</button>
               <button class="tip">50%</button>
-              <input type="text" id="custom-tip" placeholder="Custom" />
+              <input type="number" id="custom-tip" placeholder="Custom" />
             </div>
           </div>
           <div class="people">
-            <h1>Number of People</h1>
-            <input type="text" id="people-input" placeholder="0" />
+            <label>Number of People</label>
+            <input type="number" id="people-input" placeholder="0" value="1" />
             <img class="input-icon" src="./images/icon-person.svg" alt="" />
             <div class="error-msg">Can't be zero</div>
           </div>
@@ -59,14 +59,14 @@
             <div class="flex-wrapper">
               <div class="tip-per">
                 <div class="text-wrapper">
-                  <h2>Tip Amount</h2>
+                  <h1>Tip Amount</h1>
                   <p>/ person</p>
                 </div>
                 <div class="tip-value">$0.00</div>
               </div>
               <div class="total-per">
                 <div class="text-wrapper">
-                  <h2>Total</h2>
+                  <h1>Total</h1>
                   <p>/ person</p>
                 </div>
                 <div class="total-value">$0.00</div>

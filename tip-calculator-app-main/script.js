@@ -22,16 +22,16 @@ let billValue = 0;
 let tipValue = 0.15;
 let peopleValue = 1;
 
-//validation functions
-function validateFloat(s) {
-  var rgx = /^[0-9]*\.?[0-9]*$/;
-  return s.match(rgx);
-}
+//UNUSED validation functions
+// function validateFloat(s) {
+//   var rgx = /^[0-9]*\.?[0-9]*$/;
+//   return s.match(rgx);
+// }
 
-function validateInt(s) {
-  var rgx = /^[0-9]*$/;
-  return s.match(rgx);
-}
+// function validateInt(s) {
+//   var rgx = /^[0-9]*$/;
+//   return s.match(rgx);
+// }
 
 //function to handle bill input
 function setBillValue() {
@@ -40,9 +40,9 @@ function setBillValue() {
     console.log("Comma replaced!");
   }
 
-  if (!validateFloat(bill.value)) {
-    bill.value = bill.value.substring(0, bill.value.length - 1);
-  }
+  // if (!validateFloat(bill.value)) {
+  //   bill.value = bill.value.substring(0, bill.value.length - 1);
+  // }
 
   billValue = parseFloat(bill.value);
 
@@ -76,9 +76,9 @@ function handleClick(event) {
 }
 
 function setCustomTip() {
-  if (!validateInt(customTip.value)) {
-    customTip.value = customTip.value.substring(0, customTip.value.length - 1);
-  }
+  // if (!validateInt(customTip.value)) {
+  //   customTip.value = customTip.value.substring(0, customTip.value.length - 1);
+  // }
 
   tipValue = parseFloat(customTip.value / 100);
 
@@ -96,9 +96,9 @@ function setCustomTip() {
 }
 
 function setPeopleValue() {
-  if (!validateInt(people.value)) {
-    people.value = people.value.substring(0, people.value.length - 1);
-  }
+  // if (!validateInt(people.value)) {
+  //   people.value = people.value.substring(0, people.value.length - 1);
+  // }
 
   peopleValue = parseFloat(people.value);
 

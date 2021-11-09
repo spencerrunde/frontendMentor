@@ -39,7 +39,7 @@ main {
       gap: 2rem;
     }
 
-    h1 {
+    label {
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -47,7 +47,7 @@ main {
       color: $dark-grayish-cyan-1;
     }
 
-    h2 {
+    h1 {
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -83,6 +83,13 @@ main {
       padding-right: 1rem;
       color: $very-dark-cyan;
       cursor: pointer;
+
+      //hiding up and down arrows from number input
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        display: none;
+        margin: 0;
+      }
 
       &::placeholder {
         text-align: right;

@@ -61,7 +61,7 @@ main .card .flex-left {
   gap: 2rem;
 }
 
-main .card h1 {
+main .card label {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -69,7 +69,7 @@ main .card h1 {
   color: #5e7a7d;
 }
 
-main .card h2 {
+main .card h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -105,6 +105,11 @@ main .card input {
   padding-right: 1rem;
   color: #00494d;
   cursor: pointer;
+}
+
+main .card input::-webkit-outer-spin-button, main .card input::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
 }
 
 main .card input::-webkit-input-placeholder {
