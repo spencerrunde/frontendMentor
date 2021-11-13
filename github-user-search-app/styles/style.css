@@ -109,9 +109,9 @@ header .theme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 1rem;
   font-family: "Space Mono", monospace;
   font-weight: bold;
@@ -120,6 +120,10 @@ header .theme {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+header .theme span {
+  margin-top: 1px;
 }
 
 header .theme:hover {

@@ -17,7 +17,7 @@ header {
     border: none;
     color: $white;
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
     gap: 1rem;
     font-family: "Space Mono", monospace;
     font-weight: bold;
@@ -26,6 +26,10 @@ header {
     letter-spacing: 2.5px;
     text-transform: uppercase;
     cursor: pointer;
+
+    span {
+      margin-top: 1px;
+    }
 
     // using filter property to change svg color as well
     &:hover {
