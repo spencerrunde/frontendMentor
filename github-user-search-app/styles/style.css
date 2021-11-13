@@ -227,6 +227,7 @@ header .theme:hover {
   background: #1e2a47;
   padding: 2rem 1.5rem 3rem;
   border-radius: 15px;
+  margin-bottom: 2rem;
 }
 
 .card .card-header {
