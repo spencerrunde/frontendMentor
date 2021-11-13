@@ -115,9 +115,11 @@
     }
 
     .card-footer {
-      width: 530px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      word-break: break-word;
+      word-wrap: break-word;
+      column-gap: 3.33rem;
 
       .location,
       .website,

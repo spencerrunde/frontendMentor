@@ -485,11 +485,14 @@ header .theme:hover {
     margin-top: 0;
   }
   .card .card-footer {
-    width: 530px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    word-break: break-word;
+    word-wrap: break-word;
+    -webkit-column-gap: 3.33rem;
+            column-gap: 3.33rem;
   }
   .card .card-footer .location,
   .card .card-footer .website,
@@ -533,7 +536,6 @@ header .theme:hover {
   }
   .card .card-footer {
     margin-left: 9.875rem;
-    width: 530px;
   }
 }
 /*# sourceMappingURL=style.css.map */
