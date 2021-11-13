@@ -23,7 +23,7 @@ let profile = {
       message,
     } = data;
 
-    // console.log(data);
+    console.log(data);
 
     // card header scripts
     // month array for date formatting
@@ -73,7 +73,7 @@ let profile = {
 
       // card footer scripts
       function checkNull(data, className) {
-        if (data === null) {
+        if (data === null || data == "") {
           document.querySelector(className).style.opacity = 0.5;
           return "Not Available";
         } else {
