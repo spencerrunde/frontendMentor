@@ -384,6 +384,9 @@ header .theme:hover {
   body main {
     max-width: 79.585%;
   }
+  header {
+    padding-top: 0;
+  }
   .searchbar {
     margin-bottom: 1.5rem;
   }
