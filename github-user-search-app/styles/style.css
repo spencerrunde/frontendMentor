@@ -1,1 +1,532 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #141d2f;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+
+.light-mode {
+  background-color: #f6f8ff;
+  color: #4b6a9b;
+}
+
+.light-mode header .logo {
+  color: #222731;
+}
+
+.light-mode header .theme {
+  -webkit-filter: brightness(0) saturate(100%) invert(39%) sepia(33%) saturate(731%) hue-rotate(177deg) brightness(93%) contrast(84%);
+          filter: brightness(0) saturate(100%) invert(39%) sepia(33%) saturate(731%) hue-rotate(177deg) brightness(93%) contrast(84%);
+}
+
+.light-mode header .theme:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(11%) sepia(29%) saturate(551%) hue-rotate(181deg) brightness(92%) contrast(89%);
+          filter: brightness(0) saturate(100%) invert(11%) sepia(29%) saturate(551%) hue-rotate(181deg) brightness(92%) contrast(89%);
+}
+
+.light-mode .searchbar input {
+  background: #fefefe;
+  color: #222731;
+  -webkit-box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+          box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+.light-mode .searchbar input::-webkit-input-placeholder {
+  color: #4b6a9b;
+}
+
+.light-mode .searchbar input:-ms-input-placeholder {
+  color: #4b6a9b;
+}
+
+.light-mode .searchbar input::-ms-input-placeholder {
+  color: #4b6a9b;
+}
+
+.light-mode .searchbar input::placeholder {
+  color: #4b6a9b;
+}
+
+.light-mode .card {
+  background: #fefefe;
+  -webkit-box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+          box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+.light-mode .card .card-header h1 {
+  color: #2b3442;
+}
+
+.light-mode .card .card-header h2 {
+  color: #697c9a;
+}
+
+.light-mode .card .card-stats {
+  background-color: #f6f8ff;
+}
+
+.light-mode .card .card-stats .repos span,
+.light-mode .card .card-stats .followers span,
+.light-mode .card .card-stats .following span {
+  color: #2b3442;
+}
+
+.light-mode .card-footer {
+  -webkit-filter: brightness(0) saturate(100%) invert(39%) sepia(33%) saturate(731%) hue-rotate(177deg) brightness(93%) contrast(84%);
+          filter: brightness(0) saturate(100%) invert(39%) sepia(33%) saturate(731%) hue-rotate(177deg) brightness(93%) contrast(84%);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0rem 2.25rem;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+header .theme {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header .theme:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(67%) sepia(19%) saturate(639%) hue-rotate(185deg) brightness(95%) contrast(85%);
+          filter: brightness(0) saturate(100%) invert(67%) sepia(19%) saturate(639%) hue-rotate(185deg) brightness(95%) contrast(85%);
+}
+
+.searchbar {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.searchbar input {
+  padding-left: 2.875rem;
+  background: #1e2a47;
+  border: none;
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  line-height: 25px;
+  color: #ffffff;
+  height: 60px;
+  border-radius: 15px;
+  width: 100%;
+  caret-color: #0079ff;
+  cursor: pointer;
+}
+
+.searchbar input::-webkit-input-placeholder {
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.searchbar input:-ms-input-placeholder {
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.searchbar input::-ms-input-placeholder {
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.searchbar input::placeholder {
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.searchbar input:focus-visible {
+  outline: none;
+}
+
+.searchbar .search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 1rem;
+}
+
+.searchbar .search-button {
+  position: absolute;
+  right: 0.5rem;
+  top: 7.5px;
+  border: none;
+  padding: 0.75rem 1rem;
+  background-color: #0079ff;
+  border-radius: 10px;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.searchbar .search-button:hover {
+  background-color: #60abff;
+}
+
+.searchbar .error-msg {
+  display: none;
+  color: #f74646;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.card {
+  background: #1e2a47;
+  padding: 2rem 1.5rem 3rem;
+  border-radius: 15px;
+}
+
+.card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.card .card-header .avatar {
+  min-width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.card .card-header h1 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card .card-header h2 {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.card .card-header a {
+  text-decoration: none;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #0079ff;
+}
+
+.card .card-header a:hover {
+  text-decoration: underline;
+}
+
+.card .card-body {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 25px;
+  margin-bottom: 1.5rem;
+}
+
+.card .card-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #141d2f;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card .card-stats .repos,
+.card .card-stats .followers,
+.card .card-stats .following {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.card .card-stats .repos span,
+.card .card-stats .followers span,
+.card .card-stats .following span {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0.5rem;
+}
+
+.card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+}
+
+.card .card-footer img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.card .card-footer .location,
+.card .card-footer .website,
+.card .card-footer .twitter,
+.card .card-footer .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.card .card-footer .location span {
+  padding-left: 6px;
+}
+
+.card .card-footer .blog-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.card .card-footer .blog-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+  }
+  body main {
+    max-width: 79.585%;
+  }
+  .searchbar {
+    margin-bottom: 1.5rem;
+  }
+  .searchbar input {
+    padding-left: 5rem;
+    font-size: 18px;
+    height: 70px;
+  }
+  .searchbar input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .searchbar input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .searchbar input::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .searchbar input::placeholder {
+    font-size: 18px;
+  }
+  .searchbar .search-icon {
+    width: 24px;
+    height: 24px;
+    top: 23px;
+    left: 2rem;
+  }
+  .searchbar .search-button {
+    right: 0.625rem;
+    top: 9.5px;
+    border: none;
+    padding: 0.813rem 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .searchbar .error-msg {
+    display: block;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 132px;
+  }
+  .card {
+    padding: 2.5rem 2.5rem;
+  }
+  .card .card-header {
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .card .card-header .avatar {
+    min-width: 117px;
+    height: 117px;
+  }
+  .card .card-header h1 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .card .card-header h2 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .card .card-header a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .card .card-body {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 2rem;
+  }
+  .card .card-stats {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 6rem;
+    padding-left: 2rem;
+    margin-bottom: 1.875rem;
+  }
+  .card .card-stats .repos,
+  .card .card-stats .followers,
+  .card .card-stats .following {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .card .card-stats .repos span,
+  .card .card-stats .followers span,
+  .card .card-stats .following span {
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 0;
+  }
+  .card .card-footer {
+    width: 530px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .card .card-footer .location,
+  .card .card-footer .website,
+  .card .card-footer .twitter,
+  .card .card-footer .company {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .card .card-footer .location,
+  .card .card-footer .twitter {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body main {
+    max-width: 730px;
+  }
+  .card {
+    position: relative;
+    padding: 3rem;
+  }
+  .card .card-header {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+  .card .card-header h2 {
+    position: absolute;
+    top: 58px;
+    right: 48px;
+  }
+  .card .card-body {
+    margin: -2rem 0 2rem 9.875rem;
+  }
+  .card .card-stats {
+    margin: 0 0 2.25rem 9.875rem;
+    gap: 5.5rem;
+  }
+  .card .card-footer {
+    margin-left: 9.875rem;
+    width: 530px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

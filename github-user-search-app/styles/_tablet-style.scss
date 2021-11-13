@@ -1,0 +1,131 @@
+@media screen and (min-width: 768px) {
+  //general restyling
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    main {
+      max-width: 79.585%;
+    }
+  }
+
+  // searchbar styles
+
+  .searchbar {
+    margin-bottom: 1.5rem;
+
+    input {
+      padding-left: 5rem;
+      font-size: 18px;
+      height: 70px;
+
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+
+    .search-icon {
+      width: 24px;
+      height: 24px;
+      top: 23px;
+      left: 2rem;
+    }
+
+    .search-button {
+      right: 0.625rem;
+      top: 9.5px;
+      border: none;
+      padding: 0.813rem 1.5rem;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .error-msg {
+      display: block;
+      display: none;
+      position: absolute;
+      top: 15px;
+      right: 132px;
+    }
+  }
+
+  // card styles
+
+  .card {
+    padding: 2.5rem 2.5rem;
+
+    .card-header {
+      gap: 2.5rem;
+      margin-bottom: 1.5rem;
+
+      .avatar {
+        min-width: 117px;
+        height: 117px;
+      }
+
+      h1 {
+        font-size: 26px;
+        line-height: 39px;
+      }
+
+      h2 {
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      a {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .card-body {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 2rem;
+    }
+
+    .card-stats {
+      justify-content: flex-start;
+      gap: 6rem;
+      padding-left: 2rem;
+      margin-bottom: 1.875rem;
+
+      .repos,
+      .followers,
+      .following {
+        align-items: flex-start;
+        font-size: 13px;
+        line-height: 19px;
+
+        span {
+          font-size: 22px;
+          line-height: 33px;
+          margin-top: 0;
+        }
+      }
+    }
+
+    .card-footer {
+      width: 530px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .location,
+      .website,
+      .twitter,
+      .company {
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      .location,
+      .twitter {
+        grid-row: 1;
+      }
+    }
+  }
+}

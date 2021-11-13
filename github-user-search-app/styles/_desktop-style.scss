@@ -1,0 +1,40 @@
+@media screen and (min-width: 1024px) {
+  //general restyling
+  body {
+    main {
+      max-width: 730px;
+    }
+  }
+
+  // card styles
+
+  .card {
+    position: relative;
+    padding: 3rem;
+
+    .card-header {
+      align-items: flex-start;
+      margin-bottom: 0rem;
+
+      h2 {
+        position: absolute;
+        top: 58px;
+        right: 48px;
+      }
+    }
+
+    .card-body {
+      margin: -2rem 0 2rem 9.875rem;
+    }
+
+    .card-stats {
+      margin: 0 0 2.25rem 9.875rem;
+      gap: 5.5rem;
+    }
+
+    .card-footer {
+      margin-left: 9.875rem;
+      width: 530px;
+    }
+  }
+}

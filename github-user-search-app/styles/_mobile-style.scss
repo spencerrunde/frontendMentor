@@ -1,0 +1,225 @@
+// header styles
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0rem 2.25rem;
+
+  .logo {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .theme {
+    background: transparent;
+    border: none;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    // using filter property to change svg color as well
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(67%) sepia(19%) saturate(639%)
+        hue-rotate(185deg) brightness(95%) contrast(85%);
+    }
+  }
+}
+
+// searchbar styles
+
+.searchbar {
+  position: relative;
+  margin-bottom: 1rem;
+
+  input {
+    padding-left: 2.875rem;
+    background: $dark-blue;
+    border: none;
+    font-family: "Space Mono", monospace;
+    font-size: 13px;
+    line-height: 25px;
+    color: $white;
+    height: 60px;
+    border-radius: 15px;
+    width: 100%;
+    caret-color: $sharp-blue;
+    cursor: pointer;
+
+    &::placeholder {
+      font-family: "Space Mono", monospace;
+      font-size: 13px;
+      line-height: 25px;
+      color: $white;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 1rem;
+  }
+
+  .search-button {
+    position: absolute;
+    right: 0.5rem;
+    top: 7.5px;
+    border: none;
+    padding: 0.75rem 1rem;
+    background-color: $sharp-blue;
+    border-radius: 10px;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: $white;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
+
+  .error-msg {
+    display: none;
+    color: $sharp-red;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: right;
+    margin: 0.5rem 0.5rem 0 0;
+  }
+}
+
+// card styles
+
+.card {
+  background: $dark-blue;
+  padding: 2rem 1.5rem 3rem;
+  border-radius: 15px;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+
+    .avatar {
+      min-width: 80px;
+      height: 80px;
+      background-color: transparent;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 19px;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Space Mono", monospace;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 19px;
+      color: $sharp-blue;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .card-body {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $light-black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+
+    .repos,
+    .followers,
+    .following {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 16px;
+
+      span {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+
+    .location,
+    .website,
+    .twitter,
+    .company {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 13px;
+      line-height: 19px;
+    }
+
+    .location span {
+      padding-left: 6px;
+    }
+
+    .blog-link {
+      text-decoration: none;
+      color: $white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

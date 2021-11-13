@@ -1,29 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles/style.css">
-  
-  <title>Frontend Mentor | GitHub user search app</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
 
-  devfinder
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Light
-  Dark
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">devfinder</div>
 
-  Search GitHub username...
-  Search
+        <button class="theme">
+          <span>light</span> <img src="./images/icon-sun.svg" alt="" />
+        </button>
+      </header>
 
-  Joined
+      <div class="searchbar">
+        <input
+          type="text"
+          class="search"
+          placeholder="Search GitHub username..."
+        />
+        <button class="search-button">Search</button>
+        <img class="search-icon" src="./images/icon-search.svg" alt="" />
+        <div class="error-msg">No results</div>
+      </div>
 
-  Repos
-  Followers
-  Following
+      <div class="card">
+        <div class="card-header">
+          <img
+            class="avatar"
+            src="https://avatars.githubusercontent.com/u/583231?v=4"
+            alt="avatar"
+          />
+          <div class="profile-text">
+            <h1>The Octocat</h1>
+            <a
+              class="profile-link"
+              onclick="window.open(this.href,'_blank');return false;"
+              href="https://github.com/octocat"
+              >@octocat</a
+            >
+            <h2>Joined 25 Jan 2011</h2>
+          </div>
+        </div>
 
-</body>
+        <div class="card-body">This profile has no bio</div>
+
+        <div class="card-stats">
+          <div class="repos">Repos <span>8</span></div>
+          <div class="followers">Followers <span>3938</span></div>
+          <div class="following">Following <span>9</span></div>
+        </div>
+
+        <div class="card-footer">
+          <div class="location">
+            <img src="./images/icon-location.svg" alt="" />
+            <span class="location-text">San Francisco</span>
+          </div>
+          <div class="website">
+            <img src="./images/icon-website.svg" alt="" />
+            <a
+              class="blog-link"
+              onclick="window.open(this.href,'_blank');return false;"
+              href="https://github.blog"
+              >https://github.blog</a
+            >
+          </div>
+          <div class="twitter">
+            <img src="./images/icon-twitter.svg" alt="" />
+            <span class="twitter-text">Not available</span>
+          </div>
+          <div class="company">
+            <img src="./images/icon-company.svg" alt="" />
+            <span class="company-text">@github</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

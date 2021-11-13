@@ -1,7 +1,35 @@
 // Variables
+// Shared Colors
+$sharp-blue: #0079ff; // button and user profile link color
+$blue-hover: #60abff; // hover change color for button
+$sharp-red: #f74646; // error message color
+
 // Light mode colors
+$gray: #697c9a; // h2 text color
+$dull-blue: #4b6a9b; // card text color
+$dark-gray: #2b3442; // h1 color
+$light-gray: #f6f8ff; // bg color
+$off-white: #fefefe; // card/searchbar color
 
 // Dark mode colors
+$white: #ffffff; // text color
+$light-black: #141d2f; // bg color
+$dark-blue: #1e2a47; // card/searchbar color
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: $light-black;
+  color: $white;
+  padding: 0 1.5rem;
+}
+
+@import "light-mode-style";
 @import "mobile-style";
+@import "tablet-style";
 @import "desktop-style";
