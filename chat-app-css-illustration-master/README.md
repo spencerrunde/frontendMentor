@@ -11,8 +11,6 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -44,27 +42,9 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This was a fun little challenge. Since the emphasis was on doing most of the work through CSS, I made use of before and after psuedo elements for the first time. It worked out well, as I was planning on researching them soon anyways. The background "bars" are both before and after elements, along with several of the elements within the phones layout.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Speaking of the bars, I was reminded of the first challenge I did. The [profile card component](https://github.com/spencerrunde/frontendMentor/tree/master/profile-card-component-main) challenge had similar background elements. That was my very first challenge though, and I didn't exactly know the best way to execute on the idea. I manually inserted the background circles into the HTML, but I feel that the psuedo element approach I took is much better. I also used `calc()` in order to ensure that the bars grow or shrink to always be the perfect height and keep the page looking responsive.
 
 ## Author
 
