@@ -1,0 +1,45 @@
+@media screen and (min-width: 1024px) {
+  html {
+    overflow-x: hidden;
+
+    &::before {
+      left: -90px;
+      top: 0;
+      width: 510px;
+      height: calc(100% - 100px);
+      border-radius: 0 0 255px 255px;
+    }
+
+    &::after {
+      width: 510px;
+      height: calc(100% - 119px);
+      right: -90px;
+      top: 119px;
+      border-radius: 255px 255px 0 0;
+    }
+
+    body {
+      main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 7.8125rem;
+        min-height: 100vh;
+
+        .phone {
+          margin-top: 0;
+        }
+
+        .hero-text {
+          margin: 0;
+          text-align: left;
+
+          p {
+            width: 27.8125rem;
+          }
+        }
+      }
+    }
+  }
+}

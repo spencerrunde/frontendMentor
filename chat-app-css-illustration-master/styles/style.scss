@@ -1,0 +1,37 @@
+//variables
+// Primary Colors
+
+$Pale-Violet: hsl(276, 100%, 81%); //sub-heading at the top of the app UI
+$Moderate-Violet: hsl(276, 55%, 52%); //chat on the left
+$Desaturated-Dark-Violet: hsl(271, 15%, 43%); //chat on the right
+$Grayish-Blue: hsl(206, 6%, 79%); //placeholder text
+$Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%); //main heading
+$Dark-Grayish-Violet: hsl(270, 7%, 64%); //paragraph
+
+// Linear Gradient
+$Linear-Gradient: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+
+// Secondary Colors
+
+$White: hsl(0, 0%, 100%);
+$Light-Grayish-Violet: hsl(270, 20%, 96%); //app background
+$Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%); //submit button background
+$Very-Light-Magenta: hsl(289, 100%, 72%); //radio button outline
+
+// general styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  body {
+    background-color: $Light-Grayish-Violet;
+    font-family: "Rubik", sans-serif;
+  }
+}
+
+@import "mobile-style";
+@import "desktop-style";
