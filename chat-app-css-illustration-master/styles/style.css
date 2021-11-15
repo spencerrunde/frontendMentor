@@ -6,7 +6,7 @@
 }
 
 html body {
-  background-color: #f5f3f7;
+  background-color: #fafafa;
   font-family: "Rubik", sans-serif;
 }
 
@@ -328,32 +328,6 @@ html body main .hero-text p {
   line-height: 28px;
 }
 
-@-webkit-keyframes flip-in-hor-bottom {
-  0% {
-    -webkit-transform: rotateX(80deg);
-            transform: rotateX(80deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes flip-in-hor-bottom {
-  0% {
-    -webkit-transform: rotateX(80deg);
-            transform: rotateX(80deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-    opacity: 1;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   html {
     overflow-x: hidden;
@@ -368,7 +342,7 @@ html body main .hero-text p {
   html::after {
     width: 510px;
     height: calc(100% - 119px);
-    right: -90px;
+    right: -190px;
     top: 119px;
     border-radius: 255px 255px 0 0;
   }
