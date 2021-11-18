@@ -28,6 +28,7 @@ function handleActive(e) {
   e.target.classList.add("menu-active");
 }
 
+// functions to handle daily, weekly, and monthly data replacement on click
 function dailyClick(e) {
   handleActive(e);
   hours.forEach((e, i) => {
