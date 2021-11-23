@@ -1,0 +1,74 @@
+// styles for third theme
+
+.theme-3 {
+  background-color: $dark-violet-bg;
+
+  main {
+    header {
+      color: $light-yellow;
+
+      .theme-wrapper {
+        .toggle-wrapper {
+          .toggle-button {
+            background-color: $very-dark-violet-bg;
+
+            input {
+              border: 8px solid $very-dark-violet-bg;
+
+              &:checked {
+                border: 8px solid $pure-cyan;
+
+                &:hover {
+                  border: 8px solid #93fff8;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .screen {
+      background-color: $very-dark-violet-bg;
+      color: $light-yellow;
+    }
+
+    .keypad {
+      background-color: $very-dark-violet-bg;
+
+      .numBtn,
+      .operatorBtn,
+      .dotBtn {
+        background-color: $very-dark-violet;
+        box-shadow: inset 0px -4px 0px $dark-magenta;
+        color: $light-yellow;
+
+        &:hover {
+          background-color: #6c34ac;
+        }
+      }
+
+      .delBtn,
+      .resetBtn,
+      .equalsBtn {
+        background-color: $dark-violet;
+        box-shadow: inset 0px -4px 0px $vivid-magenta;
+        color: $white;
+
+        &:hover {
+          background-color: #8631af;
+        }
+      }
+
+      .equalsBtn {
+        background-color: $pure-cyan;
+        box-shadow: inset 0px -4px 0px $soft-cyan;
+        color: $very-dark-blue;
+
+        &:hover {
+          background-color: #93fff8;
+        }
+      }
+    }
+  }
+}

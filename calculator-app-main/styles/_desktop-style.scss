@@ -1,0 +1,44 @@
+// desktop styles
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0;
+
+    main {
+      min-width: 540px;
+      margin: 0;
+
+      .screen {
+        padding: 2.3125rem 2rem;
+        font-size: 48px;
+        line-height: 54px;
+        text-align: right;
+        letter-spacing: -0.8px;
+      }
+
+      .keypad {
+        gap: 1.53125rem;
+        padding: 2rem;
+
+        .numBtn,
+        .operatorBtn,
+        .dotBtn {
+          font-size: 32px;
+          line-height: 36px;
+          letter-spacing: -0.533333px;
+        }
+
+        .delBtn,
+        .resetBtn,
+        .equalsBtn {
+          font-size: 20px;
+          line-height: 22px;
+          letter-spacing: -0.333333px;
+        }
+      }
+    }
+  }
+}

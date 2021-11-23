@@ -1,0 +1,73 @@
+// styles for second theme
+
+.theme-2 {
+  background-color: $light-gray;
+
+  main {
+    header {
+      color: $very-dark-grayish-yellow;
+
+      .theme-wrapper {
+        .toggle-wrapper {
+          .toggle-button {
+            background-color: $grayish-red;
+
+            input {
+              border: 8px solid $grayish-red;
+
+              &:checked {
+                border: 8px solid $orange;
+
+                &:hover {
+                  border: 8px solid #ff8a38;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .screen {
+      background-color: $very-light-gray;
+      color: $very-dark-grayish-yellow;
+    }
+
+    .keypad {
+      background-color: $grayish-red;
+
+      .numBtn,
+      .operatorBtn,
+      .dotBtn {
+        background-color: $light-grayish-yellow;
+        box-shadow: inset 0px -4px 0px $dark-grayish-orange;
+        color: $very-dark-grayish-yellow;
+
+        &:hover {
+          background-color: $white;
+        }
+      }
+
+      .delBtn,
+      .resetBtn,
+      .equalsBtn {
+        background-color: $dark-moderate-cyan;
+        box-shadow: inset 0px -4px 0px $very-dark-cyan;
+        color: $white;
+
+        &:hover {
+          background-color: #62b5bc;
+        }
+      }
+
+      .equalsBtn {
+        background-color: $orange;
+        box-shadow: inset 0px -4px 0px $dark-orange;
+
+        &:hover {
+          background-color: #ff8a38;
+        }
+      }
+    }
+  }
+}
