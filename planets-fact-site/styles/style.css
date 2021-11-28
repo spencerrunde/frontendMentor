@@ -596,7 +596,7 @@ body main .planet-stats .average-temp span {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 1.375rem 2.5rem 1.75rem 2rem;
+    padding: 1.75rem 2.5rem 1.75rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   body main header .header-hero {
@@ -607,6 +607,9 @@ body main .planet-stats .average-temp span {
     width: auto;
     padding: 0;
     border-bottom: none;
+  }
+  body main header .tablet-links .planet-link {
+    margin-top: 0.25rem;
   }
   body main header .tablet-links .planet-link:hover::after {
     top: -1.625rem;
