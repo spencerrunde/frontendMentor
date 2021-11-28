@@ -1,0 +1,278 @@
+body {
+  position: relative;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+
+      .header-hero {
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.065625rem;
+        text-transform: uppercase;
+        margin-top: -0.125rem;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        mix-blend-mode: normal;
+        opacity: 1;
+      }
+
+      .tablet-links {
+        display: none;
+      }
+    }
+
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      background-color: $dark-blue;
+      width: 100%;
+      top: 4.3125rem;
+      z-index: 1;
+      padding: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+      .mercury,
+      .venus,
+      .earth,
+      .mars,
+      .jupiter,
+      .saturn,
+      .uranus,
+      .neptune {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem 0;
+        font-family: "Spartan", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+        letter-spacing: 0.085227rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+
+        span {
+          margin-top: 0.25rem;
+        }
+      }
+
+      .neptune {
+        border-bottom: none;
+      }
+
+      .link-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .color {
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        background-color: #def4fc;
+      }
+
+      .venus {
+        .color {
+          background-color: #f7cc7f;
+        }
+      }
+
+      .earth {
+        .color {
+          background-color: #545bfe;
+        }
+      }
+
+      .mars {
+        .color {
+          background-color: #ff6a45;
+        }
+      }
+
+      .jupiter {
+        .color {
+          background-color: #ecad7a;
+        }
+      }
+
+      .saturn {
+        .color {
+          background-color: #fccb6b;
+        }
+      }
+
+      .uranus {
+        .color {
+          background-color: #65f0d5;
+        }
+      }
+
+      .neptune {
+        .color {
+          background-color: #497efa;
+        }
+      }
+    }
+
+    .mobile-links {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-family: "Spartan", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.5625rem;
+      line-height: 0.625rem;
+      text-align: center;
+      letter-spacing: 0.120536rem;
+      text-transform: uppercase;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+      .link {
+        position: relative;
+        cursor: pointer;
+        padding: 1.25rem 1.5rem;
+        color: rgba(255, 255, 255, 0.5);
+
+        &:not(.active):hover {
+          background-color: #313148;
+        }
+      }
+
+      .active {
+        color: $white;
+        border-bottom: 4px solid $light-blue;
+      }
+    }
+
+    .img-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      .planet {
+        max-width: 50%;
+        padding-top: 6rem;
+      }
+
+      .surface {
+        display: none;
+        position: absolute;
+        max-width: 17.5%;
+        top: 75%;
+      }
+    }
+
+    .overview-wrapper {
+      .overview {
+        font-family: "Spartan", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.6875rem;
+        line-height: 1.375rem;
+        text-align: center;
+        padding: 6rem 1.5rem 1.75rem;
+
+        h1 {
+          font-family: "Antonio", sans-serif;
+          padding-bottom: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 2.5rem;
+          line-height: 3.25rem;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .source-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.25rem;
+          margin-top: 2rem;
+
+          font-size: 0.75rem;
+          line-height: 1.5625rem;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+
+          a {
+            margin-top: 0.125rem;
+            font-weight: bold;
+            color: $white;
+          }
+        }
+      }
+
+      .overview-buttons {
+        display: none;
+      }
+    }
+
+    .planet-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0 1.5rem 3rem;
+      width: 100%;
+
+      .rotation,
+      .revolution,
+      .radius,
+      .average-temp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-family: "Spartan", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.5rem;
+        line-height: 1rem;
+        letter-spacing: 0.045455rem;
+        text-transform: uppercase;
+        padding: 0.625rem 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+        p {
+          margin-top: 0.1875rem;
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        span {
+          margin-bottom: 0.125rem;
+          font-family: "Antonio", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.25rem;
+          line-height: 1.625rem;
+          text-align: right;
+          letter-spacing: -0.046875rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

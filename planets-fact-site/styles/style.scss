@@ -1,0 +1,40 @@
+// Variables
+$white: #fff;
+$light-blue: #419ebb;
+$red: #d83a34;
+$dark-blue: #070724;
+$yellow: #eda249;
+$orange: #cd5120;
+$dark-gray: #38384f;
+$purple: #6f2ed6;
+$cyan: #1ec2a4;
+$gray: #838391;
+$light-red: #d14c32;
+$blue: #2d68f0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Antonio", sans-serif;
+  background-color: $dark-blue;
+  background-image: url("../assets/background-stars.svg");
+  color: $white;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: -1532px, 0;
+  }
+}
+
+@import "mobile-style";
+@import "tablet-style";
+@import "desktop-style";

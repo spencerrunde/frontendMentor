@@ -1,0 +1,131 @@
+@media screen and (min-width: 1440px) {
+  body {
+    main {
+      header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.375rem 2.5rem 1.75rem 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+        .header-hero {
+          padding: 0;
+          margin-top: -0.125rem;
+        }
+
+        .tablet-links {
+          width: auto;
+          padding: 0;
+          border-bottom: none;
+
+          .planet-link {
+            &:hover {
+              &::after {
+                top: -1.625rem;
+              }
+            }
+          }
+        }
+      }
+
+      .desktop-wrapper {
+        width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7.875rem 10rem 0;
+
+        .img-wrapper {
+          flex: 0.8 1 0;
+
+          .planet {
+            max-width: 100%;
+            padding: 0;
+          }
+
+          .surface {
+            max-width: 10rem;
+            top: 70%;
+          }
+        }
+
+        .overview-wrapper {
+          width: 350px;
+          flex-direction: column;
+          padding-top: 0;
+          gap: 2.5rem;
+
+          .overview {
+            flex: 1 1 0;
+            font-size: 0.875rem;
+            line-height: 1.5625rem;
+            padding: 0;
+
+            h1 {
+              font-size: 5rem;
+              line-height: 6.5rem;
+            }
+
+            .source-wrapper {
+              display: flex;
+              align-items: center;
+              justify-content: left;
+              gap: 0.25rem;
+              margin-top: 1.5rem;
+
+              font-size: 0.875rem;
+              line-height: 1.5625rem;
+              mix-blend-mode: normal;
+              opacity: 0.5;
+
+              a {
+                font-weight: bold;
+                color: $white;
+              }
+            }
+          }
+
+          .overview-buttons {
+            padding-right: 0;
+            width: 100%;
+
+            .ob-link {
+              font-family: "Spartan", sans-serif;
+              font-size: 0.75rem;
+              line-height: 1.5625rem;
+              letter-spacing: 0.160714rem;
+              padding: 0.75rem 0 0.75rem 1.75rem;
+
+              span {
+                padding-right: 1.75rem;
+              }
+            }
+          }
+        }
+      }
+
+      .planet-stats {
+        max-width: 1440px;
+        gap: 1.875rem;
+        padding: 5.5rem 10rem 3.5rem;
+
+        .rotation,
+        .revolution,
+        .radius,
+        .average-temp {
+          gap: 0.25rem;
+          padding: 1.25rem 0 1.6875rem 1.4375rem;
+          font-size: 0.6875rem;
+          line-height: 1.5625rem;
+          letter-spacing: 0.0625rem;
+
+          span {
+            font-size: 2.5rem;
+            line-height: 3.25rem;
+            letter-spacing: -0.09375rem;
+          }
+        }
+      }
+    }
+  }
+}

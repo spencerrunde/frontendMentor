@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&family=Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Planets fact site</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="header-hero">the planets</div>
+        <button class="navbar">
+          <img src="./assets/icon-hamburger.svg" alt="" />
+        </button>
+
+        <div class="tablet-links">
+          <div class="planet-link mercury">mercury</div>
+          <div class="planet-link venus">venus</div>
+          <div class="planet-link earth">earth</div>
+          <div class="planet-link mars">mars</div>
+          <div class="planet-link jupiter">jupiter</div>
+          <div class="planet-link saturn">saturn</div>
+          <div class="planet-link uranus">uranus</div>
+          <div class="planet-link neptune">neptune</div>
+        </div>
+      </header>
+
+      <div class="mobile-menu">
+        <div class="mercury menu-link">
+          <div class="link-wrapper">
+            <div class="color"></div>
+            <span>mercury</span>
+          </div>
+          <img src="./assets/icon-chevron.svg" alt="" />
+        </div>
+        <div class="venus menu-link">
+          <div class="link-wrapper">
+            <div class="color"></div>
+            <span>venus</span>
+          </div>
+          <img src="./assets/icon-chevron.svg" alt="" />
+        </div>
+        <div class="earth menu-link">
+          <div class="link-wrapper">
+            <div class="color"></div>
+            <span>earth</span>
+          </div>
+          <img src="./assets/icon-chevron.svg" alt="" />
+        </div>
+        <div class="mars menu-link">
+          <div class="link-wrapper">
+            <div class="color"></div>
+            <span>mars</span>
+          </div>
+          <img src="./assets/icon-chevron.svg" alt="" />
+        </div>
+        <div class="jupiter menu-link">
+          <div class="link-wrapper">
+            <div class="color"></div>
+            <span>jupiter</span>
+          </div>
+          <img src="./assets/icon-chevron.svg" alt="" />
+        </div>
+        <div class="saturn menu-link">
+          <div class="link-wrapper">
+            <div class="color"></div>
+            <span>saturn</span>
+          </div>
+          <img src="./assets/icon-chevron.svg" alt="" />
+        </div>
+        <div class="uranus menu-link">
+          <div class="link-wrapper">
+            <div class="color"></div>
+            <span>uranus</span>
+          </div>
+          <img src="./assets/icon-chevron.svg" alt="" />
+        </div>
+        <div class="neptune menu-link">
+          <div class="link-wrapper">
+            <div class="color"></div>
+            <span>neptune</span>
+          </div>
+          <img src="./assets/icon-chevron.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="mobile-links">
+        <div class="link active">overview</div>
+        <div class="link">structure</div>
+        <div class="link">surface</div>
+      </div>
+
+      <div class="desktop-wrapper">
+        <div class="img-wrapper">
+          <img
+            class="planet"
+            src="./assets/planet-mercury.svg"
+            alt="planet image"
+          />
+          <img
+            class="surface"
+            src="./assets/geology-mercury.png"
+            alt="surface image"
+          />
+        </div>
+
+        <div class="overview-wrapper">
+          <div class="overview">
+            <h1>Mercury</h1>
+            <p>
+              Mercury is the smallest planet in the Solar System and the closest
+              to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
+              shortest of all the Sun's planets. Mercury is one of four
+              terrestrial planets in the Solar System, and is a rocky body like
+              Earth.
+            </p>
+            <div class="source-wrapper">
+              Source :
+              <a
+                href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+                target="_blank"
+                rel="”noopener"
+                noreferrer”
+              >
+                Wikipedia</a
+              >
+              <img src="./assets/icon-source.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="overview-buttons">
+            <div class="ob-link active"><span>01</span> overview</div>
+            <div class="ob-link"><span>02</span> internal structure</div>
+            <div class="ob-link"><span>03</span> surface geology</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="planet-stats">
+        <div class="rotation">
+          <p>Rotation Time</p>
+          <span>58.6 Days</span>
+        </div>
+        <div class="revolution">
+          <p>Revolution Time</p>
+          <span>87.97 Days</span>
+        </div>
+        <div class="radius">
+          <p>Radius</p>
+          <span>2,439.7 KM</span>
+        </div>
+        <div class="average-temp">
+          <p>Average Temp.</p>
+          <span>430°c</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
