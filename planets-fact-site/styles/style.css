@@ -88,6 +88,10 @@ body main header .tablet-links {
   display: none;
 }
 
+body main .desktop-border {
+  display: none;
+}
+
 body main .mobile-menu {
   display: none;
   position: absolute;
@@ -586,6 +590,7 @@ body main .planet-stats .average-temp span {
 
 @media screen and (min-width: 1440px) {
   body main header {
+    max-width: 1440px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -597,7 +602,6 @@ body main .planet-stats .average-temp span {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 1.75rem 2.5rem 1.75rem 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   body main header .header-hero {
     padding: 0;
@@ -612,7 +616,13 @@ body main .planet-stats .average-temp span {
     margin-top: 0.25rem;
   }
   body main header .tablet-links .planet-link:hover::after {
-    top: -1.625rem;
+    top: -2.15625rem;
+  }
+  body main .desktop-border {
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   body main .desktop-wrapper {
     width: 1440px;

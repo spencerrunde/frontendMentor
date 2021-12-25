@@ -2,11 +2,11 @@
   body {
     main {
       header {
+        max-width: 1440px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 1.75rem 2.5rem 1.75rem 2rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
         .header-hero {
           padding: 0;
@@ -22,11 +22,18 @@
             margin-top: 0.25rem;
             &:hover {
               &::after {
-                top: -1.625rem;
+                top: -2.15625rem;
               }
             }
           }
         }
+      }
+
+      .desktop-border {
+        display: inline-block;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
       }
 
       .desktop-wrapper {
