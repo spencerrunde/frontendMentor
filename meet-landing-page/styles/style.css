@@ -464,7 +464,7 @@ body main footer .footer__download:hover {
   }
   body main footer::before {
     background-image: url(../assets/desktop/image-footer.jpg);
-    background-position: center;
+    background-position: center top;
   }
   body main footer h2 {
     margin: 0;
