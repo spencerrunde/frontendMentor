@@ -230,6 +230,7 @@ body main footer::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  mix-blend-mode: normal;
   opacity: 0.1;
 }
 
