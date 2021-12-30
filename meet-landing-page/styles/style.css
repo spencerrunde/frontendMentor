@@ -108,6 +108,7 @@ body main .hero .hero__buttons .hero__info {
   border-radius: 1.8125rem;
   -webkit-transition: background 0.25s ease-in;
   transition: background 0.25s ease-in;
+  cursor: pointer;
 }
 
 body main .hero .hero__buttons .hero__download {
@@ -234,7 +235,20 @@ body main footer::before {
   opacity: 0.1;
 }
 
-body main footer h2 {
+body main footer .footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main footer .footer__wrapper h2 {
   position: relative;
   margin: 5.75rem 0 1.5rem;
   font-style: normal;
@@ -243,7 +257,7 @@ body main footer h2 {
   line-height: 2.25rem;
 }
 
-body main footer p {
+body main footer .footer__wrapper p {
   position: relative;
   font-style: normal;
   font-weight: 500;
@@ -252,7 +266,7 @@ body main footer p {
   margin-bottom: 2rem;
 }
 
-body main footer .footer__download {
+body main footer .footer__wrapper .footer__download {
   position: relative;
   border: none;
   font-weight: 600;
@@ -265,13 +279,15 @@ body main footer .footer__download {
   margin-bottom: 4.5rem;
   -webkit-transition: background 0.25s ease-in;
   transition: background 0.25s ease-in;
+  cursor: pointer;
+  width: 12rem;
 }
 
-body main footer .footer__download span {
+body main footer .footer__wrapper .footer__download span {
   color: #d9b8ff;
 }
 
-body main footer .footer__download:hover {
+body main footer .footer__wrapper .footer__download:hover {
   background: #b18bdd;
 }
 
@@ -301,8 +317,8 @@ body main footer .footer__download:hover {
     padding-inline: 9.75rem;
   }
   body main .hero .hero__text h1 {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 3rem;
     margin: 0 0 1.5rem;
   }
   body main .hero .hero__text p {
@@ -344,8 +360,8 @@ body main footer .footer__download:hover {
     margin-bottom: 1rem;
   }
   body main .body__text h2 {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
     padding-inline: 4rem;
   }
   body main .transition--bottom {
@@ -357,17 +373,17 @@ body main footer .footer__download:hover {
   body main footer::before {
     background-image: url(../assets/tablet/image-footer.jpg);
   }
-  body main footer h2 {
-    font-size: 40px;
-    line-height: 44px;
+  body main footer .footer__wrapper h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
     margin-bottom: 2rem;
-    padding-inline: 156px;
+    padding-inline: 9.75rem;
   }
-  body main footer p {
+  body main footer .footer__wrapper p {
     margin-bottom: 2.5rem;
     padding-inline: 6.125rem;
   }
-  body main footer .footer__download {
+  body main footer .footer__wrapper .footer__download {
     margin-bottom: 4.125rem;
   }
 }
@@ -412,15 +428,16 @@ body main footer .footer__download:hover {
     display: block;
     padding-inline: 0;
     margin-bottom: 0.5rem;
+    max-width: 33.75rem;
   }
   body main .hero .desktop__hero .hero__text h1 {
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 4rem;
+    line-height: 4rem;
     margin-bottom: 2.125rem;
   }
   body main .hero .desktop__hero .hero__text p {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
   body main .hero .hero__text {
     display: none;
@@ -430,21 +447,22 @@ body main footer .footer__download:hover {
     margin-bottom: 4rem;
   }
   body main .grid {
+    max-width: 69.375rem;
     gap: 1.875rem;
     margin: 0 10.3125rem 5rem;
   }
   body main .body__text {
     margin: 0;
-    width: 540px;
+    max-width: 33.75rem;
   }
   body main .body__text h2 {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
     padding-inline: 3rem;
   }
   body main .body__text P {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
   body main .transition--bottom {
     margin-top: 9.75rem;
@@ -456,28 +474,33 @@ body main footer .footer__download:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body main footer::before {
     background-image: url(../assets/desktop/image-footer.jpg);
     background-position: center top;
   }
-  body main footer h2 {
+  body main footer .footer__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main footer .footer__wrapper h2 {
     margin: 0;
     padding-inline: 0;
-    width: 350px;
+    max-width: 21.875rem;
   }
-  body main footer p {
+  body main footer .footer__wrapper p {
     margin-bottom: 0;
     padding-inline: 0;
-    width: 350px;
+    max-width: 21.875rem;
+    margin-left: 7.8125rem;
+    margin-right: 5.75rem;
   }
-  body main footer .footer__download {
+  body main footer .footer__wrapper .footer__download {
     margin-bottom: 0;
   }
 }

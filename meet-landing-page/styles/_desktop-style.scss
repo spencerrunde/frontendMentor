@@ -8,6 +8,7 @@
 
       .hero {
         width: 100%;
+
         .tablet__hero {
           display: none;
         }
@@ -38,16 +39,17 @@
             display: block;
             padding-inline: 0;
             margin-bottom: 0.5rem;
+            max-width: 33.75rem;
 
             h1 {
-              font-size: 64px;
-              line-height: 64px;
+              font-size: 4rem;
+              line-height: 4rem;
               margin-bottom: 2.125rem;
             }
 
             p {
-              font-size: 18px;
-              line-height: 26px;
+              font-size: 1.125rem;
+              line-height: 1.625rem;
             }
           }
         }
@@ -63,23 +65,24 @@
       }
 
       .grid {
+        max-width: 69.375rem;
         gap: 1.875rem;
         margin: 0 10.3125rem 5rem;
       }
 
       .body__text {
         margin: 0;
-        width: 540px;
+        max-width: 33.75rem;
 
         h2 {
-          font-size: 40px;
-          line-height: 44px;
+          font-size: 2.5rem;
+          line-height: 2.75rem;
           padding-inline: 3rem;
         }
 
         P {
-          font-size: 18px;
-          line-height: 26px;
+          font-size: 1.125rem;
+          line-height: 1.625rem;
         }
       }
 
@@ -92,28 +95,33 @@
         padding: 7.25rem 10.3125rem 6.5rem;
         text-align: left;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
 
         &::before {
           background-image: url(../assets/desktop/image-footer.jpg);
           background-position: center top;
         }
 
-        h2 {
-          margin: 0;
-          padding-inline: 0;
-          width: 350px;
-        }
+        .footer__wrapper {
+          flex-direction: row;
 
-        p {
-          margin-bottom: 0;
-          padding-inline: 0;
-          width: 350px;
-        }
+          h2 {
+            margin: 0;
+            padding-inline: 0;
+            max-width: 21.875rem;
+          }
 
-        .footer__download {
-          margin-bottom: 0;
+          p {
+            margin-bottom: 0;
+            padding-inline: 0;
+            max-width: 21.875rem;
+            margin-left: 7.8125rem;
+            margin-right: 5.75rem;
+          }
+
+          .footer__download {
+            margin-bottom: 0;
+          }
         }
       }
     }
