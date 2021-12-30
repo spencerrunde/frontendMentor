@@ -1,0 +1,235 @@
+body {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      margin-top: 3rem;
+      margin-bottom: 3.375rem;
+    }
+
+    .hero {
+      .tablet__hero {
+        display: none;
+      }
+
+      .mobile__hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+        gap: 1rem;
+        margin-bottom: 3rem;
+
+        & img {
+          max-width: 53.07%;
+        }
+      }
+
+      .desktop__hero {
+        display: none;
+      }
+
+      .hero__text {
+        text-align: center;
+
+        h1 {
+          font-style: normal;
+          font-weight: 900;
+          font-size: 2.5rem;
+          line-height: 2.75rem;
+          margin: 0 1.5rem 1.5rem;
+          color: $black;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 1.625rem;
+          color: $gray;
+          margin: 0 1.5rem 2rem;
+        }
+      }
+
+      .hero__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .hero__download,
+        .hero__info {
+          border: none;
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 1.625rem;
+          color: $white;
+          border-radius: 1.8125rem;
+          transition: background 0.25s ease-in;
+        }
+
+        .hero__download {
+          background: $cyan;
+          margin-bottom: 1rem;
+          padding: 1rem 2.5rem;
+
+          & span {
+            color: $light-cyan;
+          }
+
+          &:hover {
+            background: #71c0d4;
+          }
+        }
+
+        .hero__info {
+          background: $purple;
+          padding: 1rem 1.8125rem;
+          margin-bottom: 9.25rem;
+
+          &:hover {
+            background: #b18bdd;
+          }
+        }
+      }
+    }
+
+    .transition {
+      position: relative;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 1rem;
+      line-height: 1.625rem;
+      color: $gray;
+      padding: 0.9375rem 1.25rem;
+      border: 1px solid rgba(135, 135, 157, 0.25);
+      border-radius: 50%;
+      margin-bottom: 4rem;
+      background: $white;
+
+      &::before {
+        content: "";
+        height: 84px;
+        width: 1px;
+        position: absolute;
+        top: -85px;
+        right: 50%;
+        background: rgba(135, 135, 157, 0.25);
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      gap: 1.5rem;
+      margin: 0 1.5rem 4rem;
+
+      & img {
+        border-radius: 0.5rem;
+      }
+    }
+
+    .body__text {
+      margin: 0 1.5rem 9.25rem;
+      text-align: center;
+
+      span {
+        display: block;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        color: $cyan;
+        margin-bottom: 1.5rem;
+      }
+
+      h2 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        color: $black;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: $gray;
+      }
+    }
+
+    .transition--bottom {
+      margin-bottom: -29px;
+      z-index: 999;
+    }
+
+    footer {
+      position: relative;
+      width: 100%;
+      background-color: $cyan;
+      text-align: center;
+      color: $white;
+      padding-inline: 1.5rem;
+
+      &::before {
+        content: "";
+        background-image: url(../assets/mobile/image-footer.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.1;
+      }
+
+      h2 {
+        position: relative;
+        margin: 5.75rem 0 1.5rem;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 2.25rem;
+      }
+
+      p {
+        position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer__download {
+        position: relative;
+        border: none;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: $white;
+        background: $purple;
+        border-radius: 1.8125rem;
+        padding: 1rem 2.5rem;
+        margin-bottom: 4.5rem;
+        transition: background 0.25s ease-in;
+
+        span {
+          color: $light-purple;
+        }
+
+        &:hover {
+          background: #b18bdd;
+        }
+      }
+    }
+  }
+}

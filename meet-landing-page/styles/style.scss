@@ -1,0 +1,29 @@
+// Variables //
+// Colors
+$cyan: hsl(192, 37%, 48%);
+$purple: hsl(268, 34%, 53%);
+$black: hsl(240, 21%, 20%);
+$gray: hsl(240, 10%, 57%);
+$light-cyan: hsl(192, 90%, 77%);
+$light-purple: hsl(268, 100%, 86%);
+$white: hsl(0, 0%, 98%);
+
+// Global Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Red Hat Display";
+  background: $white;
+}
+
+@import "mobile-style";
+@import "tablet-style";
+@import "desktop-style";

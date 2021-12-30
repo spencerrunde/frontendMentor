@@ -1,0 +1,121 @@
+@media screen and (min-width: 1440px) {
+  body {
+    main {
+      .logo {
+        margin-top: 5rem;
+        margin-bottom: 3.75rem;
+      }
+
+      .hero {
+        width: 100%;
+        .tablet__hero {
+          display: none;
+        }
+
+        .mobile__hero {
+          display: none;
+        }
+
+        .desktop__hero {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          overflow: hidden;
+
+          gap: 5.5rem;
+          height: 22.375rem;
+
+          & img:first-child {
+            align-self: flex-start;
+            margin-left: -2rem;
+          }
+
+          & img:last-child {
+            margin-right: -2rem;
+          }
+
+          .hero__text {
+            display: block;
+            padding-inline: 0;
+            margin-bottom: 0.5rem;
+
+            h1 {
+              font-size: 64px;
+              line-height: 64px;
+              margin-bottom: 2.125rem;
+            }
+
+            p {
+              font-size: 18px;
+              line-height: 26px;
+            }
+          }
+        }
+
+        .hero__text {
+          display: none;
+        }
+      }
+
+      .transition {
+        margin-top: 12.1875rem;
+        margin-bottom: 4rem;
+      }
+
+      .grid {
+        gap: 1.875rem;
+        margin: 0 10.3125rem 5rem;
+      }
+
+      .body__text {
+        margin: 0;
+        width: 540px;
+
+        h2 {
+          font-size: 40px;
+          line-height: 44px;
+          padding-inline: 3rem;
+        }
+
+        P {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+
+      .transition--bottom {
+        margin-top: 9.75rem;
+        margin-bottom: -29px;
+      }
+
+      footer {
+        padding: 7.25rem 10.3125rem 6.5rem;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &::before {
+          background-image: url(../assets/desktop/image-footer.jpg);
+          background-position: center;
+        }
+
+        h2 {
+          margin: 0;
+          padding-inline: 0;
+          width: 350px;
+        }
+
+        p {
+          margin-bottom: 0;
+          padding-inline: 0;
+          width: 350px;
+        }
+
+        .footer__download {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

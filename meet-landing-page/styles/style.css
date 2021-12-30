@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Red Hat Display";
+  background: #fafafa;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .logo {
+  margin-top: 3rem;
+  margin-bottom: 3.375rem;
+}
+
+body main .hero .tablet__hero {
+  display: none;
+}
+
+body main .hero .mobile__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+body main .hero .mobile__hero img {
+  max-width: 53.07%;
+}
+
+body main .hero .desktop__hero {
+  display: none;
+}
+
+body main .hero .hero__text {
+  text-align: center;
+}
+
+body main .hero .hero__text h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  margin: 0 1.5rem 1.5rem;
+  color: #28283e;
+}
+
+body main .hero .hero__text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #86869c;
+  margin: 0 1.5rem 2rem;
+}
+
+body main .hero .hero__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .hero .hero__buttons .hero__download,
+body main .hero .hero__buttons .hero__info {
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #fafafa;
+  border-radius: 1.8125rem;
+  -webkit-transition: background 0.25s ease-in;
+  transition: background 0.25s ease-in;
+}
+
+body main .hero .hero__buttons .hero__download {
+  background: #4d96a8;
+  margin-bottom: 1rem;
+  padding: 1rem 2.5rem;
+}
+
+body main .hero .hero__buttons .hero__download span {
+  color: #90e4f9;
+}
+
+body main .hero .hero__buttons .hero__download:hover {
+  background: #71c0d4;
+}
+
+body main .hero .hero__buttons .hero__info {
+  background: #845eb0;
+  padding: 1rem 1.8125rem;
+  margin-bottom: 9.25rem;
+}
+
+body main .hero .hero__buttons .hero__info:hover {
+  background: #b18bdd;
+}
+
+body main .transition {
+  position: relative;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #86869c;
+  padding: 0.9375rem 1.25rem;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 50%;
+  margin-bottom: 4rem;
+  background: #fafafa;
+}
+
+body main .transition::before {
+  content: "";
+  height: 84px;
+  width: 1px;
+  position: absolute;
+  top: -85px;
+  right: 50%;
+  background: rgba(135, 135, 157, 0.25);
+}
+
+body main .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 1.5rem;
+  margin: 0 1.5rem 4rem;
+}
+
+body main .grid img {
+  border-radius: 0.5rem;
+}
+
+body main .body__text {
+  margin: 0 1.5rem 9.25rem;
+  text-align: center;
+}
+
+body main .body__text span {
+  display: block;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: #4d96a8;
+  margin-bottom: 1.5rem;
+}
+
+body main .body__text h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #28283e;
+  margin-bottom: 2rem;
+}
+
+body main .body__text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #86869c;
+}
+
+body main .transition--bottom {
+  margin-bottom: -29px;
+  z-index: 999;
+}
+
+body main footer {
+  position: relative;
+  width: 100%;
+  background-color: #4d96a8;
+  text-align: center;
+  color: #fafafa;
+  padding-inline: 1.5rem;
+}
+
+body main footer::before {
+  content: "";
+  background-image: url(../assets/mobile/image-footer.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+
+body main footer h2 {
+  position: relative;
+  margin: 5.75rem 0 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+body main footer p {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  margin-bottom: 2rem;
+}
+
+body main footer .footer__download {
+  position: relative;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #fafafa;
+  background: #845eb0;
+  border-radius: 1.8125rem;
+  padding: 1rem 2.5rem;
+  margin-bottom: 4.5rem;
+  -webkit-transition: background 0.25s ease-in;
+  transition: background 0.25s ease-in;
+}
+
+body main footer .footer__download span {
+  color: #d9b8ff;
+}
+
+body main footer .footer__download:hover {
+  background: #b18bdd;
+}
+
+@media screen and (min-width: 768px) {
+  body main .logo {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  body main .hero .tablet__hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 4.5rem;
+    overflow: hidden;
+  }
+  body main .hero .tablet__hero img {
+    max-width: 110%;
+  }
+  body main .hero .mobile__hero {
+    display: none;
+  }
+  body main .hero .hero__text {
+    text-align: center;
+    padding-inline: 9.75rem;
+  }
+  body main .hero .hero__text h1 {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 0 1.5rem;
+  }
+  body main .hero .hero__text p {
+    margin: 0 0 2rem;
+  }
+  body main .hero .hero__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+  }
+  body main .hero .hero__buttons .hero__download,
+  body main .hero .hero__buttons .hero__info {
+    margin-bottom: 0;
+  }
+  body main .transition {
+    margin-top: 10.25rem;
+    margin-bottom: 4.1875rem;
+  }
+  body main .grid {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    gap: 0.6875rem;
+    margin: 0 2.5rem 3rem;
+  }
+  body main .body__text {
+    margin: 0 6.125rem;
+  }
+  body main .body__text span {
+    margin-bottom: 1rem;
+  }
+  body main .body__text h2 {
+    font-size: 40px;
+    line-height: 44px;
+    padding-inline: 4rem;
+  }
+  body main .transition--bottom {
+    margin-bottom: -29px;
+  }
+  body main footer {
+    padding-inline: 0;
+  }
+  body main footer::before {
+    background-image: url(../assets/tablet/image-footer.jpg);
+  }
+  body main footer h2 {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 2rem;
+    padding-inline: 156px;
+  }
+  body main footer p {
+    margin-bottom: 2.5rem;
+    padding-inline: 6.125rem;
+  }
+  body main footer .footer__download {
+    margin-bottom: 4.125rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body main .logo {
+    margin-top: 5rem;
+    margin-bottom: 3.75rem;
+  }
+  body main .hero {
+    width: 100%;
+  }
+  body main .hero .tablet__hero {
+    display: none;
+  }
+  body main .hero .mobile__hero {
+    display: none;
+  }
+  body main .hero .desktop__hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    gap: 5.5rem;
+    height: 22.375rem;
+  }
+  body main .hero .desktop__hero img:first-child {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: -2rem;
+  }
+  body main .hero .desktop__hero img:last-child {
+    margin-right: -2rem;
+  }
+  body main .hero .desktop__hero .hero__text {
+    display: block;
+    padding-inline: 0;
+    margin-bottom: 0.5rem;
+  }
+  body main .hero .desktop__hero .hero__text h1 {
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: 2.125rem;
+  }
+  body main .hero .desktop__hero .hero__text p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  body main .hero .hero__text {
+    display: none;
+  }
+  body main .transition {
+    margin-top: 12.1875rem;
+    margin-bottom: 4rem;
+  }
+  body main .grid {
+    gap: 1.875rem;
+    margin: 0 10.3125rem 5rem;
+  }
+  body main .body__text {
+    margin: 0;
+    width: 540px;
+  }
+  body main .body__text h2 {
+    font-size: 40px;
+    line-height: 44px;
+    padding-inline: 3rem;
+  }
+  body main .body__text P {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  body main .transition--bottom {
+    margin-top: 9.75rem;
+    margin-bottom: -29px;
+  }
+  body main footer {
+    padding: 7.25rem 10.3125rem 6.5rem;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main footer::before {
+    background-image: url(../assets/desktop/image-footer.jpg);
+    background-position: center;
+  }
+  body main footer h2 {
+    margin: 0;
+    padding-inline: 0;
+    width: 350px;
+  }
+  body main footer p {
+    margin-bottom: 0;
+    padding-inline: 0;
+    width: 350px;
+  }
+  body main footer .footer__download {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
