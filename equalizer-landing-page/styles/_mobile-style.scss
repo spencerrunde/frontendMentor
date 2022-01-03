@@ -1,0 +1,191 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: $white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6.5rem;
+    right: -4rem;
+    height: 30rem;
+    width: 17.5rem;
+
+    background-image: url(../assets/bg-main-mobile.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    position: relative;
+
+    .logo {
+      padding: 2.5rem 0 4rem 1.5rem;
+    }
+
+    .hero {
+      .hero__text {
+        margin: 0 1.5rem 10.375rem;
+
+        h1 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 2.5rem;
+          line-height: 3rem;
+          letter-spacing: -0.454544px;
+          color: $black;
+          margin-bottom: 1.25rem;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+          line-height: 1.625rem;
+          color: $black;
+        }
+      }
+    }
+
+    .eqHero {
+      .eqHero__illustration {
+        display: flex;
+        justify-content: center;
+        border-radius: 0.75rem;
+        background-color: $black;
+        background-image: url(../assets/bg-pattern-2.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 17.5rem;
+        padding: 0 5rem;
+        position: relative;
+        height: 37.5rem;
+        margin-bottom: -13.75rem;
+
+        & img {
+          position: absolute;
+          max-width: 56%;
+          max-height: 26.875rem;
+          top: -6.125rem;
+        }
+      }
+
+      .eqHero__text {
+        position: relative;
+        border-radius: 0.75rem;
+        background-color: $orange;
+        color: $white;
+        padding: 3rem 2.25rem;
+
+        h2 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 2rem;
+          line-height: 2.5rem;
+          margin-bottom: 0.75rem;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          margin-bottom: 2.25rem;
+        }
+
+        .price {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 4.0625rem;
+          line-height: 3.25rem;
+          margin-bottom: 2rem;
+
+          span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            letter-spacing: -0.2px;
+          }
+        }
+
+        .buttons {
+          .buttons__ios,
+          .buttons__android {
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 0;
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.125rem;
+            line-height: 2rem;
+            letter-spacing: -0.18px;
+            cursor: pointer;
+            transition: background-color 0.25s ease-in-out;
+          }
+
+          .buttons__ios {
+            background-color: $black;
+            margin-bottom: 1rem;
+
+            &:hover {
+              background-color: $cyan;
+            }
+          }
+
+          .buttons__android {
+            background-color: $white;
+            color: $black;
+
+            &:hover {
+              background-color: $yellow;
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      .footer__wrapper {
+        padding: 4rem 1.5rem 5rem;
+
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+          line-height: 1.625rem;
+
+          & span {
+            font-weight: bold;
+          }
+        }
+
+        .logo--footer {
+          padding: 0 0 2rem 0;
+        }
+
+        .footer__socials {
+          margin-top: 4rem;
+          display: flex;
+          align-items: center;
+          gap: 1.25rem;
+
+          & img:hover {
+            cursor: pointer;
+            filter: invert(69%) sepia(39%) saturate(7188%) hue-rotate(330deg)
+              brightness(110%) contrast(96%);
+          }
+        }
+      }
+    }
+  }
+}

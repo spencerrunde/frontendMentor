@@ -1,27 +1,21 @@
 @media screen and (min-width: 1440px) {
   body {
     &::before {
-      content: "";
-      position: absolute;
       width: 100.8125rem;
       height: 109.875rem;
       left: -9.125rem;
       top: -7rem;
 
       background-image: url(../assets/bg-main-desktop.png);
-      background-size: contain;
     }
 
     &::after {
-      content: "";
-      position: absolute;
       width: 19.5rem;
       height: 29.25rem;
       right: 0;
       top: -2.5rem;
 
       background-image: url(../assets/bg-pattern-1.svg);
-      background-size: contain;
     }
 
     main {
@@ -49,62 +43,65 @@
       }
 
       .eqHero {
-        position: relative;
-        height: 930px;
+        height: 58.125rem;
         margin-inline: 10.25rem;
-        margin-bottom: 88px;
+        margin-bottom: 5.5rem;
 
         .eqHero__illustration {
-          display: block;
-          padding: 0;
-          position: absolute;
-          top: 212px;
-          width: 100%;
-          height: 37.5rem;
-          margin-bottom: 0;
+          top: 13.25rem;
 
           & img {
-            position: absolute;
             max-height: 40.125rem;
-            top: -212px;
+            top: -13.25rem;
             left: 6.0625rem;
           }
         }
 
         .eqHero__text {
-          position: absolute;
-          padding: 3rem;
-          width: 25rem;
+          width: 27.875rem;
           bottom: 0;
           right: 6.0625rem;
+          padding: 3.625rem 3.375rem 3rem;
+
+          h2 {
+            font-size: 2.5rem;
+            line-height: 3.25rem;
+            margin-bottom: 1.375rem;
+          }
+
+          p {
+            font-size: 1.25rem;
+            line-height: 2.125rem;
+            width: 20.8125rem;
+            margin-bottom: 2.5rem;
+          }
+
+          .price {
+            margin-bottom: 2.875rem;
+          }
         }
       }
 
       footer {
-        position: relative;
-
         .footer__wrapper {
           padding: 5.375rem 10.25rem 5.5rem;
 
           p {
-            width: 366px;
             position: absolute;
-            left: 450px;
-            bottom: 96px;
+            left: 28.125rem;
+            bottom: 6rem;
           }
 
           .logo--footer {
             padding: 0;
             position: absolute;
-            left: 164px;
-            bottom: 138px;
+            left: 10.25rem;
+            bottom: 8.625rem;
           }
 
           .footer__socials {
-            position: absolute;
-            bottom: 120px;
-            right: 164px;
-            margin: 0;
+            bottom: 7.5rem;
+            right: 10.25rem;
           }
         }
       }
