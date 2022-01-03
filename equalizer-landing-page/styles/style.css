@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #fcf9f8;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -6.5rem;
+  right: -4rem;
+  height: 30rem;
+  width: 17.5rem;
+  background-image: url(../assets/bg-main-mobile.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+body main {
+  position: relative;
+}
+
+body main .logo {
+  padding: 2.5rem 0 4rem 1.5rem;
+}
+
+body main .hero .hero__text {
+  margin: 0 1.5rem 10.375rem;
+}
+
+body main .hero .hero__text h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.454544px;
+  color: #191826;
+  margin-bottom: 1.25rem;
+}
+
+body main .hero .hero__text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #191826;
+}
+
+body main .eqHero .eqHero__illustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.75rem;
+  background-color: #191826;
+  background-image: url(../assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 17.5rem;
+  padding: 0 5rem;
+  position: relative;
+  height: 37.5rem;
+  margin-bottom: -13.75rem;
+}
+
+body main .eqHero .eqHero__illustration img {
+  position: absolute;
+  max-width: 56%;
+  max-height: 26.875rem;
+  top: -6.125rem;
+}
+
+body main .eqHero .eqHero__text {
+  position: relative;
+  border-radius: 0.75rem;
+  background-color: #fa7352;
+  color: #fcf9f8;
+  padding: 3rem 2.25rem;
+}
+
+body main .eqHero .eqHero__text h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+body main .eqHero .eqHero__text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 2.25rem;
+}
+
+body main .eqHero .eqHero__text .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.0625rem;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+}
+
+body main .eqHero .eqHero__text .price span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: -0.2px;
+}
+
+body main .eqHero .eqHero__text .buttons .buttons__ios,
+body main .eqHero .eqHero__text .buttons .buttons__android {
+  border-radius: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: -0.18px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+body main .eqHero .eqHero__text .buttons .buttons__ios {
+  background-color: #191826;
+  margin-bottom: 1rem;
+}
+
+body main .eqHero .eqHero__text .buttons .buttons__ios:hover {
+  background-color: #65e2db;
+}
+
+body main .eqHero .eqHero__text .buttons .buttons__android {
+  background-color: #fcf9f8;
+  color: #191826;
+}
+
+body main .eqHero .eqHero__text .buttons .buttons__android:hover {
+  background-color: #ffba66;
+}
+
+body main footer .footer__wrapper {
+  padding: 4rem 1.5rem 5rem;
+}
+
+body main footer .footer__wrapper p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+body main footer .footer__wrapper p span {
+  font-weight: bold;
+}
+
+body main footer .footer__wrapper .logo--footer {
+  padding: 0 0 2rem 0;
+}
+
+body main footer .footer__wrapper .footer__socials {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+
+body main footer .footer__wrapper .footer__socials img:hover {
+  cursor: pointer;
+  -webkit-filter: invert(69%) sepia(39%) saturate(7188%) hue-rotate(330deg) brightness(110%) contrast(96%);
+          filter: invert(69%) sepia(39%) saturate(7188%) hue-rotate(330deg) brightness(110%) contrast(96%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    width: 61.4375rem;
+    height: 50.5rem;
+    right: 2.5rem;
+    top: -7rem;
+    background-image: url(../assets/bg-main-tablet.png);
+    background-size: contain;
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    width: 16.666875rem;
+    height: 25rem;
+    right: -2.25rem;
+    top: -2rem;
+    background-image: url(../assets/bg-pattern-1.svg);
+    background-size: contain;
+  }
+  body main {
+    z-index: 1000;
+  }
+  body main .logo {
+    padding: 3.875rem 0 6rem 2.5rem;
+  }
+  body main .hero .hero__text {
+    width: 32.5rem;
+    margin: 0 2.5rem 7rem;
+  }
+  body main .hero .hero__text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.045455rem;
+    margin-bottom: 1.75rem;
+  }
+  body main .hero .hero__text p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  body main .eqHero {
+    position: relative;
+    height: 834px;
+    margin-inline: 2.5rem;
+  }
+  body main .eqHero .eqHero__illustration {
+    display: block;
+    padding: 0;
+    position: absolute;
+    top: 138px;
+    width: 100%;
+    height: 37.5rem;
+    margin-bottom: 0;
+  }
+  body main .eqHero .eqHero__illustration img {
+    position: absolute;
+    max-height: 34.75rem;
+    top: -138px;
+    left: 6.0625rem;
+  }
+  body main .eqHero .eqHero__text {
+    position: absolute;
+    padding: 3rem;
+    width: 25rem;
+    bottom: 0;
+    right: 6.0625rem;
+  }
+  body main footer {
+    position: relative;
+  }
+  body main footer .footer__wrapper {
+    padding: 5.375rem 2.5rem 5.5rem;
+  }
+  body main footer .footer__wrapper p {
+    width: 366px;
+  }
+  body main footer .footer__wrapper .logo--footer {
+    padding: 0 0 2rem 0;
+  }
+  body main footer .footer__wrapper .footer__socials {
+    position: absolute;
+    bottom: 114px;
+    right: 40px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body::before {
+    content: "";
+    position: absolute;
+    width: 100.8125rem;
+    height: 109.875rem;
+    left: -9.125rem;
+    top: -7rem;
+    background-image: url(../assets/bg-main-desktop.png);
+    background-size: contain;
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    width: 19.5rem;
+    height: 29.25rem;
+    right: 0;
+    top: -2.5rem;
+    background-image: url(../assets/bg-pattern-1.svg);
+    background-size: contain;
+  }
+  body main .logo {
+    padding: 4rem 0 8rem 10.25rem;
+  }
+  body main .hero .hero__text {
+    width: 53.5rem;
+    margin: 0 10.25rem 6.75rem;
+  }
+  body main .hero .hero__text h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.0625rem;
+    margin-bottom: 2.5rem;
+  }
+  body main .hero .hero__text p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+  body main .eqHero {
+    position: relative;
+    height: 930px;
+    margin-inline: 10.25rem;
+    margin-bottom: 88px;
+  }
+  body main .eqHero .eqHero__illustration {
+    display: block;
+    padding: 0;
+    position: absolute;
+    top: 212px;
+    width: 100%;
+    height: 37.5rem;
+    margin-bottom: 0;
+  }
+  body main .eqHero .eqHero__illustration img {
+    position: absolute;
+    max-height: 40.125rem;
+    top: -212px;
+    left: 6.0625rem;
+  }
+  body main .eqHero .eqHero__text {
+    position: absolute;
+    padding: 3rem;
+    width: 25rem;
+    bottom: 0;
+    right: 6.0625rem;
+  }
+  body main footer {
+    position: relative;
+  }
+  body main footer .footer__wrapper {
+    padding: 5.375rem 10.25rem 5.5rem;
+  }
+  body main footer .footer__wrapper p {
+    width: 366px;
+    position: absolute;
+    left: 450px;
+    bottom: 96px;
+  }
+  body main footer .footer__wrapper .logo--footer {
+    padding: 0;
+    position: absolute;
+    left: 164px;
+    bottom: 138px;
+  }
+  body main footer .footer__wrapper .footer__socials {
+    position: absolute;
+    bottom: 120px;
+    right: 164px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
