@@ -1,0 +1,311 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+
+  /* Neutral Colors */
+  --light-grayish-cyan-background: hsl(180, 52%, 96%);
+  --light-grayish-cyan-filter-tablets: hsl(180, 31%, 95%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+}
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Img reset */
+img {
+  display: block;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Spartan", sans-serif;
+  background-color: var(--light-grayish-cyan-background);
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+header {
+  background-image: url("../public/images/bg-header-mobile.svg");
+  background-color: var(--desaturated-dark-cyan);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 9.75rem;
+}
+
+main {
+  position: relative;
+  padding: 3.5rem 1.5rem 2.125rem;
+}
+
+.filterBar {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: -5.75rem;
+  margin-bottom: 3.5rem;
+  background: #ffffff;
+  box-shadow: 0rem 0.9375rem 1.25rem -0.3125rem rgba(13, 113, 130, 0.15);
+  border-radius: 0.3125rem;
+  padding: 1.25rem 1.5rem 1.25rem 1.25rem;
+}
+
+.filterBar__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filterBar__tag {
+  display: flex;
+  align-items: center;
+  color: var(--desaturated-dark-cyan);
+  background: var(--light-grayish-cyan-filter-tablets);
+  border-radius: 0.25rem;
+}
+
+.filterBar__tag > span {
+  padding: 0.3125rem 0.5rem 0.1875rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.1008px;
+}
+
+.closeButton {
+  background: var(--desaturated-dark-cyan);
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+  padding: 0.5625rem;
+  transition: all 0.25s ease-out;
+}
+
+.closeButton:hover {
+  background: var(--very-dark-grayish-cyan);
+}
+
+.clearButton {
+  margin-left: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.1008px;
+  color: var(--dark-grayish-cyan);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.25s ease-out;
+}
+
+.clearButton:hover {
+  color: var(--desaturated-dark-cyan);
+  text-decoration-color: var(--desaturated-dark-cyan);
+}
+
+.jobCard {
+  background-color: white;
+  position: relative;
+  margin-bottom: 2.5rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0rem 0.9375rem 1.25rem -0.3125rem rgba(13, 113, 130, 0.15);
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.jobCard.jobCard--featured::before {
+  position: absolute;
+  content: "";
+  width: 0.3125rem;
+  height: 100%;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 0.3125rem 0 0 0.3125rem;
+  background: var(--desaturated-dark-cyan);
+}
+
+.jobCard:last-child {
+  margin-bottom: 0;
+}
+
+.jobCard__logo > img {
+  max-width: 3rem;
+  position: absolute;
+  left: 1.5rem;
+  top: -1.5rem;
+}
+
+.jobCard__info {
+  margin-bottom: 1rem;
+}
+
+.jobCard__info > h1 {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
+  color: var(--desaturated-dark-cyan);
+  margin-bottom: 0.5rem;
+}
+
+.new {
+  margin: 0rem 0.5rem 0 1rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.6875rem;
+  line-height: 0.875rem;
+  text-align: center;
+  letter-spacing: -0.0848px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.375rem 0.5rem 0.25rem;
+  background: var(--desaturated-dark-cyan);
+  border-radius: 0.75rem;
+}
+
+.featured {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.6875rem;
+  line-height: 0.875rem;
+  text-align: center;
+  letter-spacing: -0.0848px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.375rem 0.5rem 0.25rem;
+  background: var(--very-dark-grayish-cyan);
+  border-radius: 0.75rem;
+}
+
+.jobCard__info > h2 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: var(--very-dark-grayish-cyan);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.jobCard__info > h2:hover {
+  color: var(--desaturated-dark-cyan);
+}
+
+.jobCard__info > p {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.1008px;
+  color: var(--dark-grayish-cyan);
+}
+
+.jobCard__info p > span {
+  color: #b7c4c4;
+}
+
+.jobCard__filters {
+  border-top: 1px solid #b7c4c4;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.jobCard__filters > button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+  color: var(--desaturated-dark-cyan);
+  padding: 0.25rem 0.5313rem;
+  background: var(--light-grayish-cyan-filter-tablets);
+  border-radius: 0.25rem;
+  transition: all 0.25s ease-out;
+}
+
+.jobCard__filters > button:hover {
+  color: white;
+  background: var(--desaturated-dark-cyan);
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    background-image: url("../public/images/bg-header-desktop.svg");
+  }
+
+  main {
+    padding: 4.75rem 2.5vw 7.5rem;
+  }
+
+  .filterBar {
+    gap: 0;
+    margin-top: -7rem;
+    margin-bottom: 2.5rem;
+    padding: 1.25rem 2.5rem;
+  }
+
+  .jobCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 2rem 2.5rem;
+  }
+
+  .jobCard__logo > img {
+    max-width: 5.5rem;
+    position: initial;
+  }
+
+  .jobCard__info {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .jobCard__info > h1 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .jobCard__info > h2 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .jobCard__info > p {
+    gap: 1rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.115385px;
+  }
+
+  .jobCard__filters {
+    border-top: none;
+    padding-top: 0;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  main {
+    padding-inline: 8rem;
+  }
+}
