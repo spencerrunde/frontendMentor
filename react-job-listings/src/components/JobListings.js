@@ -20,7 +20,7 @@ const JobListings = ({
   const tagArray = [role, level];
 
   if (languages && tools) {
-    tagArray.push(...languages, ...tools);
+    tagArray.push(...tools, ...languages);
   }
 
   //return HTML for each job card
