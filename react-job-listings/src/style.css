@@ -247,13 +247,13 @@ main {
   background: var(--desaturated-dark-cyan);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1366px) {
   header {
     background-image: url("../public/images/bg-header-desktop.svg");
   }
 
   main {
-    padding: 4.75rem 2.5vw 7.5rem;
+    padding: 4.75rem 8rem 7.5rem;
   }
 
   .filterBar {
@@ -301,11 +301,5 @@ main {
     border-top: none;
     padding-top: 0;
     margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  main {
-    padding-inline: 8rem;
   }
 }

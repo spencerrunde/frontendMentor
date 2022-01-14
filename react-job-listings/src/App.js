@@ -18,7 +18,7 @@ function App() {
     const tagArray = [role, level];
 
     if (languages && tools) {
-      tagArray.push(...tools, ...languages);
+      tagArray.push(...languages, ...tools);
     }
 
     return filters.every((tag) => tagArray.includes(tag));
