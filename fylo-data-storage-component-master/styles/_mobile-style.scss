@@ -33,8 +33,11 @@ body {
         display: flex;
         gap: 1rem;
 
-        button {
-          border: 0;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
           background-color: $very-dark-blue;
           border-radius: 10px;
           width: 48px;
