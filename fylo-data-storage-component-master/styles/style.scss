@@ -1,0 +1,18 @@
+// Reset import
+@import "_reset.scss";
+
+// Font import
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+// Variables
+// Primary Colors
+$gradient: (90deg, #ffa197 0%, #ff4a95 100%);
+
+// Neutral Colors
+$pale-blue: hsl(243, 100%, 93%);
+$grayish-blue: hsl(229, 7%, 55%);
+$dark-blue: hsl(228, 56%, 26%);
+$very-dark-blue: hsl(229, 57%, 11%);
+
+@import "_mobile-style.scss";
+@import "_desktop-style.scss";

@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background-color: #0c122c;
+  background-image: url(../images/bg-mobile.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-inline: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main {
+  width: 100%;
+}
+
+body main .heroCard {
+  width: 100%;
+  background-color: #1d2c67;
+  -webkit-box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+          box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  border-radius: 10px 100px 10px 10px;
+  padding: 40px;
+  margin-bottom: 1rem;
+}
+
+body main .heroCard__logo {
+  margin-bottom: 2rem;
+}
+
+body main .heroCard__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+body main .heroCard__buttons button {
+  border: 0;
+  background-color: #0c122c;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+body main .storageCard {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1d2c67;
+  color: #dddbff;
+  -webkit-box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+          box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  border-radius: 10px;
+  padding: 32px 32px 52px;
+}
+
+body main .storageCard h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+body main .storageCard h1 span {
+  font-weight: bold;
+}
+
+body main .storageCard__meter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+body main .storageCard__meter meter {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+body main .storageCard__meter meter::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 18.575%;
+  height: 10px;
+  width: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+body main .storageCard__meter meter::-webkit-meter-bar {
+  border: none;
+  background-color: #15204b;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+body main .storageCard__meter meter::-webkit-meter-optimum-value {
+  background: -webkit-gradient(linear, left top, right top, from(#ffa197), to(#ff4a95));
+  background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+  border-radius: 8px;
+  margin-left: 3px;
+  height: 14px;
+}
+
+body main .storageCard__meter .meter__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .storageCard__remaining {
+  position: absolute;
+  bottom: -36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 9px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+          box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: #848794;
+}
+
+body main .storageCard__remaining span {
+  font-size: 40px;
+  line-height: 40px;
+  color: #0c122c;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-size: 100% 52.5%;
+    background-position: left bottom;
+    padding-inline: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  body main .heroCard {
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+  body main .storageCard {
+    max-width: 540px;
+    display: block;
+    padding: 40px;
+  }
+  body main .storageCard__remaining {
+    bottom: initial;
+    top: -47px;
+    right: 40px;
+    border-radius: 10px 10px 0px 10px;
+  }
+  body main .storageCard__remaining::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 0;
+    -webkit-box-shadow: 0px 75px 100px rgba(0, 0, 0, 0.24776);
+            box-shadow: 0px 75px 100px rgba(0, 0, 0, 0.24776);
+    border-bottom: 23px solid transparent;
+    border-right: 23px solid white;
+  }
+}
+/*# sourceMappingURL=style.css.map */
