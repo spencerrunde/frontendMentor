@@ -1,0 +1,18 @@
+// Reset import
+@import "_reset.scss";
+
+// Font import
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+// Variables
+// Primary Colors
+$gradient: 135deg, #a2a7f0 0%, #696edd 100%;
+
+// Neutral Colors
+$very-light-grayish-blue: hsl(240, 80%, 98%);
+$light-grayish-blue: hsl(234, 14%, 74%);
+$grayish-blue: hsl(234, 13%, 49%);
+$dark-grayish-blue: hsl(232, 13%, 33%);
+
+@import "_mobile-style.scss";
+@import "_desktop-style.scss";
