@@ -1,0 +1,32 @@
+footer {
+  button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.625rem;
+    width: 8rem;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    color: white;
+    transition: all 0.25s ease-out;
+
+    &:hover {
+      background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+      color: $dark-text;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+  }
+}

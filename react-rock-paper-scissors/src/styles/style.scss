@@ -1,0 +1,60 @@
+// Font import
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+// Reset import
+@import "_reset.scss";
+
+// Primary Colors
+$scissors-border: hsl(39, 89%, 49%);
+$paper-border: hsl(230, 89%, 62%);
+$rock-border: hsl(349, 71%, 52%);
+$lizard-border: hsl(261, 73%, 60%);
+$spock-border: hsl(189, 59%, 53%);
+
+// Neutral Colors
+$dark-text: hsl(229, 25%, 31%);
+$score-text: hsl(229, 64%, 46%);
+$header-outline: hsl(217, 16%, 45%);
+
+// Background
+$radial-gradient: radial-gradient(
+  134.34% 134.34% at 50% 0%,
+  #1f3757 0%,
+  #131537 100%
+);
+
+// Mixins
+@mixin winnerShadow($color) {
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px $color,
+    0px 0px 0px 20px rgba(#ffffff, 0.025), 0px 0px 0px 45px rgba(#ffffff, 0.025),
+    0px 0px 0px 75px rgba(#ffffff, 0.025);
+}
+
+@mixin desktopWinnerShadow($color) {
+  box-shadow: inset 0px 13px 0px #babfd4, 0px 13px $color,
+    0px 0px 0px 4rem rgba(#ffffff, 0.025),
+    0px 0px 0px 8.5rem rgba(#ffffff, 0.025),
+    0px 0px 0px 13.625rem rgba(#ffffff, 0.025);
+}
+
+// Global Styles
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: $radial-gradient;
+  min-height: 100vh;
+  color: white;
+  padding: 32px 32px 56px;
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// Component imports
+@import "_header.scss";
+@import "_play.scss";
+@import "_game.scss";
+@import "_footer.scss";
+@import "_modal.scss";

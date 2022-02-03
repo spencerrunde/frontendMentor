@@ -1,0 +1,289 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 6px;
+
+  &__main {
+    width: 327px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 62px;
+
+    .main__player,
+    .main__computer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 1rem;
+
+      .icon {
+        width: 132px;
+        height: 132px;
+        background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+        border-radius: 50%;
+        border: 15px solid;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--rock {
+          border-color: $rock-border;
+          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #9d1634;
+
+          &--winner {
+            border-color: $rock-border;
+            @include winnerShadow(#9d1634);
+          }
+        }
+
+        &--paper {
+          border-color: $paper-border;
+          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2a45c2;
+
+          &--winner {
+            border-color: $paper-border;
+            @include winnerShadow(#2a45c2);
+          }
+        }
+
+        &--scissors {
+          border-color: $scissors-border;
+          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #c76c1b;
+
+          &--winner {
+            border-color: $scissors-border;
+            @include winnerShadow(#c76c1b);
+          }
+        }
+
+        &--lizard {
+          border-color: $lizard-border;
+          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #5f37a8;
+
+          &--winner {
+            border-color: $lizard-border;
+            @include winnerShadow(#5f37a8);
+          }
+        }
+
+        &--spock {
+          border-color: $spock-border;
+          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2d8dab;
+
+          &--winner {
+            border-color: $spock-border;
+            @include winnerShadow(#2d8dab);
+          }
+        }
+      }
+
+      .choiceText {
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 32px;
+        letter-spacing: 1.875px;
+        color: white;
+
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+      }
+    }
+
+    .main__player {
+      width: 144px;
+    }
+  }
+
+  &__result {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 67px;
+    text-align: center;
+
+    color: white;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+
+    .game__playAgain {
+      width: 220px;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.5px;
+      text-align: center;
+      color: #3b4262;
+
+      background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+      border-radius: 8px;
+
+      padding: 14.5px 0;
+      margin-bottom: 52px;
+      transition: all 0.25s ease-out;
+
+      &:hover {
+        color: $rock-border;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 24px;
+    position: relative;
+
+    &__main {
+      width: 100%;
+      display: flex;
+      gap: 352px;
+
+      margin-bottom: 0;
+
+      .main__player,
+      .main__computer {
+        flex-direction: column-reverse;
+        gap: 3.75rem;
+
+        .icon {
+          width: 292px;
+          height: 292px;
+          border: 32px solid;
+
+          &--rock {
+            border-color: $rock-border;
+            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #9d1634;
+
+            &--winner {
+              border-color: $rock-border;
+              @include desktopWinnerShadow(#9d1634);
+
+              img {
+                min-width: 96px;
+              }
+            }
+
+            img {
+              min-width: 96px;
+            }
+          }
+
+          &--paper {
+            border-color: $paper-border;
+            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2a45c2;
+
+            &--winner {
+              border-color: $paper-border;
+              @include desktopWinnerShadow(#2a45c2);
+
+              img {
+                min-width: 96px;
+              }
+            }
+
+            img {
+              min-width: 96px;
+            }
+          }
+
+          &--scissors {
+            border-color: $scissors-border;
+            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #c76c1b;
+
+            &--winner {
+              border-color: $scissors-border;
+              @include desktopWinnerShadow(#c76c1b);
+
+              img {
+                min-width: 96px;
+              }
+            }
+
+            img {
+              min-width: 96px;
+            }
+          }
+
+          &--lizard {
+            border-color: $lizard-border;
+            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #5f37a8;
+
+            &--winner {
+              border-color: $lizard-border;
+              @include desktopWinnerShadow(#5f37a8);
+
+              img {
+                min-width: 96px;
+              }
+            }
+
+            img {
+              min-width: 96px;
+            }
+          }
+
+          &--spock {
+            border-color: $spock-border;
+            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2d8dab;
+
+            &--winner {
+              border-color: $spock-border;
+              @include desktopWinnerShadow(#2d8dab);
+
+              img {
+                min-width: 96px;
+              }
+            }
+
+            img {
+              min-width: 96px;
+            }
+          }
+        }
+
+        .choiceText {
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 3px;
+        }
+      }
+
+      .main__player {
+        width: inherit;
+      }
+    }
+
+    &__result {
+      position: absolute;
+      top: 160px;
+      margin-bottom: 0rem;
+    }
+
+    a {
+      position: absolute;
+      top: 243px;
+
+      .game__playAgain {
+        margin-bottom: 0rem;
+      }
+    }
+  }
+}

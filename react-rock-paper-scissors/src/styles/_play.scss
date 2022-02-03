@@ -1,0 +1,155 @@
+.play {
+  background-image: url(../../public/images/bg-pentagon.svg);
+  background-position: center center;
+  background-size: 14.1875rem 14.1875rem;
+  background-repeat: no-repeat;
+  width: 19.4375rem;
+  height: 19.0625rem;
+  margin-bottom: 7.875rem;
+
+  position: relative;
+
+  .icon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+    border-radius: 50%;
+    border: 11px solid;
+    transform-origin: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &--rock {
+      bottom: 0px;
+      right: 43px;
+      border-color: $rock-border;
+      box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #9d1634;
+
+      img {
+        max-width: 2.3125rem;
+      }
+    }
+
+    &--paper {
+      right: 0px;
+      bottom: 122px;
+      border-color: $paper-border;
+      box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #2a45c2;
+
+      img {
+        width: 2.25rem;
+      }
+    }
+
+    &--scissors {
+      top: 0px;
+      left: 107.5px;
+      border-color: $scissors-border;
+      box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #c76c1b;
+
+      img {
+        width: 2.5rem;
+      }
+    }
+
+    &--lizard {
+      bottom: 0px;
+      left: 43px;
+      border-color: $lizard-border;
+      box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #5f37a8;
+
+      img {
+        max-width: 2.5625rem;
+      }
+    }
+
+    &--spock {
+      bottom: 122px;
+      left: 0px;
+      border-color: $spock-border;
+      box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #2d8dab;
+
+      img {
+        width: 1.875rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .play {
+    background-size: 21.5625rem 21.5625rem;
+    width: 29.5rem;
+    height: 28.9375rem;
+    margin-bottom: 0;
+
+    .icon {
+      width: 9.25rem;
+      height: 9.25rem;
+      border: 1rem solid;
+
+      &--rock {
+        bottom: 0px;
+        right: 65px;
+        border-color: $rock-border;
+        box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #9d1634;
+
+        img {
+          min-width: 3.4375rem;
+        }
+      }
+
+      &--paper {
+        right: 0px;
+        top: 129px;
+        border-color: $paper-border;
+        box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #2a45c2;
+
+        img {
+          min-width: 3.375rem;
+        }
+      }
+
+      &--scissors {
+        top: 0px;
+        left: 163.5px;
+        border-color: $scissors-border;
+        box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #c76c1b;
+
+        img {
+          min-width: 3.5rem;
+        }
+      }
+
+      &--lizard {
+        bottom: 0px;
+        left: 65px;
+        border-color: $lizard-border;
+        box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #5f37a8;
+
+        img {
+          min-width: 3.875rem;
+        }
+      }
+
+      &--spock {
+        top: 129px;
+        left: 0px;
+        border-color: $spock-border;
+        box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #2d8dab;
+
+        img {
+          min-width: 2.75rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  .container__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 6rem 2rem 4rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+
+    h1 {
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $dark-text;
+
+      margin-bottom: 6rem;
+    }
+
+    .container__rules {
+      img {
+        margin-bottom: 8.625rem;
+      }
+    }
+
+    button {
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: "";
+      background: #000000;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+
+    .container__wrapper {
+      position: relative;
+      width: 25rem;
+      height: 28.75rem;
+
+      h1 {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+
+        margin-bottom: 0;
+      }
+
+      .container__rules {
+        img {
+          position: absolute;
+          bottom: 3rem;
+          left: 2rem;
+
+          margin-bottom: 0rem;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 2.375rem;
+        right: 2rem;
+      }
+    }
+  }
+}
