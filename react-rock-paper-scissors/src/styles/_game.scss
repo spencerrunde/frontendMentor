@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
 
-  margin-top: 6px;
+  margin-top: 0.375rem;
 
   &__main {
-    width: 327px;
+    width: 20.4375rem;
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 62px;
+    margin-bottom: 3.875rem;
 
     .main__player,
     .main__computer {
@@ -21,11 +21,11 @@
       gap: 1rem;
 
       .icon {
-        width: 132px;
-        height: 132px;
+        width: 8.25rem;
+        height: 8.25rem;
         background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
         border-radius: 50%;
-        border: 15px solid;
+        border: 0.9375rem solid;
 
         display: flex;
         align-items: center;
@@ -86,8 +86,8 @@
         text-transform: uppercase;
         font-style: normal;
         font-weight: bold;
-        font-size: 15px;
-        line-height: 32px;
+        font-size: 0.9375rem;
+        line-height: 2rem;
         letter-spacing: 1.875px;
         color: white;
 
@@ -96,7 +96,7 @@
     }
 
     .main__player {
-      width: 144px;
+      width: 9rem;
     }
   }
 
@@ -104,8 +104,8 @@
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
-    font-size: 56px;
-    line-height: 67px;
+    font-size: 3.5rem;
+    line-height: 4.1875rem;
     text-align: center;
 
     color: white;
@@ -121,18 +121,18 @@
       text-transform: uppercase;
       font-style: normal;
       font-weight: 600;
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 1rem;
+      line-height: 1.1875rem;
       letter-spacing: 2.5px;
       text-align: center;
       color: #3b4262;
 
       background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
       box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
-      border-radius: 8px;
+      border-radius: 0.5rem;
 
-      padding: 14.5px 0;
-      margin-bottom: 52px;
+      padding: 0.9063rem 0;
+      margin-bottom: 3.25rem;
       transition: all 0.25s ease-out;
 
       &:hover {
@@ -148,13 +148,13 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 24px;
+    margin-top: 1.5rem;
     position: relative;
 
     &__main {
       width: 100%;
       display: flex;
-      gap: 352px;
+      gap: 22rem;
 
       margin-bottom: 0;
 
@@ -164,9 +164,9 @@
         gap: 3.75rem;
 
         .icon {
-          width: 292px;
-          height: 292px;
-          border: 32px solid;
+          width: 18.25rem;
+          height: 18.25rem;
+          border: 2rem solid;
 
           &--rock {
             border-color: $rock-border;
@@ -177,12 +177,12 @@
               @include desktopWinnerShadow(#9d1634);
 
               img {
-                min-width: 96px;
+                min-width: 6rem;
               }
             }
 
             img {
-              min-width: 96px;
+              min-width: 6rem;
             }
           }
 
@@ -195,12 +195,12 @@
               @include desktopWinnerShadow(#2a45c2);
 
               img {
-                min-width: 96px;
+                min-width: 6rem;
               }
             }
 
             img {
-              min-width: 96px;
+              min-width: 6rem;
             }
           }
 
@@ -213,12 +213,12 @@
               @include desktopWinnerShadow(#c76c1b);
 
               img {
-                min-width: 96px;
+                min-width: 6rem;
               }
             }
 
             img {
-              min-width: 96px;
+              min-width: 6rem;
             }
           }
 
@@ -231,12 +231,12 @@
               @include desktopWinnerShadow(#5f37a8);
 
               img {
-                min-width: 96px;
+                min-width: 6rem;
               }
             }
 
             img {
-              min-width: 96px;
+              min-width: 6rem;
             }
           }
 
@@ -249,19 +249,19 @@
               @include desktopWinnerShadow(#2d8dab);
 
               img {
-                min-width: 96px;
+                min-width: 6rem;
               }
             }
 
             img {
-              min-width: 96px;
+              min-width: 6rem;
             }
           }
         }
 
         .choiceText {
-          font-size: 24px;
-          line-height: 32px;
+          font-size: 1.5rem;
+          line-height: 2rem;
           letter-spacing: 3px;
         }
       }

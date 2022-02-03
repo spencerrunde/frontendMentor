@@ -138,7 +138,7 @@ body {
   background: radial-gradient(134.34% 134.34% at 50% 0%, #1f3757 0%, #131537 100%);
   min-height: 100vh;
   color: white;
-  padding: 32px 32px 56px;
+  padding: 2rem 2rem 3.5rem;
 }
 
 body #root {
@@ -217,6 +217,7 @@ header .header__wrapper span {
     padding: 1.125rem 1.5rem 1.125rem 2rem;
     border-radius: 0.9375rem;
     margin-bottom: 3rem;
+    margin-top: 1rem;
   }
   header img {
     max-height: 6.75rem;
@@ -254,7 +255,7 @@ header .header__wrapper span {
   background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), color-stop(98.34%, #dadada));
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
-  border: 11px solid;
+  border: 0.6875rem solid;
   -webkit-transform-origin: center;
           transform-origin: center;
   display: -webkit-box;
@@ -412,18 +413,18 @@ header .header__wrapper span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 6px;
+  margin-top: 0.375rem;
 }
 
 .game__main {
-  width: 327px;
+  width: 20.4375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 62px;
+  margin-bottom: 3.875rem;
 }
 
 .game__main .main__player,
@@ -443,12 +444,12 @@ header .header__wrapper span {
 
 .game__main .main__player .icon,
 .game__main .main__computer .icon {
-  width: 132px;
-  height: 132px;
+  width: 8.25rem;
+  height: 8.25rem;
   background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), color-stop(98.34%, #dadada));
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
-  border: 15px solid;
+  border: 0.9375rem solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,23 +536,23 @@ header .header__wrapper span {
   text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
-  font-size: 15px;
-  line-height: 32px;
+  font-size: 0.9375rem;
+  line-height: 2rem;
   letter-spacing: 1.875px;
   color: white;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
 }
 
 .game__main .main__player {
-  width: 144px;
+  width: 9rem;
 }
 
 .game__result {
   text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
-  font-size: 56px;
-  line-height: 67px;
+  font-size: 3.5rem;
+  line-height: 4.1875rem;
   text-align: center;
   color: white;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
@@ -567,8 +568,8 @@ header .header__wrapper span {
   text-transform: uppercase;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   letter-spacing: 2.5px;
   text-align: center;
   color: #3b4262;
@@ -576,9 +577,9 @@ header .header__wrapper span {
   background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
           box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
-  border-radius: 8px;
-  padding: 14.5px 0;
-  margin-bottom: 52px;
+  border-radius: 0.5rem;
+  padding: 0.9063rem 0;
+  margin-bottom: 3.25rem;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
@@ -599,7 +600,7 @@ header .header__wrapper span {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 24px;
+    margin-top: 1.5rem;
     position: relative;
   }
   .game__main {
@@ -607,7 +608,7 @@ header .header__wrapper span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 352px;
+    gap: 22rem;
     margin-bottom: 0;
   }
   .game__main .main__player,
@@ -620,9 +621,9 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon,
   .game__main .main__computer .icon {
-    width: 292px;
-    height: 292px;
-    border: 32px solid;
+    width: 18.25rem;
+    height: 18.25rem;
+    border: 2rem solid;
   }
   .game__main .main__player .icon--rock,
   .game__main .main__computer .icon--rock {
@@ -638,11 +639,11 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--rock--winner img,
   .game__main .main__computer .icon--rock--winner img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--rock img,
   .game__main .main__computer .icon--rock img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--paper,
   .game__main .main__computer .icon--paper {
@@ -658,11 +659,11 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--paper--winner img,
   .game__main .main__computer .icon--paper--winner img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--paper img,
   .game__main .main__computer .icon--paper img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--scissors,
   .game__main .main__computer .icon--scissors {
@@ -678,11 +679,11 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--scissors--winner img,
   .game__main .main__computer .icon--scissors--winner img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--scissors img,
   .game__main .main__computer .icon--scissors img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--lizard,
   .game__main .main__computer .icon--lizard {
@@ -698,11 +699,11 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--lizard--winner img,
   .game__main .main__computer .icon--lizard--winner img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--lizard img,
   .game__main .main__computer .icon--lizard img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--spock,
   .game__main .main__computer .icon--spock {
@@ -718,16 +719,16 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--spock--winner img,
   .game__main .main__computer .icon--spock--winner img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .icon--spock img,
   .game__main .main__computer .icon--spock img {
-    min-width: 96px;
+    min-width: 6rem;
   }
   .game__main .main__player .choiceText,
   .game__main .main__computer .choiceText {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     letter-spacing: 3px;
   }
   .game__main .main__player {
