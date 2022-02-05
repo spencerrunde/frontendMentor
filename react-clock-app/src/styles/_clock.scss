@@ -112,6 +112,15 @@
 @media screen and (min-width: 1366px) {
   .clock {
     margin-bottom: 0;
+
+    &__message {
+      margin-bottom: 1rem;
+    }
+
+    &__time {
+      gap: 11px;
+      margin-bottom: 1rem;
+    }
   }
 }
 

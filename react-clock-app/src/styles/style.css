@@ -436,6 +436,13 @@ body #root .main__wrapper .outerWrapper .insideWrapper {
   .clock {
     margin-bottom: 0;
   }
+  .clock__message {
+    margin-bottom: 1rem;
+  }
+  .clock__time {
+    gap: 11px;
+    margin-bottom: 1rem;
+  }
 }
 
 @keyframes rotate {
