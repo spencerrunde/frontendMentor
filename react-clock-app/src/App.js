@@ -12,7 +12,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const getClockInfo = () => {
-    let url = "http://worldtimeapi.org/api/ip";
+    let url = "https://worldtimeapi.org/api/ip";
     fetch(url)
       .then((response) => {
         return response.json();
