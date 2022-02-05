@@ -4,7 +4,7 @@ function MoreButton({ toggleOpen, isOpen }) {
   return (
     <div className="moreButton">
       <p>{isOpen ? "Less" : "More"}</p>
-      <button onClick={toggleOpen}>
+      <button aria-label="More Button" onClick={toggleOpen}>
         <img
           src={
             isOpen
