@@ -1,0 +1,125 @@
+.clock {
+  margin-bottom: 3rem;
+
+  &__message {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    img {
+      cursor: pointer;
+
+      &:hover {
+        animation-name: rotate;
+        animation-duration: 2000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+
+    .greeting {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &__time {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 100px;
+      line-height: 100px;
+      letter-spacing: -2.5px;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__location {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clock {
+    margin-bottom: 5rem;
+
+    &__message {
+      margin-bottom: 0;
+
+      .greeting {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 3.6px;
+
+        span {
+          display: initial;
+        }
+      }
+    }
+
+    &__time {
+      gap: 11px;
+      margin-bottom: 0;
+
+      h1 {
+        font-size: 175px;
+        line-height: 175px;
+        letter-spacing: -4.375px;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 28px;
+        margin-bottom: 13px;
+      }
+    }
+
+    &__location {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 3.6px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .clock {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

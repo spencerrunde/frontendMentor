@@ -1,0 +1,73 @@
+.quotes {
+  &--open {
+    position: relative;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &__refresh {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    cursor: pointer;
+
+    img {
+      &:hover {
+        animation-name: rotate;
+        animation-duration: 2000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__author {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quotes {
+    width: 573px;
+
+    &__refresh {
+      top: 8px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+      width: 540px;
+      margin-bottom: 12px;
+    }
+
+    &__author {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

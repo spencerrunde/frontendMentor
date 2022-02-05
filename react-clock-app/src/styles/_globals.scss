@@ -1,0 +1,103 @@
+body {
+  font-family: "Inter", sans-serif;
+
+  #root {
+    .main {
+      color: $white;
+
+      &--day {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(../../public/images/mobile/bg-image-daytime.jpg);
+        background-size: cover;
+        background-position: center center;
+      }
+
+      &--night {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(../../public/images/mobile/bg-image-nighttime.jpg);
+        background-size: cover;
+        background-position: center center;
+      }
+
+      &__wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .outerWrapper {
+          flex: 1;
+          padding: 32px 26px 40px;
+          display: flex;
+          flex-direction: column;
+
+          .insideWrapper {
+            margin-top: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    #root {
+      .main {
+        &--day {
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../public/images/tablet/bg-image-daytime.jpg);
+          background-size: cover;
+          background-position: center center;
+        }
+
+        &--night {
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../public/images/tablet/bg-image-nighttime.jpg);
+          background-size: cover;
+          background-position: center center;
+        }
+
+        &__wrapper {
+          .outerWrapper {
+            padding: 80px 64px 64px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  body {
+    #root {
+      .main {
+        &--day {
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../public/images/desktop/bg-image-daytime.jpg);
+          background-size: cover;
+          background-position: center center;
+        }
+
+        &--night {
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../public/images/desktop/bg-image-nighttime.jpg);
+          background-size: cover;
+          background-position: center center;
+        }
+
+        &__wrapper {
+          .outerWrapper {
+            padding: 56px 165px 98px;
+
+            .insideWrapper {
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}

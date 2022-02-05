@@ -1,0 +1,62 @@
+.moreButton {
+  background: $white;
+  border-radius: 28px;
+  width: 115px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5px 4px 3.5px 16px;
+
+  p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 3.75px;
+    text-transform: uppercase;
+
+    color: $black;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  button {
+    background: $gray;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background: #999999;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .moreButton {
+    width: 146px;
+    padding: 8px 9px 8px 21px;
+
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 5px;
+    }
+
+    button {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
