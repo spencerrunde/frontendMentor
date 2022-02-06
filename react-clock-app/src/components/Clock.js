@@ -21,7 +21,7 @@ function Clock({ clockInfo, geoIpInfo, greeting }) {
   useEffect(() => {
     getImageSrc();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [greeting]);
 
   return (
     <div className="clock">

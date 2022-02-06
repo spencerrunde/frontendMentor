@@ -9,7 +9,8 @@ function App() {
   //setting state
   const [clockInfo, setClockInfo] = useState("");
   const [geoIpInfo, setGeoIpInfo] = useState("");
-  const [greeting, setGreeting] = useState();
+  const [greeting, setGreeting] = useState("");
+  const [hours, setHours] = useState(Date().substring(16, 18));
   const [isOpen, setIsOpen] = useState(false);
 
   //fetching clock info from api
@@ -42,7 +43,9 @@ function App() {
   };
 
   //pulls two digit hours value from clock data
-  const hours = clockInfo ? clockInfo.datetime.substring(11, 13) : "";
+  const getHours = () => {
+    setHours(Date().substring(16, 18));
+  };
 
   //determines morning, afternoon, or evening
   const getTimeOfDay = () => {
@@ -63,6 +66,7 @@ function App() {
     // fires every 20 seconds to ensure clock and time of day are accurate
     const updateClock = setInterval(() => {
       getClockInfo();
+      getHours();
       getTimeOfDay();
     }, 20000);
 
