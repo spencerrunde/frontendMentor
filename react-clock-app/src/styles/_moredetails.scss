@@ -1,6 +1,6 @@
 .moreDetails {
   &--open {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(40.7742px);
 
     padding: 48px 26px;
@@ -100,7 +100,7 @@
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1440px) {
   .moreDetails {
     margin-top: -42px;
 
@@ -125,7 +125,7 @@
           height: 252px;
           width: 1px;
           bottom: -140%;
-          right: -18px;
+          right: -5%;
           background: $gray;
           mix-blend-mode: normal;
           opacity: 0.25;

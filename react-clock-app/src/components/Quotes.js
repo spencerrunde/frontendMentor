@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 function Quotes({ isOpen }) {
+  //setting state
   const [quote, setQuote] = useState("");
+
+  //getting quote data from api
   const getQuote = () => {
     let url = "https://programming-quotes-api.herokuapp.com/quotes/random";
     fetch(url)

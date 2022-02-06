@@ -203,7 +203,7 @@ body #root .main__wrapper .outerWrapper .insideWrapper {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1440px) {
   body #root .main--day {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../public/images/desktop/bg-image-daytime.jpg);
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../public/images/desktop/bg-image-daytime.jpg);
@@ -432,7 +432,7 @@ body #root .main__wrapper .outerWrapper .insideWrapper {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1440px) {
   .clock {
     margin-bottom: 0;
   }
@@ -528,7 +528,7 @@ body #root .main__wrapper .outerWrapper .insideWrapper {
 }
 
 .moreDetails--open {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(255, 255, 255, 0.75);
   -webkit-backdrop-filter: blur(40.7742px);
           backdrop-filter: blur(40.7742px);
   padding: 48px 26px;
@@ -635,7 +635,7 @@ body #root .main__wrapper .outerWrapper .insideWrapper {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1440px) {
   .moreDetails {
     margin-top: -42px;
   }
@@ -661,7 +661,7 @@ body #root .main__wrapper .outerWrapper .insideWrapper {
     height: 252px;
     width: 1px;
     bottom: -140%;
-    right: -18px;
+    right: -5%;
     background: #303030;
     mix-blend-mode: normal;
     opacity: 0.25;

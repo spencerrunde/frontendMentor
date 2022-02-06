@@ -6,11 +6,13 @@ import MoreDetails from "./components/MoreDetails";
 import Quotes from "./components/Quotes";
 
 function App() {
+  //setting state
   const [clockInfo, setClockInfo] = useState("");
   const [geoIpInfo, setGeoIpInfo] = useState("");
   const [greeting, setGreeting] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
+  //fetching clock info from api
   const getClockInfo = () => {
     let url = "https://worldtimeapi.org/api/ip";
     fetch(url)
@@ -22,9 +24,9 @@ function App() {
       });
   };
 
+  //fetching geolocation info from api
   const getGeoIpInfo = () => {
-    let url =
-      "https://api.ipgeolocation.io/ipgeo?apiKey=234f23e6e9714dde837a72a6af101ae3";
+    let url = "https://ipwhois.app/json/";
     fetch(url)
       .then((response) => {
         return response.json();
@@ -34,19 +36,22 @@ function App() {
       });
   };
 
+  //toggles true/false on click
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
 
-  const hours = clockInfo ? clockInfo.datetime.substring(11, 16) : "";
+  //pulls two digit hours value from clock data
+  const hours = clockInfo ? clockInfo.datetime.substring(11, 13) : "";
 
+  //determines morning, afternoon, or evening
   const getTimeOfDay = () => {
-    if (hours >= 5 && hours < 12) {
-      setGreeting("morning");
-    } else if (hours >= 12 && hours < 18) {
+    if (hours >= 12 && hours < 18) {
       setGreeting("afternoon");
-    } else {
+    } else if (hours >= 18 && hours <= 24) {
       setGreeting("evening");
+    } else {
+      setGreeting("morning");
     }
   };
 
@@ -55,6 +60,7 @@ function App() {
     getGeoIpInfo();
     getTimeOfDay();
 
+    // fires every 20 seconds to ensure clock and time of day are accurate
     const updateClock = setInterval(() => {
       getClockInfo();
       getTimeOfDay();

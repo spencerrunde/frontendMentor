@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from "react";
 
 function Clock({ clockInfo, geoIpInfo, greeting }) {
+  //setting state
   const [imageSrc, setImageSrc] = useState("");
 
   // fixing error caused by null value and formatting datetime to 24:60 format
@@ -8,6 +9,7 @@ function Clock({ clockInfo, geoIpInfo, greeting }) {
     ? clockInfo.datetime.substring(11, 16)
     : "";
 
+  // determines image to be displayed based on time of day
   const getImageSrc = () => {
     if (greeting === "morning" || greeting === "afternoon") {
       setImageSrc("images/desktop/icon-sun.svg");
@@ -34,7 +36,7 @@ function Clock({ clockInfo, geoIpInfo, greeting }) {
         <h1>{formattedTime}</h1> <span>{clockInfo.abbreviation}</span>
       </div>
       <div className="clock__location">
-        In {geoIpInfo.city}, {geoIpInfo.country_code2}
+        In {geoIpInfo.city}, {geoIpInfo.country_code}
       </div>
     </div>
   );
