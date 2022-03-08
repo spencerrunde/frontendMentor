@@ -1,0 +1,27 @@
+body {
+  font-family: "Barlow", sans-serif;
+  padding: 2rem 1.5rem 4.5rem;
+  background-color: $light-cream-bg;
+
+  * {
+    button {
+      cursor: pointer;
+    }
+
+    &:focus-visible {
+      outline: $dark-cyan dotted 4px;
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    padding: 2.5rem 2.5rem 4.5rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  body {
+    padding: 2.75rem 5rem 5.5rem;
+  }
+}
