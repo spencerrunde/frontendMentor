@@ -25,6 +25,7 @@ function Subscribe({
   const [activeButton3, setActiveButton3] = useState("");
   const [activeButton4, setActiveButton4] = useState("");
   const [activeButton5, setActiveButton5] = useState("");
+  const [orderButton, setOrderButton] = useState(false);
 
   // functions to handle toggle on click
   const handleToggle = () => {
@@ -100,6 +101,26 @@ function Subscribe({
   const handleDelivery = (e) => {
     setDeliveryChoice(e.currentTarget.dataset.id);
   };
+
+  const handleOrderButton = () => {
+    if (
+      drinkChoice !== "_____" &&
+      typeChoice !== "_____" &&
+      amountChoice !== "_____" &&
+      deliveryChoice !== "_____"
+    ) {
+      if (drinkChoice === "Capsules" && grindChoice === "_____") {
+        setOrderButton(true);
+      } else if (grindChoice !== "_____") {
+        setOrderButton(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleOrderButton();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [drinkChoice, typeChoice, amountChoice, grindChoice, deliveryChoice]);
 
   useEffect(() => {
     const handleWidth = () => {
@@ -526,25 +547,20 @@ function Subscribe({
             </p>
           </div>
           <button
-            className={
-              drinkChoice !== "_____" &&
-              typeChoice !== "_____" &&
-              amountChoice !== "_____" &&
-              grindChoice !== "_____" &&
-              deliveryChoice !== "_____"
-                ? null
-                : "disabled"
-            }
+            className={orderButton === true ? null : "disabled"}
             //disables button if user has not made a selection for every state
             onClick={() => {
               if (
                 drinkChoice !== "_____" &&
                 typeChoice !== "_____" &&
                 amountChoice !== "_____" &&
-                grindChoice !== "_____" &&
                 deliveryChoice !== "_____"
               ) {
-                toggleModal();
+                if (drinkChoice === "Capsules" && grindChoice === "_____") {
+                  toggleModal();
+                } else if (grindChoice !== "_____") {
+                  toggleModal();
+                }
               }
             }}
           >
