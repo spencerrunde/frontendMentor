@@ -68,5 +68,5 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Spencer Runde](https://spencerrunde.com/)
 - Frontend Mentor - [@spencerrunde](https://www.frontendmentor.io/profile/spencerrunde)
