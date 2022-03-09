@@ -25,8 +25,6 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshotPhone.png)
-![](./screenshotTablet.png)
 ![](./screenshotDesktop.png)
 
 ### Links
@@ -46,29 +44,15 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+{screenWidth >= 1440 && (
+   <div className="desktop-nav__wrapper">
+      <nav className="desktop-nav"> ...
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I had to make use of conditional rendering quite a bit while working on the project. The mobile header and the desktop navbar for the subscribe page are two examples of this. This stands out as one of the features that makes React really great to me, along with stateful components of course. I'm sure that there is a more optimal way to go about creating the logic required for the subscribe page to work, and I will update it when I return to this project with more knowledge. Other than that, I am very happy with this project and the way that it turned out.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Spencer Runde](https://spencerrunde.com/)
 - Frontend Mentor - [@spencerrunde](https://www.frontendmentor.io/profile/spencerrunde)
