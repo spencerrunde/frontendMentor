@@ -2,7 +2,7 @@ import React from "react";
 
 function MoreButton({ toggleOpen, isOpen }) {
   return (
-    <div className="moreButton">
+    <button className="moreButton" onClick={toggleOpen}>
       <p>{isOpen ? "Less" : "More"}</p>
       <button aria-label="More Button" onClick={toggleOpen}>
         <img
@@ -14,7 +14,7 @@ function MoreButton({ toggleOpen, isOpen }) {
           alt=""
         />
       </button>
-    </div>
+    </button>
   );
 }
 

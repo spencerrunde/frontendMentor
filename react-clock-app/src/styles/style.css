@@ -457,6 +457,7 @@ body #root .main__wrapper .outerWrapper .insideWrapper {
 }
 
 .moreButton {
+  cursor: pointer;
   background: white;
   border-radius: 28px;
   width: 115px;
