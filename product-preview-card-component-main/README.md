@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/tailwindcss-product-preview-card-VXRnkzp0de](https://www.frontendmentor.io/solutions/tailwindcss-product-preview-card-VXRnkzp0de)
+- Live Site URL: [https://product-preview-card-sr.netlify.app/](https://product-preview-card-sr.netlify.app/)
 
 ## My process
 

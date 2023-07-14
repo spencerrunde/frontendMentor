@@ -15,59 +15,60 @@
 
     <title>Frontend Mentor | Product preview card component</title>
   </head>
-  <body
-    class="h-screen flex justify-center items-center py-7 px-4 bg-cream-bg box-border font-montserrat"
-  >
-    <div
-      class="card flex flex-col lg:flex-row bg-white rounded-xl overflow-hidden w-[375px] lg:w-[600px]"
+  <main>
+    <body
+      class="h-screen flex justify-center items-center py-7 px-4 bg-cream-bg box-border font-montserrat"
     >
-      <div class="card__image flex-1 lg:min-w-[50%]">
-        <picture>
-          <source
-            media="(min-width: 1440px)"
-            srcset="./images/image-product-desktop.jpg"
-            alt="Gabrielle Chanel perfume" />
-          <img
-            class="w-full lg:min-h-full"
-            src="./images/image-product-mobile.jpg"
-            alt="Gabrielle Chanel perfume"
-        /></picture>
-      </div>
-      <div class="card__text p-6 lg:p-8 flex-1">
-        <span
-          class="mb-3 lg:mb-5 block text-xs tracking-[5px] font-medium text-aurometal-saurus uppercase"
-          >Perfume</span
-        >
-        <h1
-          class="mb-4 lg:mb-6 font-fraunces text-[32px] font-bold leading-8 text-gunmetal"
-        >
-          Gabrielle Essence Eau De Parfum
-        </h1>
-        <p
-          class="mb-6 lg:mb-7 text-[16px] leading-[23px] text-aurometal-saurus"
-        >
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="card__prices flex items-center gap-5 mb-5 lg:mb-7">
-          <h2
-            class="font-fraunces text-[32px] font-bold leading-8 text-deep-aquamarine"
-          >
-            $149.99
-          </h2>
-
-          <h3
-            class="text-[13px] line-through font-bold leading-[23px] text-aurometal-saurus"
-          >
-            $169.99
-          </h3>
+      <div
+        class="card flex flex-col lg:flex-row bg-white rounded-xl overflow-hidden w-[375px] lg:w-[600px]"
+      >
+        <div class="card__image flex-1 lg:min-w-[50%]">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./images/image-product-desktop.jpg"
+              alt="Gabrielle Chanel perfume" />
+            <img
+              class="w-full lg:min-h-full"
+              src="./images/image-product-mobile.jpg"
+              alt="Gabrielle Chanel perfume"
+          /></picture>
         </div>
-        <div
-          class="card__button flex justify-center items-center gap-3 text-[14px] py-4 rounded-[8px] bg-deep-aquamarine hover:bg-deep-aquamarine-hover transition-all text-white font-bold cursor-pointer"
-        >
-          <img src="./images/icon-cart.svg" alt="Cart icon" />Add to Cart
+        <div class="card__text p-6 lg:p-8 flex-1">
+          <span
+            class="mb-3 lg:mb-5 block text-xs tracking-[5px] font-medium text-aurometal-saurus uppercase"
+            >Perfume</span
+          >
+          <h1
+            class="mb-4 lg:mb-6 font-fraunces text-[32px] font-bold leading-8 text-gunmetal"
+          >
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p
+            class="mb-6 lg:mb-7 text-[16px] leading-[23px] text-aurometal-saurus"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="card__prices flex items-center gap-5 mb-5 lg:mb-7">
+            <h2
+              class="font-fraunces text-[32px] font-bold leading-8 text-deep-aquamarine"
+            >
+              $149.99
+            </h2>
+            <h3
+              class="text-[13px] line-through font-bold leading-[23px] text-aurometal-saurus"
+            >
+              $169.99
+            </h3>
+          </div>
+          <div
+            class="card__button flex justify-center items-center gap-3 text-[14px] py-4 rounded-[8px] bg-deep-aquamarine hover:bg-deep-aquamarine-hover transition-all text-white font-bold cursor-pointer"
+          >
+            <img src="./images/icon-cart.svg" alt="Cart icon" />Add to Cart
+          </div>
         </div>
       </div>
-    </div>
-  </body>
+    </body>
+  </main>
 </html>
