@@ -1,40 +1,29 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Spartan", sans-serif;
-  background-color: #3a4764;
+  background-color: hsl(222, 26%, 31%);
   padding: 1.75rem 1.5rem 2rem;
 }
 
 body {
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
 body main {
   max-width: 540px;
   margin: 0 auto;
 }
-
 body main header {
-  color: white;
+  color: hsl(0, 0%, 100%);
   margin-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 body main header h1 {
   font-style: normal;
   font-weight: bold;
@@ -42,14 +31,9 @@ body main header h1 {
   line-height: 36px;
   letter-spacing: -0.533333px;
 }
-
 body main header .theme-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   text-transform: uppercase;
   gap: 1.25rem;
   font-style: normal;
@@ -58,81 +42,55 @@ body main header .theme-wrapper {
   line-height: 13px;
   letter-spacing: 1px;
 }
-
 body main header .theme-wrapper span {
   margin-bottom: 5px;
 }
-
 body main header .theme-wrapper .toggle-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
 }
-
 body main header .theme-wrapper .toggle-wrapper .number-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 13.5px;
 }
-
 body main header .theme-wrapper .toggle-wrapper .number-wrapper :nth-child(1) {
   padding-left: 3px;
   padding-right: 1px;
 }
-
 body main header .theme-wrapper .toggle-wrapper .number-wrapper :nth-child(2) {
   padding-left: 0.5px;
 }
-
 body main header .theme-wrapper .toggle-wrapper .number-wrapper :nth-child(3) {
   padding-left: 1px;
 }
-
 body main header .theme-wrapper .toggle-wrapper .toggle-button {
   width: 71px;
   height: 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 7px;
-  background-color: #232c43;
+  background-color: hsl(223, 31%, 20%);
   border-radius: 13px;
 }
-
 body main header .theme-wrapper .toggle-wrapper .toggle-button input {
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 8px solid #232c43;
+  border: 8px solid hsl(223, 31%, 20%);
   border-radius: 50%;
 }
-
 body main header .theme-wrapper .toggle-wrapper .toggle-button input:checked {
-  border: 8px solid #d03f2f;
+  border: 8px solid hsl(6, 63%, 50%);
 }
-
 body main header .theme-wrapper .toggle-wrapper .toggle-button input:checked:hover {
   border: 8px solid #f96b5b;
 }
-
 body main .screen {
-  background-color: #182034;
+  background-color: hsl(224, 36%, 15%);
   border-radius: 10px;
   padding: 1.625rem 1.5rem;
   margin-bottom: 1.5rem;
@@ -142,31 +100,25 @@ body main .screen {
   line-height: 36px;
   text-align: right;
   letter-spacing: -0.533333px;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
-
 body main .keypad {
-  background-color: #232c43;
+  background-color: hsl(223, 31%, 20%);
   border-radius: 10px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.8125rem;
   padding: 1.5rem;
 }
-
 body main .keypad button {
   cursor: pointer;
 }
-
 body main .keypad .numBtn,
 body main .keypad .operatorBtn,
 body main .keypad .dotBtn {
   border: none;
-  background-color: #eae3dc;
-  -webkit-box-shadow: inset 0px -4px 0px #b4a597;
-          box-shadow: inset 0px -4px 0px #b4a597;
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: inset 0px -4px 0px hsl(28, 16%, 65%);
   border-radius: 5px;
   padding: 1rem 0;
   font-family: "Spartan", sans-serif;
@@ -175,36 +127,28 @@ body main .keypad .dotBtn {
   font-size: 28px;
   line-height: 31px;
   letter-spacing: -0.466667px;
-  color: #444b5a;
-  -webkit-transition: background-color 0.25s ease-in-out;
+  color: hsl(221, 14%, 31%);
   transition: background-color 0.25s ease-in-out;
 }
-
 body main .keypad .numBtn:hover,
 body main .keypad .operatorBtn:hover,
 body main .keypad .dotBtn:hover {
   background-color: #fffffe;
 }
-
 body main .keypad .numBtn:active,
 body main .keypad .operatorBtn:active,
 body main .keypad .dotBtn:active {
-  -webkit-transform: scaleY(0.9375);
-          transform: scaleY(0.9375);
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  transform: scaleY(0.9375);
+  transform-origin: bottom;
+  box-shadow: none;
 }
-
 body main .keypad .delBtn,
 body main .keypad .resetBtn,
 body main .keypad .equalsBtn {
   text-transform: uppercase;
   border: none;
-  background-color: #637097;
-  -webkit-box-shadow: inset 0px -4px 0px #404e72;
-          box-shadow: inset 0px -4px 0px #404e72;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: inset 0px -4px 0px hsl(224, 28%, 35%);
   border-radius: 5px;
   font-family: "Spartan", sans-serif;
   font-style: normal;
@@ -212,59 +156,39 @@ body main .keypad .equalsBtn {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: -0.266667px;
-  color: white;
-  -webkit-transition: background-color 0.25s ease-in-out;
+  color: hsl(0, 0%, 100%);
   transition: background-color 0.25s ease-in-out;
 }
-
 body main .keypad .delBtn:hover,
 body main .keypad .resetBtn:hover,
 body main .keypad .equalsBtn:hover {
   background-color: #a2b2e1;
 }
-
 body main .keypad .delBtn:active,
 body main .keypad .resetBtn:active,
 body main .keypad .equalsBtn:active {
-  -webkit-transform: scaleY(0.9375);
-          transform: scaleY(0.9375);
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  transform: scaleY(0.9375);
+  transform-origin: bottom;
+  box-shadow: none;
 }
-
 body main .keypad .resetBtn {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / 3;
+  grid-column: 1/3;
   padding: 1.407rem 0;
 }
-
 body main .keypad .equalsBtn {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3 / 5;
-  background-color: #d03f2f;
-  -webkit-box-shadow: inset 0px -4px 0px #93261a;
-          box-shadow: inset 0px -4px 0px #93261a;
+  grid-column: 3/5;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: inset 0px -4px 0px hsl(6, 70%, 34%);
 }
-
 body main .keypad .equalsBtn:hover {
   background-color: #f96b5b;
 }
 
 @media screen and (min-width: 768px) {
   body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     padding: 0;
   }
@@ -298,151 +222,117 @@ body main .keypad .equalsBtn:hover {
     letter-spacing: -0.333333px;
   }
 }
-
 .theme-2 {
-  background-color: #e6e6e6;
+  background-color: hsl(0, 0%, 90%);
 }
-
 .theme-2 main header {
-  color: #35352c;
+  color: hsl(60, 10%, 19%);
 }
-
 .theme-2 main header .theme-wrapper .toggle-wrapper .toggle-button {
-  background-color: #d1cccc;
+  background-color: hsl(0, 5%, 81%);
 }
-
 .theme-2 main header .theme-wrapper .toggle-wrapper .toggle-button input {
-  border: 8px solid #d1cccc;
+  border: 8px solid hsl(0, 5%, 81%);
 }
-
 .theme-2 main header .theme-wrapper .toggle-wrapper .toggle-button input:checked {
-  border: 8px solid #ca5502;
+  border: 8px solid hsl(25, 98%, 40%);
 }
-
 .theme-2 main header .theme-wrapper .toggle-wrapper .toggle-button input:checked:hover {
   border: 8px solid #ff8a38;
 }
-
 .theme-2 main .screen {
-  background-color: #ededed;
-  color: #35352c;
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
 }
-
 .theme-2 main .keypad {
-  background-color: #d1cccc;
+  background-color: hsl(0, 5%, 81%);
 }
-
 .theme-2 main .keypad .numBtn,
 .theme-2 main .keypad .operatorBtn,
 .theme-2 main .keypad .dotBtn {
-  background-color: #e5e4e1;
-  -webkit-box-shadow: inset 0px -4px 0px #a69d91;
-          box-shadow: inset 0px -4px 0px #a69d91;
-  color: #35352c;
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: inset 0px -4px 0px hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
 }
-
 .theme-2 main .keypad .numBtn:hover,
 .theme-2 main .keypad .operatorBtn:hover,
 .theme-2 main .keypad .dotBtn:hover {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
 }
-
 .theme-2 main .keypad .delBtn,
 .theme-2 main .keypad .resetBtn,
 .theme-2 main .keypad .equalsBtn {
-  background-color: #377f86;
-  -webkit-box-shadow: inset 0px -4px 0px #1b5f65;
-          box-shadow: inset 0px -4px 0px #1b5f65;
-  color: white;
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: inset 0px -4px 0px hsl(185, 58%, 25%);
+  color: hsl(0, 0%, 100%);
 }
-
 .theme-2 main .keypad .delBtn:hover,
 .theme-2 main .keypad .resetBtn:hover,
 .theme-2 main .keypad .equalsBtn:hover {
   background-color: #62b5bc;
 }
-
 .theme-2 main .keypad .equalsBtn {
-  background-color: #ca5502;
-  -webkit-box-shadow: inset 0px -4px 0px #893901;
-          box-shadow: inset 0px -4px 0px #893901;
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: inset 0px -4px 0px hsl(25, 99%, 27%);
 }
-
 .theme-2 main .keypad .equalsBtn:hover {
   background-color: #ff8a38;
 }
 
 .theme-3 {
-  background-color: #160628;
+  background-color: hsl(268, 75%, 9%);
 }
-
 .theme-3 main header {
-  color: #ffe53d;
+  color: hsl(52, 100%, 62%);
 }
-
 .theme-3 main header .theme-wrapper .toggle-wrapper .toggle-button {
-  background-color: #1d0934;
+  background-color: hsl(268, 71%, 12%);
 }
-
 .theme-3 main header .theme-wrapper .toggle-wrapper .toggle-button input {
-  border: 8px solid #1d0934;
+  border: 8px solid hsl(268, 71%, 12%);
 }
-
 .theme-3 main header .theme-wrapper .toggle-wrapper .toggle-button input:checked {
-  border: 8px solid #00e0d1;
+  border: 8px solid hsl(176, 100%, 44%);
 }
-
 .theme-3 main header .theme-wrapper .toggle-wrapper .toggle-button input:checked:hover {
   border: 8px solid #93fff8;
 }
-
 .theme-3 main .screen {
-  background-color: #1d0934;
-  color: #ffe53d;
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
 }
-
 .theme-3 main .keypad {
-  background-color: #1d0934;
+  background-color: hsl(268, 71%, 12%);
 }
-
 .theme-3 main .keypad .numBtn,
 .theme-3 main .keypad .operatorBtn,
 .theme-3 main .keypad .dotBtn {
-  background-color: #341c4f;
-  -webkit-box-shadow: inset 0px -4px 0px #871c9c;
-          box-shadow: inset 0px -4px 0px #871c9c;
-  color: #ffe53d;
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: inset 0px -4px 0px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
 }
-
 .theme-3 main .keypad .numBtn:hover,
 .theme-3 main .keypad .operatorBtn:hover,
 .theme-3 main .keypad .dotBtn:hover {
   background-color: #6c34ac;
 }
-
 .theme-3 main .keypad .delBtn,
 .theme-3 main .keypad .resetBtn,
 .theme-3 main .keypad .equalsBtn {
-  background-color: #58077d;
-  -webkit-box-shadow: inset 0px -4px 0px #bc15f4;
-          box-shadow: inset 0px -4px 0px #bc15f4;
-  color: white;
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: inset 0px -4px 0px hsl(285, 91%, 52%);
+  color: hsl(0, 0%, 100%);
 }
-
 .theme-3 main .keypad .delBtn:hover,
 .theme-3 main .keypad .resetBtn:hover,
 .theme-3 main .keypad .equalsBtn:hover {
   background-color: #8631af;
 }
-
 .theme-3 main .keypad .equalsBtn {
-  background-color: #00e0d1;
-  -webkit-box-shadow: inset 0px -4px 0px #6cf9f2;
-          box-shadow: inset 0px -4px 0px #6cf9f2;
-  color: #1b2428;
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: inset 0px -4px 0px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
 }
-
 .theme-3 main .keypad .equalsBtn:hover {
   background-color: #93fff8;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
@@ -11,144 +10,103 @@ img {
 
 body {
   font-family: "Red Hat Display";
-  background: #fafafa;
+  background: hsl(0, 0%, 98%);
 }
 
 body main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 body main .logo {
   margin-top: 3rem;
   margin-bottom: 3.375rem;
 }
-
 body main .hero .tablet__hero {
   display: none;
 }
-
 body main .hero .mobile__hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   overflow: hidden;
   gap: 1rem;
   margin-bottom: 3rem;
 }
-
 body main .hero .mobile__hero img {
   max-width: 53.07%;
 }
-
 body main .hero .desktop__hero {
   display: none;
 }
-
 body main .hero .hero__text {
   text-align: center;
 }
-
 body main .hero .hero__text h1 {
   font-style: normal;
   font-weight: 900;
   font-size: 2.5rem;
   line-height: 2.75rem;
   margin: 0 1.5rem 1.5rem;
-  color: #28283e;
+  color: hsl(240, 21%, 20%);
 }
-
 body main .hero .hero__text p {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #86869c;
+  color: hsl(240, 10%, 57%);
   margin: 0 1.5rem 2rem;
 }
-
 body main .hero .hero__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 body main .hero .hero__buttons .hero__download,
 body main .hero .hero__buttons .hero__info {
   border: none;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #fafafa;
+  color: hsl(0, 0%, 98%);
   border-radius: 1.8125rem;
-  -webkit-transition: background 0.25s ease-in;
   transition: background 0.25s ease-in;
   cursor: pointer;
 }
-
 body main .hero .hero__buttons .hero__download {
-  background: #4d96a8;
+  background: hsl(192, 37%, 48%);
   margin-bottom: 1rem;
   padding: 1rem 2.5rem;
 }
-
 body main .hero .hero__buttons .hero__download span {
-  color: #90e4f9;
+  color: hsl(192, 90%, 77%);
 }
-
 body main .hero .hero__buttons .hero__download:hover {
   background: #71c0d4;
 }
-
 body main .hero .hero__buttons .hero__info {
-  background: #845eb0;
+  background: hsl(268, 34%, 53%);
   padding: 1rem 1.8125rem;
   margin-bottom: 9.25rem;
 }
-
 body main .hero .hero__buttons .hero__info:hover {
   background: #b18bdd;
 }
-
 body main .transition {
   position: relative;
   font-style: normal;
   font-weight: 900;
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #86869c;
+  color: hsl(240, 10%, 57%);
   padding: 0.9375rem 1.25rem;
   border: 1px solid rgba(135, 135, 157, 0.25);
   border-radius: 50%;
   margin-bottom: 4rem;
-  background: #fafafa;
+  background: hsl(0, 0%, 98%);
 }
-
 body main .transition::before {
   content: "";
   height: 84px;
@@ -158,27 +116,20 @@ body main .transition::before {
   right: 50%;
   background: rgba(135, 135, 157, 0.25);
 }
-
 body main .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   gap: 1.5rem;
   margin: 0 1.5rem 4rem;
 }
-
 body main .grid img {
   border-radius: 0.5rem;
 }
-
 body main .body__text {
   margin: 0 1.5rem 9.25rem;
   text-align: center;
 }
-
 body main .body__text span {
   display: block;
   font-style: normal;
@@ -187,41 +138,36 @@ body main .body__text span {
   line-height: 1.625rem;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  color: #4d96a8;
+  color: hsl(192, 37%, 48%);
   margin-bottom: 1.5rem;
 }
-
 body main .body__text h2 {
   font-style: normal;
   font-weight: 900;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #28283e;
+  color: hsl(240, 21%, 20%);
   margin-bottom: 2rem;
 }
-
 body main .body__text p {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #86869c;
+  color: hsl(240, 10%, 57%);
 }
-
 body main .transition--bottom {
   margin-bottom: -29px;
   z-index: 999;
 }
-
 body main footer {
   position: relative;
   width: 100%;
-  background-color: #4d96a8;
+  background-color: hsl(192, 37%, 48%);
   text-align: center;
-  color: #fafafa;
+  color: hsl(0, 0%, 98%);
   padding-inline: 1.5rem;
 }
-
 body main footer::before {
   content: "";
   background-image: url(../assets/mobile/image-footer.jpg);
@@ -234,20 +180,11 @@ body main footer::before {
   mix-blend-mode: normal;
   opacity: 0.1;
 }
-
 body main footer .footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 body main footer .footer__wrapper h2 {
   position: relative;
   margin: 5.75rem 0 1.5rem;
@@ -256,7 +193,6 @@ body main footer .footer__wrapper h2 {
   font-size: 2rem;
   line-height: 2.25rem;
 }
-
 body main footer .footer__wrapper p {
   position: relative;
   font-style: normal;
@@ -265,28 +201,24 @@ body main footer .footer__wrapper p {
   line-height: 1.625rem;
   margin-bottom: 2rem;
 }
-
 body main footer .footer__wrapper .footer__download {
   position: relative;
   border: none;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #fafafa;
-  background: #845eb0;
+  color: hsl(0, 0%, 98%);
+  background: hsl(268, 34%, 53%);
   border-radius: 1.8125rem;
   padding: 1rem 2.5rem;
   margin-bottom: 4.5rem;
-  -webkit-transition: background 0.25s ease-in;
   transition: background 0.25s ease-in;
   cursor: pointer;
   width: 12rem;
 }
-
 body main footer .footer__wrapper .footer__download span {
-  color: #d9b8ff;
+  color: hsl(268, 100%, 86%);
 }
-
 body main footer .footer__wrapper .footer__download:hover {
   background: #b18bdd;
 }
@@ -297,12 +229,8 @@ body main footer .footer__wrapper .footer__download:hover {
     margin-bottom: 4rem;
   }
   body main .hero .tablet__hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-bottom: 4.5rem;
     overflow: hidden;
   }
@@ -325,16 +253,9 @@ body main footer .footer__wrapper .footer__download:hover {
     margin: 0 0 2rem;
   }
   body main .hero .hero__buttons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
   }
   body main .hero .hero__buttons .hero__download,
@@ -346,10 +267,8 @@ body main footer .footer__wrapper .footer__download:hover {
     margin-bottom: 4.1875rem;
   }
   body main .grid {
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
     gap: 0.6875rem;
     margin: 0 2.5rem 3rem;
   }
@@ -387,7 +306,6 @@ body main footer .footer__wrapper .footer__download:hover {
     margin-bottom: 4.125rem;
   }
 }
-
 @media screen and (min-width: 1440px) {
   body main .logo {
     margin-top: 5rem;
@@ -403,22 +321,15 @@ body main footer .footer__wrapper .footer__download:hover {
     display: none;
   }
   body main .hero .desktop__hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: flex-end;
+    justify-content: center;
     overflow: hidden;
     gap: 5.5rem;
     height: 22.375rem;
   }
   body main .hero .desktop__hero img:first-child {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     margin-left: -2rem;
   }
   body main .hero .desktop__hero img:last-child {
@@ -471,22 +382,15 @@ body main footer .footer__wrapper .footer__download:hover {
   body main footer {
     padding: 7.25rem 10.3125rem 6.5rem;
     text-align: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   body main footer::before {
     background-image: url(../assets/desktop/image-footer.jpg);
     background-position: center top;
   }
   body main footer .footer__wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   body main footer .footer__wrapper h2 {
     margin: 0;
@@ -503,5 +407,4 @@ body main footer .footer__wrapper .footer__download:hover {
   body main footer .footer__wrapper .footer__download {
     margin-bottom: 0;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

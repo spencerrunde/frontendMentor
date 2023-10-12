@@ -86,8 +86,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 article,
@@ -135,90 +134,57 @@ body {
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  background-color: #0c122c;
+  background-color: hsl(229, 57%, 11%);
   background-image: url(../images/bg-mobile.png);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   padding-inline: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 body main {
   width: 100%;
 }
-
 body main .heroCard {
   width: 100%;
-  background-color: #1d2c67;
-  -webkit-box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
-          box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  background-color: hsl(228, 56%, 26%);
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
   border-radius: 10px 100px 10px 10px;
   padding: 40px;
   margin-bottom: 1rem;
 }
-
 body main .heroCard__logo {
   margin-bottom: 2rem;
 }
-
 body main .heroCard__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
-
 body main .heroCard__buttons div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #0c122c;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(229, 57%, 11%);
   border-radius: 10px;
   width: 48px;
   height: 48px;
   cursor: pointer;
 }
-
 body main .storageCard {
   position: relative;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #1d2c67;
-  color: #dddbff;
-  -webkit-box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
-          box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(228, 56%, 26%);
+  color: hsl(243, 100%, 93%);
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
   border-radius: 10px;
   padding: 32px 32px 52px;
 }
-
 body main .storageCard h1 {
   font-style: normal;
   font-weight: normal;
@@ -226,35 +192,24 @@ body main .storageCard h1 {
   line-height: 16px;
   margin-bottom: 6px;
 }
-
 body main .storageCard h1 span {
   font-weight: bold;
 }
-
 body main .storageCard__meter {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
 }
-
 body main .storageCard__meter meter {
   position: relative;
   width: 100%;
   height: 40px;
 }
-
 body main .storageCard__meter meter::after {
   position: absolute;
   content: "";
@@ -265,47 +220,31 @@ body main .storageCard__meter meter::after {
   background: white;
   border-radius: 50%;
 }
-
 body main .storageCard__meter meter::-webkit-meter-bar {
   border: none;
   background-color: #15204b;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 body main .storageCard__meter meter::-webkit-meter-optimum-value {
-  background: -webkit-gradient(linear, left top, right top, from(#ffa197), to(#ff4a95));
   background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
   border-radius: 8px;
   margin-left: 3px;
   height: 14px;
 }
-
 body main .storageCard__meter .meter__wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 body main .storageCard__remaining {
   position: absolute;
   bottom: -36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 9px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
-          box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
   border-radius: 10px;
   padding: 1rem 1.5rem;
   text-transform: uppercase;
@@ -314,13 +253,12 @@ body main .storageCard__remaining {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 1px;
-  color: #848794;
+  color: hsl(229, 7%, 55%);
 }
-
 body main .storageCard__remaining span {
   font-size: 40px;
   line-height: 40px;
-  color: #0c122c;
+  color: hsl(229, 57%, 11%);
 }
 
 @media screen and (min-width: 1024px) {
@@ -329,21 +267,12 @@ body main .storageCard__remaining span {
     background-size: 100% 52.5%;
     background-position: left bottom;
     padding-inline: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   body main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: flex-end;
+    justify-content: center;
     gap: 30px;
   }
   body main .heroCard {
@@ -366,10 +295,8 @@ body main .storageCard__remaining span {
     position: absolute;
     top: 70px;
     right: 0;
-    -webkit-box-shadow: 0px 75px 100px rgba(0, 0, 0, 0.24776);
-            box-shadow: 0px 75px 100px rgba(0, 0, 0, 0.24776);
+    box-shadow: 0px 75px 100px rgba(0, 0, 0, 0.24776);
     border-bottom: 23px solid transparent;
     border-right: 23px solid white;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

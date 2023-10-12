@@ -1,0 +1,16 @@
+// Reset import
+@import "_reset.scss";
+
+// Font import
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+// Variables
+// Primary Colors
+$white: #ffffff;
+$light-gray: #d5e1ef;
+$grayish-blue: #7b879d;
+$dark-blue: #1f3251;
+
+// Mobile and Desktop styles import
+@import "_mobile-style.scss";
+@import "_desktop-style.scss";

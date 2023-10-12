@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,17 +9,7 @@ body {
   background-color: #070724;
   background-image: url("../assets/background-stars.svg");
   color: #fff;
-  -webkit-animation: slide 60s linear infinite;
-          animation: slide 60s linear infinite;
-}
-
-@-webkit-keyframes slide {
-  0% {
-    background-position: 0, 0;
-  }
-  100% {
-    background-position: -1532px, 0;
-  }
+  animation: slide 60s linear infinite;
 }
 
 @keyframes slide {
@@ -31,41 +20,22 @@ body {
     background-position: -1532px, 0;
   }
 }
-
 body {
   position: relative;
 }
-
 body main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 body main header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 1.5rem;
 }
-
 body main header .header-hero {
   text-transform: uppercase;
   font-style: normal;
@@ -76,22 +46,18 @@ body main header .header-hero {
   text-transform: uppercase;
   margin-top: -0.125rem;
 }
-
 body main header button {
   background: transparent;
   border: none;
   mix-blend-mode: normal;
   opacity: 1;
 }
-
 body main header .tablet-links {
   display: none;
 }
-
 body main .desktop-border {
   display: none;
 }
-
 body main .mobile-menu {
   display: none;
   position: absolute;
@@ -102,7 +68,6 @@ body main .mobile-menu {
   padding: 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 body main .mobile-menu .mercury,
 body main .mobile-menu .venus,
 body main .mobile-menu .earth,
@@ -111,15 +76,9 @@ body main .mobile-menu .jupiter,
 body main .mobile-menu .saturn,
 body main .mobile-menu .uranus,
 body main .mobile-menu .neptune {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 1.25rem 0;
   font-family: "Spartan", sans-serif;
   font-style: normal;
@@ -131,7 +90,6 @@ body main .mobile-menu .neptune {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-
 body main .mobile-menu .mercury span,
 body main .mobile-menu .venus span,
 body main .mobile-menu .earth span,
@@ -142,64 +100,45 @@ body main .mobile-menu .uranus span,
 body main .mobile-menu .neptune span {
   margin-top: 0.25rem;
 }
-
 body main .mobile-menu .neptune {
   border-bottom: none;
 }
-
 body main .mobile-menu .link-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 1.5rem;
 }
-
 body main .mobile-menu .color {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
   background-color: #def4fc;
 }
-
 body main .mobile-menu .venus .color {
   background-color: #f7cc7f;
 }
-
 body main .mobile-menu .earth .color {
   background-color: #545bfe;
 }
-
 body main .mobile-menu .mars .color {
   background-color: #ff6a45;
 }
-
 body main .mobile-menu .jupiter .color {
   background-color: #ecad7a;
 }
-
 body main .mobile-menu .saturn .color {
   background-color: #fccb6b;
 }
-
 body main .mobile-menu .uranus .color {
   background-color: #65f0d5;
 }
-
 body main .mobile-menu .neptune .color {
   background-color: #497efa;
 }
-
 body main .mobile-links {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-family: "Spartan", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -211,49 +150,35 @@ body main .mobile-links {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 body main .mobile-links .link {
   position: relative;
   cursor: pointer;
   padding: 1.25rem 1.5rem;
   color: rgba(255, 255, 255, 0.5);
 }
-
 body main .mobile-links .link:not(.active):hover {
   background-color: #313148;
 }
-
 body main .mobile-links .active {
   color: #fff;
   border-bottom: 4px solid #419ebb;
 }
-
 body main .img-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
-
 body main .img-wrapper .planet {
   max-width: 50%;
   padding-top: 6rem;
 }
-
 body main .img-wrapper .surface {
   display: none;
   position: absolute;
   max-width: 17.5%;
   top: 75%;
 }
-
 body main .overview-wrapper .overview {
   font-family: "Spartan", sans-serif;
   font-style: normal;
@@ -263,7 +188,6 @@ body main .overview-wrapper .overview {
   text-align: center;
   padding: 6rem 1.5rem 1.75rem;
 }
-
 body main .overview-wrapper .overview h1 {
   font-family: "Antonio", sans-serif;
   padding-bottom: 1rem;
@@ -274,17 +198,10 @@ body main .overview-wrapper .overview h1 {
   text-align: center;
   text-transform: uppercase;
 }
-
 body main .overview-wrapper .overview .source-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 0.25rem;
   margin-top: 2rem;
   font-size: 0.75rem;
@@ -292,43 +209,28 @@ body main .overview-wrapper .overview .source-wrapper {
   mix-blend-mode: normal;
   opacity: 0.5;
 }
-
 body main .overview-wrapper .overview .source-wrapper a {
   margin-top: 0.125rem;
   font-weight: bold;
   color: #fff;
 }
-
 body main .overview-wrapper .overview-buttons {
   display: none;
 }
-
 body main .planet-stats {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0.5rem;
   padding: 0 1.5rem 3rem;
   width: 100%;
 }
-
 body main .planet-stats .rotation,
 body main .planet-stats .revolution,
 body main .planet-stats .radius,
 body main .planet-stats .average-temp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Spartan", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -339,7 +241,6 @@ body main .planet-stats .average-temp {
   padding: 0.625rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 body main .planet-stats .rotation p,
 body main .planet-stats .revolution p,
 body main .planet-stats .radius p,
@@ -347,7 +248,6 @@ body main .planet-stats .average-temp p {
   margin-top: 0.1875rem;
   color: rgba(255, 255, 255, 0.5);
 }
-
 body main .planet-stats .rotation span,
 body main .planet-stats .revolution span,
 body main .planet-stats .radius span,
@@ -366,13 +266,8 @@ body main .planet-stats .average-temp span {
 @media screen and (min-width: 768px) {
   body main header {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 0;
   }
   body main header .header-hero {
@@ -383,15 +278,9 @@ body main .planet-stats .average-temp span {
   }
   body main header .tablet-links {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     gap: 2.0625rem;
     padding: 0 3.25rem 1.6875rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -465,26 +354,15 @@ body main .planet-stats .average-temp span {
     max-width: 10rem;
   }
   body main .overview-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding-top: 8rem;
     gap: 4.25rem;
   }
   body main .overview-wrapper .overview {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    flex: 1 1 0;
     text-align: left;
     padding: 0 0 0 2.5rem;
   }
@@ -495,21 +373,12 @@ body main .planet-stats .average-temp span {
     text-align: left;
   }
   body main .overview-wrapper .overview .source-wrapper {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    justify-content: left;
   }
   body main .overview-wrapper .overview-buttons {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex: 1 1 0;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 1rem;
     padding-right: 2.5rem;
   }
@@ -537,16 +406,9 @@ body main .planet-stats .average-temp span {
     background-color: #419ebb;
   }
   body main .planet-stats {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 0.6875rem;
     padding: 1.6875rem 2.5rem 2.25rem;
   }
@@ -554,19 +416,10 @@ body main .planet-stats .average-temp span {
   body main .planet-stats .revolution,
   body main .planet-stats .radius,
   body main .planet-stats .average-temp {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex: 1 1 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     gap: 0.375rem;
     padding: 1rem 0 1.25rem 1rem;
   }
@@ -587,20 +440,12 @@ body main .planet-stats .average-temp span {
     letter-spacing: -0.05625rem;
   }
 }
-
 @media screen and (min-width: 1440px) {
   body main header {
     max-width: 1440px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 1.75rem 2.5rem 1.75rem 2rem;
   }
   body main header .header-hero {
@@ -626,21 +471,13 @@ body main .planet-stats .average-temp span {
   }
   body main .desktop-wrapper {
     width: 1440px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     padding: 7.875rem 10rem 0;
   }
   body main .desktop-wrapper .img-wrapper {
-    -webkit-box-flex: 0.8;
-        -ms-flex: 0.8 1 0px;
-            flex: 0.8 1 0;
+    flex: 0.8 1 0;
   }
   body main .desktop-wrapper .img-wrapper .planet {
     max-width: 100%;
@@ -652,17 +489,12 @@ body main .planet-stats .average-temp span {
   }
   body main .desktop-wrapper .overview-wrapper {
     width: 350px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding-top: 0;
     gap: 2.5rem;
   }
   body main .desktop-wrapper .overview-wrapper .overview {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    flex: 1 1 0;
     font-size: 0.875rem;
     line-height: 1.5625rem;
     padding: 0;
@@ -672,15 +504,9 @@ body main .planet-stats .average-temp span {
     line-height: 6.5rem;
   }
   body main .desktop-wrapper .overview-wrapper .overview .source-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    align-items: center;
+    justify-content: left;
     gap: 0.25rem;
     margin-top: 1.5rem;
     font-size: 0.875rem;
@@ -729,5 +555,4 @@ body main .planet-stats .average-temp span {
     line-height: 3.25rem;
     letter-spacing: -0.09375rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

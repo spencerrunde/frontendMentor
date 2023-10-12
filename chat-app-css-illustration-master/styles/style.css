@@ -1,8 +1,8 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html body {
@@ -14,7 +14,6 @@ html {
   position: relative;
   min-height: 100vh;
 }
-
 html::before {
   content: "";
   position: absolute;
@@ -26,7 +25,6 @@ html::before {
   border-radius: 0 0 255px 0;
   z-index: -1;
 }
-
 html::after {
   content: "";
   position: absolute;
@@ -40,35 +38,22 @@ html::after {
   border-radius: 255px 0 0 0;
   z-index: -1;
 }
-
 html body main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 html body main .phone {
   margin-top: 4rem;
   padding: 11px 9.5px;
   width: 247px;
   height: 505px;
   position: relative;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
-  -webkit-box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.251202);
-          box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.251202);
+  box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.251202);
 }
-
 html body main .phone::after {
   position: absolute;
   content: "";
@@ -79,61 +64,51 @@ html body main .phone::after {
   background: #ffffff;
   border-radius: 0px 0px 14px 14px;
 }
-
 html body main .phone .inner-phone {
   background: #f5f3f7;
   border: 1px solid rgba(62, 39, 83, 0.0509178);
   border-radius: 20px;
   height: 483px;
 }
-
 html body main .phone .inner-phone .phone-header {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 28px;
   padding-top: 30px;
   height: 66px;
   background: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
-  -webkit-box-shadow: 0px 0px 13px rgba(62, 39, 83, 0.251202);
-          box-shadow: 0px 0px 13px rgba(62, 39, 83, 0.251202);
+  box-shadow: 0px 0px 13px rgba(62, 39, 83, 0.251202);
   border-radius: 20px 20px 6px 6px;
 }
-
 html body main .phone .inner-phone .phone-header::before {
-  content: "\0276C";
+  content: "❬";
   font-weight: bold;
-  color: white;
+  color: hsl(0, 0%, 100%);
   position: absolute;
   left: 14px;
   bottom: 15px;
 }
-
 html body main .phone .inner-phone .phone-header::after {
-  content: "\2807";
-  color: white;
+  content: "⠇";
+  color: hsl(0, 0%, 100%);
   position: absolute;
   right: 16.5px;
   bottom: 15px;
 }
-
 html body main .phone .inner-phone .phone-header img {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid hsl(0, 0%, 100%);
   margin-right: 0.5rem;
 }
-
 html body main .phone .inner-phone .phone-header .header-status {
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
   line-height: 13px;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
-
 html body main .phone .inner-phone .phone-header .header-status p {
   font-style: normal;
   font-weight: normal;
@@ -142,7 +117,6 @@ html body main .phone .inner-phone .phone-header .header-status p {
   color: #d99eff;
   margin-top: 2px;
 }
-
 html body main .phone .sam-msg {
   font-style: normal;
   font-weight: normal;
@@ -155,48 +129,32 @@ html body main .phone .sam-msg {
   width: 128px;
   margin-top: 11px;
   margin-left: 7.5px;
-  -webkit-animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-
 html body main .phone .sam-msg:nth-child(3) {
   margin-bottom: 1rem;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
-
-html body main .phone .sam-msg:nth-last-child(-n + 4) {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+html body main .phone .sam-msg:nth-last-child(-n+4) {
+  animation-delay: 2.5s;
 }
-
 html body main .phone .dog-imgs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-right: 7.5px;
   margin-bottom: 0.5rem;
   gap: 0.5rem;
-  -webkit-animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 1s;
 }
-
 html body main .phone .dog-imgs img {
   width: 40px;
-  -webkit-box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
-          box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
+  box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
   border-radius: 10px;
 }
-
 html body main .phone .msg-wrapper {
   margin-right: 7.5px;
 }
-
 html body main .phone .msg-wrapper .spencer-msg {
   margin-left: 92.5px;
   width: 128px;
@@ -205,32 +163,25 @@ html body main .phone .msg-wrapper .spencer-msg {
   font-size: 8px;
   line-height: 11px;
   color: #6e5d7e;
-  background: white;
-  -webkit-box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
-          box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
   border-radius: 10px 10px 4px 10px;
   padding: 6px 8px;
   margin-bottom: 0.5rem;
-  -webkit-animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 1.5s;
 }
-
 html body main .phone .msg-wrapper .spencer-msg:nth-child(2) {
   margin-left: 140.5px;
   margin-bottom: 5px;
   width: 80px;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
-
 html body main .phone .pricing-msg,
 html body main .phone .pricing-msg-2 {
   position: relative;
   background: linear-gradient(-22.5deg, #8739ff 0%, #e844ff 100%);
-  -webkit-box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
-          box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
+  box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
   border-radius: 10px 10px 10px 4px;
   width: 160px;
   padding: 10.5px 16px 10.5px 28px;
@@ -240,13 +191,10 @@ html body main .phone .pricing-msg-2 {
   font-weight: normal;
   font-size: 8px;
   line-height: 11px;
-  color: white;
-  -webkit-animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-          animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  color: hsl(0, 0%, 100%);
+  animation: flip-in-hor-bottom 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 3s;
 }
-
 html body main .phone .pricing-msg::before,
 html body main .phone .pricing-msg-2::before {
   position: absolute;
@@ -257,10 +205,8 @@ html body main .phone .pricing-msg-2::before {
   height: 12px;
   border-radius: 50%;
   border: 1px solid #e472ff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 html body main .phone .pricing-msg span,
 html body main .phone .pricing-msg-2 span {
   float: right;
@@ -269,7 +215,6 @@ html body main .phone .pricing-msg-2 span {
   font-size: 12px;
   line-height: 11px;
 }
-
 html body main .phone .input {
   position: relative;
   margin: 16px 7.5px 0px;
@@ -279,77 +224,51 @@ html body main .phone .input {
   line-height: 11px;
   letter-spacing: -0.0703125px;
   color: #c5c9cc;
-  background: white;
+  background: hsl(0, 0%, 100%);
   border-radius: 16.9544px;
   padding: 12px 20px;
 }
-
 html body main .phone .input::after {
   content: ">";
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-size: 16px;
   padding: 7px 8px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 5px;
   right: 5.5px;
   background: #3e2753;
   border-radius: 50%;
 }
-
 html body main .hero-text {
   margin: 4rem 2rem;
   text-align: center;
 }
-
 html body main .hero-text h1 {
-  color: #3e2753;
+  color: hsl(271, 36%, 24%);
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
 }
-
 html body main .hero-text p {
   margin-top: 1.5rem;
-  color: #a39daa;
+  color: hsl(270, 7%, 64%);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
 }
-
-@-webkit-keyframes flip-in-hor-bottom {
-  0% {
-    -webkit-transform: rotateX(80deg);
-            transform: rotateX(80deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-    opacity: 1;
-  }
-}
-
 @keyframes flip-in-hor-bottom {
   0% {
-    -webkit-transform: rotateX(80deg);
-            transform: rotateX(80deg);
+    transform: rotateX(80deg);
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
+    transform: rotateX(0);
     opacity: 1;
   }
 }
@@ -373,19 +292,10 @@ html body main .hero-text p {
     border-radius: 255px 255px 0 0;
   }
   html body main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 7.8125rem;
     min-height: 100vh;
   }
@@ -399,5 +309,4 @@ html body main .hero-text p {
   html body main .hero-text p {
     width: 27.8125rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,100 +1,69 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Space Mono", monospace;
-  background-color: #c5e4e7;
+  background-color: hsl(185, 41%, 84%);
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 main .logo {
   margin: 3.125rem 0 2.5rem;
 }
-
 main .card {
   width: 100vw;
-  background-color: white;
-  -webkit-box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
-          box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
   border-radius: 25px 25px 0px 0px;
   padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
-
 main .card .flex-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
-
 main .card label {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  color: #5e7a7d;
+  color: hsl(186, 14%, 43%);
 }
-
 main .card h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
-
 main .card p {
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 19px;
-  color: #7f9c9f;
+  color: hsl(184, 14%, 56%);
 }
-
 main .card button {
   cursor: pointer;
 }
-
 main .card input {
   height: 3rem;
   width: 100%;
   border: none;
   border-radius: 5px;
-  background-color: #f4fafa;
+  background-color: hsl(189, 41%, 97%);
   margin-top: 0.5rem;
   font-family: "Space Mono", monospace;
   font-style: normal;
@@ -103,51 +72,24 @@ main .card input {
   line-height: 36px;
   text-align: right;
   padding-right: 1rem;
-  color: #00494d;
+  color: hsl(183, 100%, 15%);
   cursor: pointer;
 }
-
 main .card input::-webkit-outer-spin-button, main .card input::-webkit-inner-spin-button {
   display: none;
   margin: 0;
 }
-
-main .card input::-webkit-input-placeholder {
+main .card input::-moz-placeholder {
   text-align: right;
   font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
-  color: #00494d;
+  color: hsl(183, 100%, 15%);
   mix-blend-mode: normal;
   opacity: 0.35;
 }
-
-main .card input:-ms-input-placeholder {
-  text-align: right;
-  font-family: "Space Mono", monospace;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  color: #00494d;
-  mix-blend-mode: normal;
-  opacity: 0.35;
-}
-
-main .card input::-ms-input-placeholder {
-  text-align: right;
-  font-family: "Space Mono", monospace;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  color: #00494d;
-  mix-blend-mode: normal;
-  opacity: 0.35;
-}
-
 main .card input::placeholder {
   text-align: right;
   font-family: "Space Mono", monospace;
@@ -155,42 +97,35 @@ main .card input::placeholder {
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
-  color: #00494d;
+  color: hsl(183, 100%, 15%);
   mix-blend-mode: normal;
   opacity: 0.35;
 }
-
 main .card input:focus-visible {
   outline: none;
-  border: 2px solid #26c0ab;
-  caret-color: #26c0ab;
+  border: 2px solid hsl(172, 67%, 45%);
+  caret-color: hsl(172, 67%, 45%);
 }
-
 main .card .bill,
 main .card .people {
   position: relative;
 }
-
 main .card .bill .input-icon,
 main .card .people .input-icon {
   position: absolute;
   left: 1rem;
   top: 3rem;
 }
-
 main .card .btn-grid {
   margin-top: 1rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
-
 main .card .btn-grid button {
   height: 3rem;
   width: 100%;
-  background: #00494d;
+  background: hsl(183, 100%, 15%);
   border-radius: 5px;
   border: none;
   font-family: "Space Mono", monospace;
@@ -199,24 +134,19 @@ main .card .btn-grid button {
   font-size: 24px;
   line-height: 36px;
   text-align: center;
-  color: white;
-  -webkit-transition: all 0.25s ease-in;
+  color: hsl(0, 0%, 100%);
   transition: all 0.25s ease-in;
 }
-
 main .card .btn-grid button:hover {
   background: #9fe8df;
-  color: #00494d;
+  color: hsl(183, 100%, 15%);
 }
-
 main .card .btn-grid .button-active {
-  background: #26c0ab;
+  background: hsl(172, 67%, 45%);
 }
-
 main .card .btn-grid input {
   margin-top: 0;
 }
-
 main .card .people .error-msg {
   font-style: normal;
   font-weight: bold;
@@ -226,42 +156,29 @@ main .card .people .error-msg {
   color: #e17457;
   margin-top: 0.5rem;
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
-
 main .card .people .show-error-msg {
   opacity: 1;
 }
-
 main .card .people .error-input {
   border: 2px solid #e17457;
   caret-color: #e17457;
 }
-
 main .card .output {
-  background-color: #00494d;
+  background-color: hsl(183, 100%, 15%);
   border-radius: 1rem;
   padding: 2.375rem 1.5rem 1.5rem;
 }
-
 main .card .output .tip-per,
 main .card .output .total-per {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 main .card .output .tip-per {
   margin-bottom: 1.25rem;
 }
-
 main .card .output .tip-value,
 main .card .output .total-value {
   font-style: normal;
@@ -270,9 +187,8 @@ main .card .output .total-value {
   line-height: 47px;
   text-align: right;
   letter-spacing: -0.666667px;
-  color: #26c0ab;
+  color: hsl(172, 67%, 45%);
 }
-
 main .card .output button {
   font-family: "Space Mono", monospace;
   font-style: normal;
@@ -281,21 +197,18 @@ main .card .output button {
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #00494d;
-  background: #26c0ab;
+  color: hsl(183, 100%, 15%);
+  background: hsl(172, 67%, 45%);
   border: none;
   border-radius: 5px;
   padding: 0.5rem 0;
   margin-top: 2rem;
   width: 100%;
-  -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
-
 main .card .output button:hover {
   background: #9fe8df;
 }
-
 main .card .output .inactive {
   mix-blend-mode: normal;
   opacity: 0.35;
@@ -310,23 +223,17 @@ main .card .output .inactive {
   }
   main .card {
     max-width: 920px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 2rem;
     border-radius: 25px;
   }
   main .card .flex-left {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    flex: 1 1 0;
     margin: 1rem;
     gap: 2.5rem;
   }
   main .card .flex-left .btn-grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   main .card .flex-left .people {
     position: relative;
@@ -337,23 +244,14 @@ main .card .output .inactive {
     right: 0;
   }
   main .card .flex-right {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+    flex: 1 1 0;
   }
   main .card .flex-right .output {
     height: 100%;
     padding: 2.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
   }
   main .card .flex-right .output .tip-value,
   main .card .flex-right .output .total-value {
@@ -361,5 +259,4 @@ main .card .output .inactive {
     line-height: 71px;
     letter-spacing: -1px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

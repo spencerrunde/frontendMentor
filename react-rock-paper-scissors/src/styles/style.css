@@ -87,8 +87,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 article,
@@ -140,75 +139,48 @@ body {
   color: white;
   padding: 2rem 2rem 3.5rem;
 }
-
 body #root {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
   width: 100%;
   padding: 0.75rem 0.75rem 0.75rem 1.5rem;
-  border: 3px solid #606e85;
+  border: 3px solid hsl(217, 16%, 45%);
   border-radius: 0.3125rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 6rem;
 }
-
 header img {
   max-height: 3.75rem;
 }
-
 header .header__wrapper {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#ffffff));
   background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
-  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
-          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   border-radius: 0.25rem;
   padding: 0.625rem 1.5313rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 header .header__wrapper h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 0.625rem;
   line-height: 0.75rem;
   letter-spacing: 1.5625px;
-  color: #2a46c0;
+  color: hsl(229, 64%, 46%);
 }
-
 header .header__wrapper span {
   font-style: normal;
   font-weight: bold;
   font-size: 2.5rem;
   line-height: 2.5rem;
-  color: #3b4363;
+  color: hsl(229, 25%, 31%);
 }
 
 @media screen and (min-width: 1024px) {
@@ -236,7 +208,6 @@ header .header__wrapper span {
     line-height: 4rem;
   }
 }
-
 .play {
   background-image: url(../../public/images/bg-pentagon.svg);
   background-position: center center;
@@ -247,93 +218,64 @@ header .header__wrapper span {
   margin-bottom: 7.875rem;
   position: relative;
 }
-
 .play .icon {
   position: absolute;
   width: 6rem;
   height: 6rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), color-stop(98.34%, #dadada));
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
   border: 0.6875rem solid;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform-origin: center;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: -webkit-transform 0.25s ease-out;
-  transition: -webkit-transform 0.25s ease-out;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.25s ease-out;
-  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
-
 .play .icon:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .play .icon--rock {
   bottom: 0px;
   right: 43px;
-  border-color: #dc2e4e;
-  -webkit-box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #9d1634;
-          box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #9d1634;
+  border-color: hsl(349, 71%, 52%);
+  box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #9d1634;
 }
-
 .play .icon--rock img {
   max-width: 2.3125rem;
 }
-
 .play .icon--paper {
   right: 0px;
   bottom: 122px;
-  border-color: #4865f4;
-  -webkit-box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #2a45c2;
-          box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #2a45c2;
+  border-color: hsl(230, 89%, 62%);
+  box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #2a45c2;
 }
-
 .play .icon--paper img {
   width: 2.25rem;
 }
-
 .play .icon--scissors {
   top: 0px;
   left: 107.5px;
-  border-color: #ec9e0e;
-  -webkit-box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #c76c1b;
-          box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #c76c1b;
+  border-color: hsl(39, 89%, 49%);
+  box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #c76c1b;
 }
-
 .play .icon--scissors img {
   width: 2.5rem;
 }
-
 .play .icon--lizard {
   bottom: 0px;
   left: 43px;
-  border-color: #834fe3;
-  -webkit-box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #5f37a8;
-          box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #5f37a8;
+  border-color: hsl(261, 73%, 60%);
+  box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #5f37a8;
 }
-
 .play .icon--lizard img {
   max-width: 2.5625rem;
 }
-
 .play .icon--spock {
   bottom: 122px;
   left: 0px;
-  border-color: #40b9ce;
-  -webkit-box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #2d8dab;
-          box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #2d8dab;
+  border-color: hsl(189, 59%, 53%);
+  box-shadow: inset 0px 4px 0px #babfd4, 0px 4px #2d8dab;
 }
-
 .play .icon--spock img {
   width: 1.875rem;
 }
@@ -353,9 +295,8 @@ header .header__wrapper span {
   .play .icon--rock {
     bottom: 0px;
     right: 65px;
-    border-color: #dc2e4e;
-    -webkit-box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #9d1634;
-            box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #9d1634;
+    border-color: hsl(349, 71%, 52%);
+    box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #9d1634;
   }
   .play .icon--rock img {
     min-width: 3.4375rem;
@@ -363,9 +304,8 @@ header .header__wrapper span {
   .play .icon--paper {
     right: 0px;
     top: 129px;
-    border-color: #4865f4;
-    -webkit-box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #2a45c2;
-            box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #2a45c2;
+    border-color: hsl(230, 89%, 62%);
+    box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #2a45c2;
   }
   .play .icon--paper img {
     min-width: 3.375rem;
@@ -373,9 +313,8 @@ header .header__wrapper span {
   .play .icon--scissors {
     top: 0px;
     left: 163.5px;
-    border-color: #ec9e0e;
-    -webkit-box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #c76c1b;
-            box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #c76c1b;
+    border-color: hsl(39, 89%, 49%);
+    box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #c76c1b;
   }
   .play .icon--scissors img {
     min-width: 3.5rem;
@@ -383,9 +322,8 @@ header .header__wrapper span {
   .play .icon--lizard {
     bottom: 0px;
     left: 65px;
-    border-color: #834fe3;
-    -webkit-box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #5f37a8;
-            box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #5f37a8;
+    border-color: hsl(261, 73%, 60%);
+    box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #5f37a8;
   }
   .play .icon--lizard img {
     min-width: 3.875rem;
@@ -393,144 +331,93 @@ header .header__wrapper span {
   .play .icon--spock {
     top: 129px;
     left: 0px;
-    border-color: #40b9ce;
-    -webkit-box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #2d8dab;
-            box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #2d8dab;
+    border-color: hsl(189, 59%, 53%);
+    box-shadow: inset 0px 6px 0px #babfd4, 0px 6px #2d8dab;
   }
   .play .icon--spock img {
     min-width: 2.75rem;
   }
 }
-
 .game {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 0.375rem;
 }
-
 .game__main {
   width: 20.4375rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 3.875rem;
 }
-
 .game__main .main__player,
 .game__main .main__computer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
-
 .game__main .main__player .icon,
 .game__main .main__computer .icon {
   width: 8.25rem;
   height: 8.25rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), color-stop(98.34%, #dadada));
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
   border: 0.9375rem solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .game__main .main__player .icon--rock,
 .game__main .main__computer .icon--rock {
-  border-color: #dc2e4e;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #9d1634;
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #9d1634;
+  border-color: hsl(349, 71%, 52%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #9d1634;
 }
-
 .game__main .main__player .icon--rock--winner,
 .game__main .main__computer .icon--rock--winner {
-  border-color: #dc2e4e;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #9d1634, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #9d1634, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
+  border-color: hsl(349, 71%, 52%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #9d1634, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
 }
-
 .game__main .main__player .icon--paper,
 .game__main .main__computer .icon--paper {
-  border-color: #4865f4;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2a45c2;
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2a45c2;
+  border-color: hsl(230, 89%, 62%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2a45c2;
 }
-
 .game__main .main__player .icon--paper--winner,
 .game__main .main__computer .icon--paper--winner {
-  border-color: #4865f4;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2a45c2, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2a45c2, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
+  border-color: hsl(230, 89%, 62%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2a45c2, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
 }
-
 .game__main .main__player .icon--scissors,
 .game__main .main__computer .icon--scissors {
-  border-color: #ec9e0e;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #c76c1b;
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #c76c1b;
+  border-color: hsl(39, 89%, 49%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #c76c1b;
 }
-
 .game__main .main__player .icon--scissors--winner,
 .game__main .main__computer .icon--scissors--winner {
-  border-color: #ec9e0e;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #c76c1b, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #c76c1b, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
+  border-color: hsl(39, 89%, 49%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #c76c1b, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
 }
-
 .game__main .main__player .icon--lizard,
 .game__main .main__computer .icon--lizard {
-  border-color: #834fe3;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #5f37a8;
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #5f37a8;
+  border-color: hsl(261, 73%, 60%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #5f37a8;
 }
-
 .game__main .main__player .icon--lizard--winner,
 .game__main .main__computer .icon--lizard--winner {
-  border-color: #834fe3;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #5f37a8, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #5f37a8, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
+  border-color: hsl(261, 73%, 60%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #5f37a8, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
 }
-
 .game__main .main__player .icon--spock,
 .game__main .main__computer .icon--spock {
-  border-color: #40b9ce;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2d8dab;
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2d8dab;
+  border-color: hsl(189, 59%, 53%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2d8dab;
 }
-
 .game__main .main__player .icon--spock--winner,
 .game__main .main__computer .icon--spock--winner {
-  border-color: #40b9ce;
-  -webkit-box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2d8dab, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
-          box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2d8dab, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
+  border-color: hsl(189, 59%, 53%);
+  box-shadow: inset 0px 5px 0px #babfd4, 0px 5px #2d8dab, 0px 0px 0px 20px rgba(255, 255, 255, 0.025), 0px 0px 0px 45px rgba(255, 255, 255, 0.025), 0px 0px 0px 75px rgba(255, 255, 255, 0.025);
 }
-
 .game__main .main__player .choiceText,
 .game__main .main__computer .choiceText {
   text-transform: uppercase;
@@ -542,11 +429,9 @@ header .header__wrapper span {
   color: white;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
 }
-
 .game__main .main__player {
   width: 9rem;
 }
-
 .game__result {
   text-transform: uppercase;
   font-style: normal;
@@ -558,11 +443,9 @@ header .header__wrapper span {
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   margin-bottom: 1rem;
 }
-
 .game a {
   text-decoration: none;
 }
-
 .game a .game__playAgain {
   width: 220px;
   text-transform: uppercase;
@@ -573,50 +456,34 @@ header .header__wrapper span {
   letter-spacing: 2.5px;
   text-align: center;
   color: #3b4262;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#ffffff));
   background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
-  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
-          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   border-radius: 0.5rem;
   padding: 0.9063rem 0;
   margin-bottom: 3.25rem;
-  -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-
 .game a .game__playAgain:hover {
-  color: #dc2e4e;
+  color: hsl(349, 71%, 52%);
 }
 
 @media screen and (min-width: 1024px) {
   .game {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1.5rem;
     position: relative;
   }
   .game__main {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 22rem;
     margin-bottom: 0;
   }
   .game__main .main__player,
   .game__main .main__computer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     gap: 3.75rem;
   }
   .game__main .main__player .icon,
@@ -627,15 +494,13 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--rock,
   .game__main .main__computer .icon--rock {
-    border-color: #dc2e4e;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #9d1634;
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #9d1634;
+    border-color: hsl(349, 71%, 52%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #9d1634;
   }
   .game__main .main__player .icon--rock--winner,
   .game__main .main__computer .icon--rock--winner {
-    border-color: #dc2e4e;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #9d1634, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #9d1634, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
+    border-color: hsl(349, 71%, 52%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #9d1634, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
   }
   .game__main .main__player .icon--rock--winner img,
   .game__main .main__computer .icon--rock--winner img {
@@ -647,15 +512,13 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--paper,
   .game__main .main__computer .icon--paper {
-    border-color: #4865f4;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2a45c2;
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2a45c2;
+    border-color: hsl(230, 89%, 62%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2a45c2;
   }
   .game__main .main__player .icon--paper--winner,
   .game__main .main__computer .icon--paper--winner {
-    border-color: #4865f4;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2a45c2, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2a45c2, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
+    border-color: hsl(230, 89%, 62%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2a45c2, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
   }
   .game__main .main__player .icon--paper--winner img,
   .game__main .main__computer .icon--paper--winner img {
@@ -667,15 +530,13 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--scissors,
   .game__main .main__computer .icon--scissors {
-    border-color: #ec9e0e;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #c76c1b;
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #c76c1b;
+    border-color: hsl(39, 89%, 49%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #c76c1b;
   }
   .game__main .main__player .icon--scissors--winner,
   .game__main .main__computer .icon--scissors--winner {
-    border-color: #ec9e0e;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #c76c1b, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #c76c1b, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
+    border-color: hsl(39, 89%, 49%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #c76c1b, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
   }
   .game__main .main__player .icon--scissors--winner img,
   .game__main .main__computer .icon--scissors--winner img {
@@ -687,15 +548,13 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--lizard,
   .game__main .main__computer .icon--lizard {
-    border-color: #834fe3;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #5f37a8;
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #5f37a8;
+    border-color: hsl(261, 73%, 60%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #5f37a8;
   }
   .game__main .main__player .icon--lizard--winner,
   .game__main .main__computer .icon--lizard--winner {
-    border-color: #834fe3;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #5f37a8, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #5f37a8, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
+    border-color: hsl(261, 73%, 60%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #5f37a8, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
   }
   .game__main .main__player .icon--lizard--winner img,
   .game__main .main__computer .icon--lizard--winner img {
@@ -707,15 +566,13 @@ header .header__wrapper span {
   }
   .game__main .main__player .icon--spock,
   .game__main .main__computer .icon--spock {
-    border-color: #40b9ce;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2d8dab;
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2d8dab;
+    border-color: hsl(189, 59%, 53%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2d8dab;
   }
   .game__main .main__player .icon--spock--winner,
   .game__main .main__computer .icon--spock--winner {
-    border-color: #40b9ce;
-    -webkit-box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2d8dab, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
-            box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2d8dab, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
+    border-color: hsl(189, 59%, 53%);
+    box-shadow: inset 0px 13px 0px #babfd4, 0px 13px #2d8dab, 0px 0px 0px 4rem rgba(255, 255, 255, 0.025), 0px 0px 0px 8.5rem rgba(255, 255, 255, 0.025), 0px 0px 0px 13.625rem rgba(255, 255, 255, 0.025);
   }
   .game__main .main__player .icon--spock--winner img,
   .game__main .main__computer .icon--spock--winner img {
@@ -747,7 +604,6 @@ header .header__wrapper span {
     margin-bottom: 0rem;
   }
 }
-
 footer button {
   background: transparent;
   border: 1px solid white;
@@ -761,14 +617,11 @@ footer button {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: white;
-  -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-
 footer button:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#ffffff));
   background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
-  color: #3b4363;
+  color: hsl(229, 25%, 31%);
 }
 
 @media screen and (min-width: 1024px) {
@@ -778,7 +631,6 @@ footer button:hover {
     right: 32px;
   }
 }
-
 .container {
   position: absolute;
   top: 0;
@@ -786,39 +638,28 @@ footer button:hover {
   width: 100vw;
   height: 100vh;
 }
-
 .container .container__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 6rem 2rem 4rem;
   width: 100%;
   height: 100%;
   background-color: white;
   border-radius: 0.5rem;
 }
-
 .container .container__wrapper h1 {
   text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
   line-height: 2rem;
-  color: #3b4363;
+  color: hsl(229, 25%, 31%);
   margin-bottom: 6rem;
 }
-
 .container .container__wrapper .container__rules img {
   margin-bottom: 8.625rem;
 }
-
 .container .container__wrapper button {
   background: transparent;
   cursor: pointer;
@@ -829,15 +670,9 @@ footer button:hover {
     position: fixed;
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .container::after {
     z-index: -1;
@@ -873,5 +708,4 @@ footer button:hover {
     top: 2.375rem;
     right: 2rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

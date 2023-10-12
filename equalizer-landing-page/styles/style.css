@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
@@ -11,10 +10,9 @@ img {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  background-color: #fcf9f8;
+  background-color: hsl(20, 33%, 98%);
   position: relative;
 }
-
 body::before {
   content: "";
   position: absolute;
@@ -27,46 +25,36 @@ body::before {
   background-position: top center;
   background-repeat: no-repeat;
 }
-
 body main {
   position: relative;
 }
-
 body main .logo {
   padding: 2.5rem 0 4rem 1.5rem;
 }
-
 body main .hero .hero__text {
   margin: 0 1.5rem 10.375rem;
 }
-
 body main .hero .hero__text h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 2.5rem;
   line-height: 3rem;
   letter-spacing: -0.454544px;
-  color: #191826;
+  color: hsl(244, 23%, 12%);
   margin-bottom: 1.25rem;
 }
-
 body main .hero .hero__text p {
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #191826;
+  color: hsl(244, 23%, 12%);
 }
-
 body main .eqHero .eqHero__illustration {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-radius: 0.75rem;
-  background-color: #191826;
+  background-color: hsl(244, 23%, 12%);
   background-image: url(../assets/bg-pattern-2.svg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -76,22 +64,19 @@ body main .eqHero .eqHero__illustration {
   height: 37.5rem;
   margin-bottom: -13.75rem;
 }
-
 body main .eqHero .eqHero__illustration img {
   position: absolute;
   max-width: 56%;
   max-height: 26.875rem;
   top: -6.125rem;
 }
-
 body main .eqHero .eqHero__text {
   position: relative;
   border-radius: 0.75rem;
-  background-color: #fa7352;
-  color: #fcf9f8;
+  background-color: hsl(12, 94%, 65%);
+  color: hsl(20, 33%, 98%);
   padding: 3rem 2.25rem;
 }
-
 body main .eqHero .eqHero__text h2 {
   font-style: normal;
   font-weight: bold;
@@ -99,7 +84,6 @@ body main .eqHero .eqHero__text h2 {
   line-height: 2.5rem;
   margin-bottom: 0.75rem;
 }
-
 body main .eqHero .eqHero__text p {
   font-style: normal;
   font-weight: normal;
@@ -107,14 +91,9 @@ body main .eqHero .eqHero__text p {
   line-height: 1.75rem;
   margin-bottom: 2.25rem;
 }
-
 body main .eqHero .eqHero__text .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 1rem;
   font-style: normal;
   font-weight: bold;
@@ -122,7 +101,6 @@ body main .eqHero .eqHero__text .price {
   line-height: 3.25rem;
   margin-bottom: 2rem;
 }
-
 body main .eqHero .eqHero__text .price span {
   font-style: normal;
   font-weight: normal;
@@ -130,19 +108,12 @@ body main .eqHero .eqHero__text .price span {
   line-height: 2rem;
   letter-spacing: -0.2px;
 }
-
 body main .eqHero .eqHero__text .buttons .buttons__ios,
 body main .eqHero .eqHero__text .buttons .buttons__android {
   border-radius: 0.75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 1rem 0;
   font-style: normal;
@@ -151,62 +122,46 @@ body main .eqHero .eqHero__text .buttons .buttons__android {
   line-height: 2rem;
   letter-spacing: -0.18px;
   cursor: pointer;
-  -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 }
-
 body main .eqHero .eqHero__text .buttons .buttons__ios {
-  background-color: #191826;
+  background-color: hsl(244, 23%, 12%);
   margin-bottom: 1rem;
 }
-
 body main .eqHero .eqHero__text .buttons .buttons__ios:hover {
-  background-color: #65e2db;
+  background-color: hsl(177, 68%, 64%);
 }
-
 body main .eqHero .eqHero__text .buttons .buttons__android {
-  background-color: #fcf9f8;
-  color: #191826;
+  background-color: hsl(20, 33%, 98%);
+  color: hsl(244, 23%, 12%);
 }
-
 body main .eqHero .eqHero__text .buttons .buttons__android:hover {
-  background-color: #ffba66;
+  background-color: hsl(33, 100%, 70%);
 }
-
 body main footer .footer__wrapper {
   padding: 4rem 1.5rem 5rem;
 }
-
 body main footer .footer__wrapper p {
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.625rem;
 }
-
 body main footer .footer__wrapper p span {
   font-weight: bold;
 }
-
 body main footer .footer__wrapper .logo--footer {
   padding: 0 0 2rem 0;
 }
-
 body main footer .footer__wrapper .footer__socials {
   margin-top: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 1.25rem;
 }
-
 body main footer .footer__wrapper .footer__socials img:hover {
   cursor: pointer;
-  -webkit-filter: invert(69%) sepia(39%) saturate(7188%) hue-rotate(330deg) brightness(110%) contrast(96%);
-          filter: invert(69%) sepia(39%) saturate(7188%) hue-rotate(330deg) brightness(110%) contrast(96%);
+  filter: invert(69%) sepia(39%) saturate(7188%) hue-rotate(330deg) brightness(110%) contrast(96%);
 }
 
 @media screen and (min-width: 768px) {
@@ -293,7 +248,6 @@ body main footer .footer__wrapper .footer__socials img:hover {
     margin: 0;
   }
 }
-
 @media screen and (min-width: 1440px) {
   body::before {
     width: 100.8125rem;
@@ -377,5 +331,4 @@ body main footer .footer__wrapper .footer__socials img:hover {
     bottom: 7.5rem;
     right: 10.25rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
